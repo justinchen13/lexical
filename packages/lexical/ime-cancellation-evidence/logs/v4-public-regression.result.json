@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "../.context/scratch/public-ime-repro-v4/run-regression-probe.mjs"
+  ],
+  "started": "2026-10-17T09:16:28.248Z",
+  "finished": "2026-10-17T09:16:29.510Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

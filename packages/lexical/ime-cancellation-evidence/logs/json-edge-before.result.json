@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "../.context/scratch/ime-revision3/edge/run-edge.mjs"
+  ],
+  "started": "2026-10-17T08:36:56.170Z",
+  "finished": "2026-10-17T08:36:57.035Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

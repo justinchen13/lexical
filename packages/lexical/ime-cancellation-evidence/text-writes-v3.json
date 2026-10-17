@@ -1,0 +1,22 @@
+[
+  {
+    "file": "packages/lexical/src/LexicalGeneratedJSON.ts",
+    "line": 257,
+    "code": "node.__text = prevNode.__text"
+  },
+  {
+    "file": "packages/lexical/src/nodes/LexicalTextNode.ts",
+    "line": 462,
+    "code": "this.__text = text"
+  },
+  {
+    "file": "packages/lexical/src/nodes/LexicalTextNode.ts",
+    "line": 922,
+    "code": "self.__text = text"
+  },
+  {
+    "file": "packages/lexical/src/nodes/LexicalTextNode.ts",
+    "line": 1031,
+    "code": "writableSelf.__text = updatedText"
+  }
+]

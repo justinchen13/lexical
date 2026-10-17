@@ -1,0 +1,10 @@
+$ vitest --project unit --project scripts-unit --no-watch packages/lexical/src packages/lexical-code-core/src
+
+ RUN  v5.0.1 <lexical-checkout>
+
+
+ Test Files  101 passed (101)
+      Tests  2254 passed (2254)
+   Start at  16:37:44
+   Duration  3.82s (environment 32%, transform 22%, tests 22%, import 13%, worker 9%, setup 3%)
+

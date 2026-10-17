@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "<ime-repro>/verify.py",
+    "--checkout",
+    "."
+  ],
+  "started": "2026-10-17T10:18:56.135Z",
+  "finished": "2026-10-17T10:18:56.186Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

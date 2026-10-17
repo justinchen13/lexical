@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "../.context/scratch/ime-revision4/verify-native-scope.mjs"
+  ],
+  "started": "2026-10-17T09:10:53.950Z",
+  "finished": "2026-10-17T09:10:54.133Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

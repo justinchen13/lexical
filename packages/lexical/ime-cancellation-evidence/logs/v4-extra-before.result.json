@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "../.context/scratch/ime-revision4/extra/run-extra.mjs"
+  ],
+  "started": "2026-10-17T09:07:03.090Z",
+  "finished": "2026-10-17T09:07:03.967Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

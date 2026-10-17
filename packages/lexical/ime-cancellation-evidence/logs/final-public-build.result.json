@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "<ime-repro>/build.mjs",
+    "."
+  ],
+  "started": "2026-10-17T10:18:55.980Z",
+  "finished": "2026-10-17T10:18:56.078Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

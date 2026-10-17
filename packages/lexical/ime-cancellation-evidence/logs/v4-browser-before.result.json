@@ -1,0 +1,15 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-browser",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+    "-t",
+    "ephemeral|selection slices"
+  ],
+  "started": "2026-10-17T09:07:14.572Z",
+  "finished": "2026-10-17T09:07:17.299Z",
+  "exit": 1,
+  "signal": null,
+  "node": "v25.2.1"
+}

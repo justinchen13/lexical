@@ -1,0 +1,34 @@
+[
+  {
+    "engine": "webkit",
+    "kind": "ephemeral-no-editor",
+    "outcome": {
+      "text": "export-copy"
+    },
+    "live": {
+      "model": "a b",
+      "dom": "a b",
+      "placeholder": null,
+      "selection": {
+        "key": "2",
+        "offset": 1
+      }
+    }
+  },
+  {
+    "engine": "chromium",
+    "kind": "ephemeral-no-editor",
+    "outcome": {
+      "text": "export-copy"
+    },
+    "live": {
+      "model": "a b",
+      "dom": "a b",
+      "placeholder": null,
+      "selection": {
+        "key": "2",
+        "offset": 1
+      }
+    }
+  }
+]

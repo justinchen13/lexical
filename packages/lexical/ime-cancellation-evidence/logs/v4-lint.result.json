@@ -1,0 +1,22 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "eslint",
+    "packages/lexical/src/LexicalEditor.ts",
+    "packages/lexical/src/LexicalEvents.ts",
+    "packages/lexical/src/LexicalGeneratedJSON.ts",
+    "packages/lexical/src/LexicalSelection.ts",
+    "packages/lexical/src/LexicalUtils.ts",
+    "packages/lexical/src/nodes/LexicalTextNode.ts",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+    "packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts",
+    "packages/lexical-selection/src/lexical-node.ts",
+    "packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts"
+  ],
+  "started": "2026-10-17T09:09:41.153Z",
+  "finished": "2026-10-17T09:09:43.901Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

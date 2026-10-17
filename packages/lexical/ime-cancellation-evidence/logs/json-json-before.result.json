@@ -1,0 +1,15 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-browser",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+    "-t",
+    "JSON text updates"
+  ],
+  "started": "2026-10-17T08:37:02.981Z",
+  "finished": "2026-10-17T08:37:05.073Z",
+  "exit": 1,
+  "signal": null,
+  "node": "v25.2.1"
+}

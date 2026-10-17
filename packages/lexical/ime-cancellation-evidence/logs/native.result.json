@@ -1,0 +1,7 @@
+{
+  "command": "./probe <probe-directory>",
+  "exit": 0,
+  "date": "2026-10-17",
+  "verificationExit": 0,
+  "bundleRebuildIdentical": true
+}

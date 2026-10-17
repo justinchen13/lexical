@@ -1,0 +1,12 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "tsc-test"
+  ],
+  "started": "2026-10-17T08:17:29.521Z",
+  "finished": "2026-10-17T08:17:45.527Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

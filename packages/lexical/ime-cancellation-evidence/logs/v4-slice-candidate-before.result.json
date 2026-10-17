@@ -1,0 +1,15 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-browser",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+    "-t",
+    "single NBSP"
+  ],
+  "started": "2026-10-17T09:12:16.523Z",
+  "finished": "2026-10-17T09:12:18.366Z",
+  "exit": 1,
+  "signal": null,
+  "node": "v25.2.1"
+}

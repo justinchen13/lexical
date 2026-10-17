@@ -1,0 +1,19 @@
+{
+  "sourceFreezeVerified": true,
+  "validExistingChecks": {
+    "browser": "358 passed / 2 skipped; ime-revision4/browser.result.json exit 0",
+    "unit": "3524 passed; ime-revision4/unit.result.json exit 0",
+    "tsc": "ime-revision4/tsc-final.result.json exit 0",
+    "tsc-test": "ime-revision4/tsc-test-final.result.json exit 0",
+    "lint": "all ten files, ime-revision4/lint-final.result.json exit 0",
+    "format": "all ten files, ime-revision4/format-final.result.json exit 0",
+    "generation": "generator drift/schema parity/clone included in current unit run"
+  },
+  "flowReuse": {
+    "inputsComparedToBaseline": 152,
+    "allUnchanged": true,
+    "evidence": "ime-revision2/flow.log and flow.result.json: Found 0 errors, exit 0",
+    "notRerun": true
+  },
+  "scopeDecision": "No reviewed source or dependency/config change since valid v4 checks. Reuse existing affected checks. Do not claim a full current ci-check, release build or unrelated CI matrix run."
+}

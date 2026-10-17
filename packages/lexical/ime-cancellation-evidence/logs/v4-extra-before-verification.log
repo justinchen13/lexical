@@ -1,0 +1,17 @@
+PASS webkit json-code-insert: {"model":"Xab","dom":"Xab","placeholder":null,"selection":{"key":"2","offset":1}}
+PASS webkit json-code-replace: {"model":"X Z","dom":"X Z","placeholder":null,"selection":{"key":"5","offset":1}}
+PASS webkit json-custom-insert: {"model":"Xab","dom":"Xab","placeholder":null,"selection":{"key":"8","offset":1}}
+PASS webkit json-custom-replace: {"model":"X Z","dom":"X Z","placeholder":null,"selection":{"key":"11","offset":1}}
+FAIL webkit ephemeral-no-editor: {"error":"Error: Unable to find an active editor. This method can only be used synchronously during the callback of editor.update(), editor.read(), or editor.getEditorState().read(..., {editor}). Detected on the page: 1 compatible editor(s) with version review"}
+FAIL webkit ephemeral-set: {"model":"a bc","dom":"a bc","placeholder":null,"selection":{"key":"17","offset":1}}
+FAIL webkit ephemeral-json: {"model":"a bc","dom":"a bc","placeholder":null,"selection":{"key":"20","offset":1}}
+FAIL webkit slice-live: {"model":"bc","dom":"bc","placeholder":null,"selection":{"key":"23","offset":1}}
+PASS chromium json-code-insert: {"model":"Xab","dom":"Xab","placeholder":null,"selection":{"key":"2","offset":1}}
+PASS chromium json-code-replace: {"model":"X Z","dom":"X Z","placeholder":null,"selection":{"key":"5","offset":1}}
+PASS chromium json-custom-insert: {"model":"Xab","dom":"Xab","placeholder":null,"selection":{"key":"8","offset":1}}
+PASS chromium json-custom-replace: {"model":"X Z","dom":"X Z","placeholder":null,"selection":{"key":"11","offset":1}}
+FAIL chromium ephemeral-no-editor: {"error":"Error: Unable to find an active editor. This method can only be used synchronously during the callback of editor.update(), editor.read(), or editor.getEditorState().read(..., {editor}). Detected on the page: 1 compatible editor(s) with version review"}
+FAIL chromium ephemeral-set: {"model":"a bc","dom":"a bc","placeholder":null,"selection":{"key":"17","offset":1}}
+FAIL chromium ephemeral-json: {"model":"a bc","dom":"a bc","placeholder":null,"selection":{"key":"20","offset":1}}
+FAIL chromium slice-live: {"model":"bc","dom":"bc","placeholder":null,"selection":{"key":"23","offset":1}}
+8 passed; 8 failed (synthetic/model evidence).

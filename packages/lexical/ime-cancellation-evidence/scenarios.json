@@ -1,0 +1,113 @@
+[
+  {
+    "id": "backspace",
+    "richText": false,
+    "initial": "abc",
+    "cancel": "backspace",
+    "expected": "abc",
+    "backspaceExpected": "ab"
+  },
+  {
+    "id": "escape",
+    "richText": true,
+    "initial": "abc",
+    "cancel": "escape",
+    "expected": "abc",
+    "backspaceExpected": "ab"
+  },
+  {
+    "id": "confirm-space",
+    "richText": false,
+    "initial": "abc",
+    "cancel": "space",
+    "expected": "abc你",
+    "backspaceExpected": "abc"
+  },
+  {
+    "id": "confirm-enter",
+    "richText": true,
+    "initial": "abc",
+    "cancel": "enter",
+    "expectedMode": "committed-data",
+    "ordinaryBackspace": true
+  },
+  {
+    "id": "empty",
+    "richText": false,
+    "initial": "",
+    "cancel": "backspace",
+    "expected": "",
+    "backspaceExpected": ""
+  },
+  {
+    "id": "nbsp",
+    "richText": true,
+    "initial": "a b ",
+    "cancel": "escape",
+    "expected": "a b ",
+    "backspaceExpected": "a b"
+  },
+  {
+    "id": "multi",
+    "richText": true,
+    "initial": "abcd",
+    "cancel": "escape",
+    "expected": "abZ"
+  },
+  {
+    "id": "copies",
+    "richText": false,
+    "initial": "a b c",
+    "operation": "copies",
+    "cancel": "escape",
+    "expected": "ab c"
+  },
+  {
+    "id": "copy-insertion",
+    "richText": true,
+    "initial": "abc",
+    "operation": "copy-insertion",
+    "cancel": "escape",
+    "expected": "abc"
+  },
+  {
+    "id": "json-insert",
+    "richText": false,
+    "initial": "a b c",
+    "operation": "json-insert",
+    "cancel": "escape",
+    "expected": "Xab c"
+  },
+  {
+    "id": "json-replace",
+    "richText": true,
+    "initial": "a b c",
+    "operation": "json-replace",
+    "cancel": "escape",
+    "expected": "X Z"
+  },
+  {
+    "id": "slice-live",
+    "richText": true,
+    "initial": "a b c",
+    "operation": "slice-live",
+    "cancel": "escape",
+    "expected": "b c"
+  },
+  {
+    "id": "slice-owned",
+    "richText": false,
+    "initial": "a b c",
+    "operation": "slice-owned",
+    "cancel": "escape",
+    "expected": ""
+  },
+  {
+    "id": "slice-real",
+    "richText": true,
+    "initial": "a b c",
+    "operation": "slice-real",
+    "cancel": "escape",
+    "expected": " "
+  }
+]

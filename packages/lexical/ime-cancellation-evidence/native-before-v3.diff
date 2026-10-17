@@ -1,0 +1,11 @@
+--- captured-range-cleanup-v2/before.js
++++ json-cleanup-v3/before.js
+@@ -19588,7 +19588,7 @@
+     register: registerPlainText
+   });
+ 
+-  // captured-probe.ts
++  // current-probe.ts
+   var host = globalThis;
+   host.factories ??= {};
+   host.factories["before"] = (root, scenario) => {

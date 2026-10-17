@@ -1,0 +1,14 @@
+$ vitest --project unit --project scripts-unit --no-watch packages/lexical/src packages/lexical-plain-text packages/lexical-rich-text packages/lexical-yjs
+
+ RUN  v5.0.1 <lexical-checkout>
+
+
+ Test Files  122 passed (122)
+      Tests  2462 passed (2462)
+   Start at  16:17:30
+   Duration  5.67s (transform 33%, environment 26%, tests 18%, import 12%, worker 7%, setup 4%)
+
+  Transform  |unit| transforming modules took 26.57s · 33% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

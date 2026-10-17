@@ -1,0 +1,37 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts -t 'single NBSP'
+
+ RUN  v5.0.1 <lexical-checkout>
+
+ ❯ |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (96 tests | 2 failed | 92 skipped) 134ms
+   ❯ Safari composition (richText=false) (48)
+     × a live slice identifies the single NBSP at offset 1 85ms
+   ❯ Safari composition (richText=true) (48)
+     × a live slice identifies the single NBSP at offset 1 42ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > a live slice identifies the single NBSP at offset 1
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > a live slice identifies the single NBSP at offset 1
+AssertionError: expected ' ' to be '' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----a-live-slice-identifies-the-single-NBSP-at-offset-1.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----a-live-slice-identifies-the-single-NBSP-at-offset-1.png
+
+- Expected
++ Received
+
++  
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:109:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:350:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  2 failed | 2 passed | 92 skipped (96)
+   Start at  17:12:17
+   Duration  964ms (import 53%, tests 32%, worker 14%, setup 2%)
+
+[ELIFECYCLE] Command failed with exit code 1.

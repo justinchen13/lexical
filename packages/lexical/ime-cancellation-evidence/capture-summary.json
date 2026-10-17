@@ -1,0 +1,394 @@
+{
+  "revision": "active-node-v4",
+  "scenarios": [
+    {
+      "scenario": "backspace",
+      "editor": "PlainText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "abc",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Backspace",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        },
+        {
+          "key": "Backspace",
+          "keyCode": 8
+        }
+      ],
+      "ordinaryBackspaceChecked": true
+    },
+    {
+      "scenario": "escape",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "abc",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        },
+        {
+          "key": "Backspace",
+          "keyCode": 8
+        }
+      ],
+      "ordinaryBackspaceChecked": true
+    },
+    {
+      "scenario": "confirm-space",
+      "editor": "PlainText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "abc你",
+      "compositionendData": "你",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText",
+        "insertFromComposition"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": " ",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        },
+        {
+          "key": "Backspace",
+          "keyCode": 8
+        }
+      ],
+      "ordinaryBackspaceChecked": true
+    },
+    {
+      "scenario": "confirm-enter",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "abcni",
+      "compositionendData": "ni",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText",
+        "insertFromComposition"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Enter",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        },
+        {
+          "key": "Backspace",
+          "keyCode": 8
+        }
+      ],
+      "ordinaryBackspaceChecked": true
+    },
+    {
+      "scenario": "empty",
+      "editor": "PlainText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Backspace",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        },
+        {
+          "key": "Backspace",
+          "keyCode": 8
+        }
+      ],
+      "ordinaryBackspaceChecked": true
+    },
+    {
+      "scenario": "nbsp",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "a b ",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        },
+        {
+          "key": "Backspace",
+          "keyCode": 8
+        }
+      ],
+      "ordinaryBackspaceChecked": true
+    },
+    {
+      "scenario": "multi",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "abZ",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    },
+    {
+      "scenario": "copies",
+      "editor": "PlainText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "ab c",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    },
+    {
+      "scenario": "copy-insertion",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "abc",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    },
+    {
+      "scenario": "json-insert",
+      "editor": "PlainText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "Xab c",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    },
+    {
+      "scenario": "json-replace",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "X Z",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    },
+    {
+      "scenario": "slice-live",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "b c",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    },
+    {
+      "scenario": "slice-owned",
+      "editor": "PlainText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": "",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    },
+    {
+      "scenario": "slice-real",
+      "editor": "RichText",
+      "result": "passed",
+      "textAfterCancellationOrConfirmation": " ",
+      "compositionendData": "",
+      "inputTypes": [
+        "insertCompositionText",
+        "insertCompositionText",
+        "deleteCompositionText"
+      ],
+      "keysAfterCompositionend": [
+        {
+          "key": "Escape",
+          "keyCode": 229
+        },
+        {
+          "key": "Enter",
+          "keyCode": 13
+        }
+      ],
+      "ordinaryBackspaceChecked": false
+    }
+  ],
+  "trustedDOMEvents": 276,
+  "trustedKeydowns": 64,
+  "nativeHIDKeydowns": 64,
+  "sourceID": "com.apple.inputmethod.SCIM.ITABC",
+  "capture": {
+    "accessibilityTrusted": true,
+    "architecture": "arm64",
+    "binarySha256": "dd6f741dda1a31417802d9483270459c1f88a9f808e32e889b4b4588e5898ee4",
+    "buildManifestSha256": "b4a3f834e2e47929c663b15492d8d5d1c7dc2c2ae649f4619ffb36d1c1b9dde6",
+    "bundleSha256": "29add179f7a5cea18ec9a48701c32d5dade3b0d71585a194da74f33295da1ddd",
+    "os": "Version 27.0.1 (Build 26A434)",
+    "postEventAccess": true,
+    "revision": "active-node-v4",
+    "scenarioCount": 14,
+    "scenarioPlanSha256": "0932d6cb6c274d6dafcb10dcf1d226edfc22a3f29837c9a8cb9df31b7c8b9b63",
+    "timestamp": "2026-10-17T10:11:59Z",
+    "type": "capture-start",
+    "variant": "final-only",
+    "webkit": "22625.1.29.11.28"
+  },
+  "restoration": {
+    "elementRestoreCode": 0,
+    "inputSourceRestored": true,
+    "inputSourceStatus": 0,
+    "previousApplicationActivated": true,
+    "previousApplicationFocused": true,
+    "previousFocusElementAvailable": true,
+    "previousFocusElementRestored": true,
+    "timestamp": "2026-10-17T10:12:25Z",
+    "type": "restored",
+    "windowRestoreCode": 0
+  },
+  "reusedBaseline": {
+    "revision": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+    "captureDataset": "range-cleanup-v2 before variant",
+    "missingEnterCases": 6,
+    "newBaselineRun": false
+  },
+  "allPassed": true
+}

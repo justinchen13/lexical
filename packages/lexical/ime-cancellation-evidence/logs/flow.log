@@ -1,0 +1,3 @@
+$ node ./scripts/check-flow-types.mjs
+Running Flow...
+Found 0 errors

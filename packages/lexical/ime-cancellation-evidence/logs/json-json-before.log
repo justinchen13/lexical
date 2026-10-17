@@ -1,0 +1,89 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts -t 'JSON text updates'
+
+ RUN  v5.0.1 <lexical-checkout>
+
+ ❯ |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (68 tests | 8 failed | 58 skipped) 358ms
+   ❯ Safari composition (richText=false) (34)
+     × JSON text updates maintain placeholder ownership (insert) 90ms
+     × JSON text updates maintain placeholder ownership (delete) 46ms
+     × JSON text updates maintain placeholder ownership (replace) 34ms
+     × JSON text updates maintain placeholder ownership (ambiguous) 34ms
+   ❯ Safari composition (richText=true) (34)
+     × JSON text updates maintain placeholder ownership (insert) 47ms
+     × JSON text updates maintain placeholder ownership (delete) 33ms
+     × JSON text updates maintain placeholder ownership (replace) 33ms
+     × JSON text updates maintain placeholder ownership (ambiguous) 34ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 8 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > JSON text updates maintain placeholder ownership (insert)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > JSON text updates maintain placeholder ownership (insert)
+AssertionError: expected 'Xa b' to be 'Xab' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----JSON-text-updates-maintain-placeholder-ownership--insert-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----JSON-text-updates-maintain-placeholder-ownership--insert-.png
+
+Expected: "Xab"
+Received: "Xa b"
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:107:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:240:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/8]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > JSON text updates maintain placeholder ownership (delete)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > JSON text updates maintain placeholder ownership (delete)
+AssertionError: expected ' b' to be 'b' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----JSON-text-updates-maintain-placeholder-ownership--delete-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----JSON-text-updates-maintain-placeholder-ownership--delete-.png
+
+Expected: "b"
+Received: " b"
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:107:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:240:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/8]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > JSON text updates maintain placeholder ownership (replace)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > JSON text updates maintain placeholder ownership (replace)
+AssertionError: expected 'XZ' to be 'X Z' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----JSON-text-updates-maintain-placeholder-ownership--replace-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----JSON-text-updates-maintain-placeholder-ownership--replace-.png
+
+Expected: "X Z"
+Received: "XZ"
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:107:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:240:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/8]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > JSON text updates maintain placeholder ownership (ambiguous)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > JSON text updates maintain placeholder ownership (ambiguous)
+AssertionError: expected 'ab' to be 'a b' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----JSON-text-updates-maintain-placeholder-ownership--ambiguous-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----JSON-text-updates-maintain-placeholder-ownership--ambiguous-.png
+
+Expected: "a b"
+Received: "ab"
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:107:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:240:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/8]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  8 failed | 2 passed | 58 skipped (68)
+   Start at  16:37:03
+   Duration  1.21s (tests 52%, import 32%, worker 15%, setup 1%)
+
+[ELIFECYCLE] Command failed with exit code 1.

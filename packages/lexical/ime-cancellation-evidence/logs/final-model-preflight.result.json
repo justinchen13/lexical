@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "<validation>/preflight-model.mjs"
+  ],
+  "started": "2026-10-17T09:41:07.502Z",
+  "finished": "2026-10-17T09:41:10.780Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

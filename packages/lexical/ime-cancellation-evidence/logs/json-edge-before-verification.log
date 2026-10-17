@@ -1,0 +1,9 @@
+PASS webkit set-insert: expected="Xab" model="Xab" dom="Xab"
+FAIL webkit json-insert: expected="Xab" model="Xa b" dom="Xa b"
+PASS webkit set-replace: expected="X Z" model="X Z" dom="X Z"
+FAIL webkit json-replace: expected="X Z" model="XZ" dom="XZ"
+PASS chromium set-insert: expected="Xab" model="Xab" dom="Xab"
+FAIL chromium json-insert: expected="Xab" model="Xa b" dom="Xa b"
+PASS chromium set-replace: expected="X Z" model="X Z" dom="X Z"
+FAIL chromium json-replace: expected="X Z" model="XZ" dom="XZ"
+4 passed; 4 failed (synthetic DOM replay).

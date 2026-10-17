@@ -1,0 +1,449 @@
+diff --git a/packages/lexical/src/LexicalEditor.ts b/packages/lexical/src/LexicalEditor.ts
+index 1f42ee760..b1e444a03 100644
+--- a/packages/lexical/src/LexicalEditor.ts
++++ b/packages/lexical/src/LexicalEditor.ts
+@@ -276,6 +276,8 @@ export interface CollapsedSelectionFormat {
+ export interface InputState {
+   compositionPhase: 'idle' | 'composing' | 'ending-firefox' | 'ending-safari';
+   compositionEndData: string;
++  /** Text at the insertion point before a desktop Safari composition. */
++  compositionStart: {key: NodeKey; offset: number; text: string} | null;
+   /**
+    * The segmented node that insertText switched to normal mode to compose
+    * into, which becomes a plain TextNode when the composition ends. No other
+@@ -344,6 +346,7 @@ export function createInputState(): InputState {
+     composedSegmentedKey: null,
+     compositionEndData: '',
+     compositionPhase: 'idle',
++    compositionStart: null,
+     hadOrphanedCompositionEvents: false,
+     handledSelectionCommandTimeoutId: null,
+     isInsertLineBreak: false,
+diff --git a/packages/lexical/src/LexicalEvents.ts b/packages/lexical/src/LexicalEvents.ts
+index d96a6de74..af7ddcebf 100644
+--- a/packages/lexical/src/LexicalEvents.ts
++++ b/packages/lexical/src/LexicalEvents.ts
+@@ -1806,6 +1806,7 @@ function $handleCompositionStart(event: CompositionEvent): boolean {
+     const node = selection.anchor.getNode();
+     $setCompositionKey(anchor.key);
+     $addUpdateTag(COMPOSITION_START_TAG);
++    let placeholderOffset: number | null = null;
+ 
+     if (
+       // If it has been 30ms since the last keydown, then we should
+@@ -1838,6 +1839,30 @@ function $handleCompositionStart(event: CompositionEvent): boolean {
+       const updatedSelection = $getSelection();
+       if ($isRangeSelection(updatedSelection)) {
+         $setCompositionKey(updatedSelection.anchor.key);
++        placeholderOffset = Math.min(
++          updatedSelection.anchor.offset,
++          updatedSelection.focus.offset,
++        );
++      }
++    }
++    if (!IS_IOS && (IS_SAFARI || IS_APPLE_WEBKIT)) {
++      const updatedSelection = $getSelection();
++      if ($isRangeSelection(updatedSelection)) {
++        const updatedNode = updatedSelection.anchor.getNode();
++        if ($isTextNode(updatedNode)) {
++          const text = updatedNode.getTextContent();
++          // Remember the model text without our inserted placeholder. A real
++          // NBSP has the same value, so cancellation cannot strip it by value.
++          inputState.compositionStart = {
++            key: updatedNode.getKey(),
++            offset: placeholderOffset ?? updatedSelection.anchor.offset,
++            text:
++              placeholderOffset === null
++                ? text
++                : text.slice(0, placeholderOffset) +
++                  text.slice(placeholderOffset + COMPOSITION_START_CHAR.length),
++          };
++        }
+       }
+     }
+   }
+@@ -1886,6 +1911,8 @@ function $cleanupComposedSubclass(compositionKey: NodeKey | null): void {
+ 
+ function $onCompositionEndImpl(editor: LexicalEditor, data?: string): boolean {
+   const compositionKey = editor._compositionKey;
++  const compositionStart = editor._inputState.compositionStart;
++  editor._inputState.compositionStart = null;
+   $setCompositionKey(null);
+ 
+   // Handle termination of composition.
+@@ -1894,6 +1921,17 @@ function $onCompositionEndImpl(editor: LexicalEditor, data?: string): boolean {
+     // So check for the empty case.
+     if (data === '') {
+       const node = $getNodeByKey(compositionKey);
++      if (
++        compositionStart !== null &&
++        compositionStart.key === compositionKey &&
++        $isTextNode(node) &&
++        node.isAttached()
++      ) {
++        node.setTextContent(compositionStart.text);
++        node.select(compositionStart.offset, compositionStart.offset);
++        $cleanupComposedSubclass(compositionKey);
++        return false;
++      }
+       const domElement = editor.getElementByKey(compositionKey);
+       const textNode =
+         domElement !== null && $isTextNode(node)
+@@ -1978,11 +2016,13 @@ function onCompositionEnd(
+   const inputState = editor._inputState;
+   if (IS_FIREFOX) {
+     inputState.compositionPhase = 'ending-firefox';
+-  } else if (!IS_IOS && (IS_SAFARI || IS_APPLE_WEBKIT)) {
++  } else if (event.data !== '' && !IS_IOS && (IS_SAFARI || IS_APPLE_WEBKIT)) {
+     // https://github.com/facebook/lexical/pull/7061
+     inputState.compositionPhase = 'ending-safari';
+     inputState.compositionEndData = event.data;
+   } else {
++    // A cancelled Safari composition has no insertFromComposition to clear
++    // the composition key. Finish now so the next ordinary key can dispatch.
+     dispatchCommand(editor, COMPOSITION_END_COMMAND, event);
+   }
+ }
+@@ -2002,7 +2042,12 @@ function onKeyDown(event: KeyboardEvent, editor: LexicalEditor): void {
+   if (event.key !== 'Backspace') {
+     clearHandledSelectionCommandInsertText(inputState);
+   }
+-  if (editor.isComposing()) {
++  if (
++    editor.isComposing() ||
++    // Safari may deliver the key already consumed by the IME after ending
++    // composition (#7061). It must not delete text or dispatch Enter again.
++    (!IS_IOS && (IS_SAFARI || IS_APPLE_WEBKIT) && event.keyCode === 229)
++  ) {
+     return;
+   }
+   dispatchCommand(editor, KEY_DOWN_COMMAND, event);
+@@ -2188,7 +2233,7 @@ function $handleKeyDown(event: KeyboardEvent): boolean {
+     return true;
+   }
+   if (inputState.compositionPhase === 'ending-safari') {
+-    const isBack = isBackspace(event);
++    const isBack = isBackspace(event) && event.keyCode === 229;
+     if (isBack) {
+       updateEditorSync(editor, () => {
+         $onCompositionEndImpl(editor, inputState.compositionEndData);
+diff --git a/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts b/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
+new file mode 100644
+index 000000000..7e772785d
+--- /dev/null
++++ b/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
+@@ -0,0 +1,314 @@
++/**
++ * Copyright (c) Meta Platforms, Inc. and affiliates.
++ *
++ * This source code is licensed under the MIT license found in the
++ * LICENSE file in the root directory of this source tree.
++ *
++ */
++
++import {buildEditorFromExtensions} from '@lexical/extension';
++import {PlainTextExtension} from '@lexical/plain-text';
++import {RichTextExtension} from '@lexical/rich-text';
++import {
++  $create,
++  $createParagraphNode,
++  $createTextNode,
++  $getRoot,
++  $getSelection,
++  $isRangeSelection,
++  COMMAND_PRIORITY_CRITICAL,
++  COMPOSITION_END_TAG,
++  KEY_BACKSPACE_COMMAND,
++  KEY_ENTER_COMMAND,
++  TextNode,
++} from 'lexical';
++import {assert, describe, expect, onTestFinished, test, vi} from 'vitest';
++
++// Exercise Safari's DOM event handlers in CI's Chromium as well as WebKit.
++// These are synthetic event replays, not a substitute for a system IME test.
++vi.mock('lexical/src/environment', async importOriginal => ({
++  ...(await importOriginal<typeof import('lexical/src/environment')>()),
++  IS_APPLE: true,
++  IS_APPLE_WEBKIT: true,
++  IS_CHROME: false,
++  IS_FIREFOX: false,
++  IS_IOS: false,
++  IS_SAFARI: true,
++}));
++
++class CustomTextNode extends TextNode {
++  $config() {
++    return this.config('custom-text', {extends: TextNode});
++  }
++}
++
++function mount(richText: boolean, initialize: () => void) {
++  const root = document.createElement('div');
++  root.contentEditable = 'true';
++  document.body.append(root);
++  const editor = buildEditorFromExtensions({
++    dependencies: [richText ? RichTextExtension : PlainTextExtension],
++    name: 'safari-composition-test',
++    nodes: [CustomTextNode],
++  });
++  editor.setRootElement(root);
++  onTestFinished(() => {
++    editor.dispose();
++    root.remove();
++  });
++  root.focus();
++  editor.update(
++    () => {
++      $getRoot().clear();
++      initialize();
++    },
++    {discrete: true},
++  );
++  const commands: string[] = [];
++  editor.registerCommand(
++    KEY_ENTER_COMMAND,
++    event => {
++      event?.preventDefault();
++      commands.push('enter');
++      return true;
++    },
++    COMMAND_PRIORITY_CRITICAL,
++  );
++  editor.registerCommand(
++    KEY_BACKSPACE_COMMAND,
++    () => {
++      commands.push('backspace');
++      return false;
++    },
++    COMMAND_PRIORITY_CRITICAL,
++  );
++  const tags: string[] = [];
++  editor.registerUpdateListener(update => tags.push(...update.tags));
++  const keyDown = (key: string, keyCode: number) =>
++    root.dispatchEvent(
++      new KeyboardEvent('keydown', {
++        bubbles: true,
++        cancelable: true,
++        key,
++        keyCode,
++      }),
++    );
++  const composition = (type: string, data = '') =>
++    root.dispatchEvent(new CompositionEvent(type, {bubbles: true, data}));
++  const dispatchInput = (
++    type: 'input' | 'beforeinput',
++    inputType: string,
++    data: string | null,
++  ) => {
++    const event = new InputEvent(type, {
++      bubbles: true,
++      cancelable: type === 'beforeinput',
++      data,
++      inputType,
++      isComposing: inputType === 'insertCompositionText',
++    });
++    // Chromium normalizes Safari-only input types to the empty string.
++    Object.defineProperty(event, 'inputType', {value: inputType});
++    root.dispatchEvent(event);
++  };
++  const input = (inputType: string, data: string | null) =>
++    dispatchInput('input', inputType, data);
++  const beforeInput = (inputType: string, data: string | null) =>
++    dispatchInput('beforeinput', inputType, data);
++  const setDOMText = (text: string, offset: number) => {
++    const domSelection = document.getSelection();
++    assert(domSelection);
++    const textDOM = domSelection.anchorNode;
++    assert(textDOM instanceof Text && root.contains(textDOM));
++    textDOM.data = text;
++    domSelection.setBaseAndExtent(textDOM, offset, textDOM, offset);
++  };
++  const flush = () => new Promise<void>(resolve => setTimeout(resolve, 0));
++  const composeText = async (
++    data: string,
++    text: string,
++    offset: number,
++    key: string,
++  ) => {
++    composition('compositionupdate', data);
++    beforeInput('insertCompositionText', data);
++    setDOMText(text, offset);
++    input('insertCompositionText', data);
++    await flush();
++    keyDown(key, 229);
++  };
++  const expectText = (text: string) => {
++    expect(editor.read(() => $getRoot().getTextContent())).toBe(text);
++    expect(root.textContent).toBe(text);
++  };
++  return {
++    beforeInput,
++    commands,
++    composeText,
++    composition,
++    editor,
++    expectText,
++    flush,
++    input,
++    keyDown,
++    root,
++    setDOMText,
++    tags,
++  };
++}
++
++function $paragraph(text: string, start = text.length, end = start) {
++  const node = $createTextNode(text);
++  $getRoot().append($createParagraphNode().append(node));
++  node.select(start, end);
++}
++
++describe.each([false, true])('Safari composition (richText=%s)', richText => {
++  test.each(['Backspace', 'Escape'])(
++    'an empty native compositionend after %s releases the next Enter',
++    async cancelKey => {
++      const t = mount(richText, () => $paragraph('abc'));
++      // Safari starts composition before the Process keydown.
++      t.composition('compositionstart');
++      await t.flush();
++      await t.composeText('n', 'abcn\u00a0', 4, 'n');
++      await t.composeText('ni', 'abcni\u00a0', 5, 'i');
++      expect(t.editor.isComposing()).toBe(true);
++
++      // Cancellation has deleteCompositionText and no insertFromComposition.
++      if (cancelKey === 'Backspace') {
++        await t.composeText('n', 'abcn\u00a0', 4, 'Backspace');
++      }
++      t.beforeInput('deleteCompositionText', null);
++      t.setDOMText('abc\u00a0', 3);
++      t.input('deleteCompositionText', null);
++      t.composition('compositionend');
++      // WebKit can deliver the key consumed by the IME after compositionend.
++      t.keyDown(cancelKey, 229);
++      await t.flush();
++
++      expect(t.commands).toEqual([]);
++      t.keyDown('Enter', 13);
++      expect(t.commands).toEqual(['enter']);
++      expect(t.editor.isComposing()).toBe(false);
++      t.expectText('abc');
++      expect(t.tags).toContain(COMPOSITION_END_TAG);
++      t.keyDown('Backspace', 8);
++      await t.flush();
++      expect(t.commands).toEqual(['enter', 'backspace']);
++      t.expectText('ab');
++    },
++  );
++
++  test('normal confirmation consumes the IME Enter but handles a later Backspace', async () => {
++    const t = mount(richText, () => $paragraph('abc'));
++    t.composition('compositionstart');
++    await t.flush();
++    await t.composeText('ni', 'abcni\u00a0', 5, 'i');
++    t.beforeInput('deleteCompositionText', null);
++    t.setDOMText('abc\u00a0', 3);
++    t.input('deleteCompositionText', null);
++    // Real WebKit commits via beforeinput before reporting compositionend.
++    t.beforeInput('insertFromComposition', '你');
++    await t.flush();
++    t.composition('compositionend', '你');
++    t.keyDown('Enter', 229);
++    await t.flush();
++    expect(t.commands).toEqual([]);
++    t.expectText('abc你');
++    t.keyDown('Backspace', 8);
++    await t.flush();
++    expect(t.commands).toEqual(['backspace']);
++    t.expectText('abc');
++    t.keyDown('Enter', 13);
++    expect(t.commands).toEqual(['backspace', 'enter']);
++  });
++
++  test.each(['a\u00a0b\u00a0', '\u00a0\u00a0'])(
++    'cancellation preserves real NBSP in %j',
++    async text => {
++      const t = mount(richText, () => $paragraph(text));
++      t.composition('compositionstart');
++      await t.flush();
++      t.setDOMText(text + 'ni\u00a0', text.length + 2);
++      t.input('insertCompositionText', 'ni');
++      await t.flush();
++      t.setDOMText(text + '\u00a0', text.length);
++      t.input('deleteCompositionText', null);
++      t.composition('compositionend');
++      await t.flush();
++      t.expectText(text);
++      t.editor.read(() => {
++        const selection = $getSelection();
++        assert($isRangeSelection(selection));
++        expect(selection.anchor.offset).toBe(text.length);
++      });
++      t.keyDown('Enter', 229);
++      expect(t.commands).toEqual([]);
++      t.keyDown('Enter', 13);
++      expect(t.commands).toEqual(['enter']);
++    },
++  );
++
++  test.each([
++    'empty',
++    'selection',
++    'backward-selection',
++    'format',
++    'token',
++    'subclass',
++    'segmented-subclass',
++  ])(
++    'immediate cancellation retains only non-composing text (%s)',
++    async kind => {
++      const t = mount(richText, () => {
++        if (kind === 'empty') {
++          $getRoot().append($createParagraphNode()).selectEnd();
++        } else if (kind === 'subclass' || kind === 'segmented-subclass') {
++          const node = $create(CustomTextNode).setTextContent('abc');
++          $getRoot().append($createParagraphNode().append(node));
++          if (kind === 'segmented-subclass') {
++            node.setMode('segmented').select(1, 1);
++          } else {
++            node.selectEnd();
++          }
++        } else {
++          $paragraph(
++            'a\u00a0bc',
++            kind === 'selection' ? 2 : 4,
++            kind === 'backward-selection' ? 2 : 4,
++          );
++          const selection = $getSelection();
++          assert($isRangeSelection(selection));
++          if (kind === 'format') {
++            selection.format = 1;
++          } else if (kind === 'token') {
++            const node = selection.anchor.getNode();
++            assert(node instanceof TextNode);
++            node.setMode('token');
++          }
++        }
++      });
++      t.composition('compositionstart');
++      await t.flush();
++      t.composition('compositionend');
++      t.keyDown('Escape', 229);
++      await t.flush();
++      expect(t.editor.isComposing()).toBe(false);
++      t.expectText(
++        kind === 'empty'
++          ? ''
++          : kind === 'selection' || kind === 'backward-selection'
++            ? 'a\u00a0'
++            : kind === 'subclass' || kind === 'segmented-subclass'
++              ? 'abc'
++              : 'a\u00a0bc',
++      );
++      if (kind === 'subclass' || kind === 'segmented-subclass') {
++        expect(
++          t.editor.read(() => $getRoot().getAllTextNodes()[0].getType()),
++        ).toBe(kind === 'subclass' ? 'custom-text' : 'text');
++      }
++    },
++  );
++});

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "<probe>/verify.py",
+    "--checkout",
+    ".",
+    "--local-binary"
+  ],
+  "started": "2026-10-17T10:13:01.200Z",
+  "finished": "2026-10-17T10:13:01.249Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

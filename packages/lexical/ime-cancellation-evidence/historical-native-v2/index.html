@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>Lexical system IME reproduction</title>
+<style>body{font:20px system-ui;margin:40px}#root{border:2px solid #888;padding:20px;min-height:100px;white-space:pre-wrap}p{margin:0}#label{margin-bottom:20px}</style>
+<div id="label">Lexical system Pinyin: before / after</div><div id="root" contenteditable="true"></div>
+<script src="before.js"></script><script src="after.js"></script>
+<script>
+window.resetProbe=(variant,scenario)=>{window.current?.dispose();const old=document.querySelector('#root');const root=old.cloneNode(false);old.replaceWith(root);document.querySelector('#label').textContent=variant+' / '+scenario;window.current=window.factories[variant](root,scenario);return true};
+window.snapshotProbe=()=>window.current.snapshot();
+</script>

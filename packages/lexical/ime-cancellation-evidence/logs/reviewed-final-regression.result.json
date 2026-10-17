@@ -1,0 +1,11 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-browser",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts"
+  ],
+  "exit": 1,
+  "source": "reviewed patch, before the two findings were fixed",
+  "finished": "2026-10-17T08:20:45.454Z"
+}

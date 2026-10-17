@@ -1,0 +1,10 @@
+$ node scripts/generate-node-json.mjs
+npm warn Unknown env config "manage-package-manager-versions". This will stop working in the next major version of npm.
+wrote <lexical-checkout>/packages/lexical/src/LexicalGeneratedJSON.ts
+wrote <lexical-checkout>/packages/lexical-rich-text/src/LexicalRichTextGeneratedJSON.ts
+wrote <lexical-checkout>/packages/lexical-link/src/LexicalLinkGeneratedJSON.ts
+wrote <lexical-checkout>/packages/lexical-mark/src/LexicalMarkGeneratedJSON.ts
+wrote <lexical-checkout>/packages/lexical-list/src/LexicalListGeneratedJSON.ts
+wrote <lexical-checkout>/packages/lexical-table/src/LexicalTableGeneratedJSON.ts
+wrote <lexical-checkout>/packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts
+wrote <lexical-checkout>/packages/lexical-react/src/shared/LexicalReactGeneratedJSON.ts

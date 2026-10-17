@@ -1,0 +1,44 @@
+{
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "packageVersion": "0.52.0",
+  "version": "active-node-v4",
+  "files": {
+    "packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts": "debb8a7a969b8f5a41fd7222387717d2ce443accb6b232fac73e47c4b0844bd5",
+    "packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts": "169b379cbbbe98ee843de4ed9b92578845f8e61e0e1d1e4ed33b117275c9a3b8",
+    "packages/lexical-selection/src/lexical-node.ts": "10f0ff7f5d67427509ecc095065410dcac9c5b9711d27e416276e68afbaf187f",
+    "packages/lexical/src/LexicalEditor.ts": "923ecaa18a052cd8aecda34fbbebbce68e192c67d6a4d196324ce48edcc5b733",
+    "packages/lexical/src/LexicalEvents.ts": "7fe39334f78b3e2c55c9756222a39949d02b203842efed594fc99ab367a75b37",
+    "packages/lexical/src/LexicalGeneratedJSON.ts": "58c42eb6324ef521679f1f4d27bfb0babb142d1f4ab7d353ec5d145c55273521",
+    "packages/lexical/src/LexicalSelection.ts": "72f64652fd81282d9df93757f65134015dbe5423211514cfe089424f8b37a605",
+    "packages/lexical/src/LexicalUtils.ts": "7e8bfc2b6d82df4d747d500d0bc56bc964cc0cf742c38812b7739f55ff092169",
+    "packages/lexical/src/nodes/LexicalTextNode.ts": "46dff46a321c89b50c5034e8fb1d84e6642c3aa060fedf991528cb48c37acf30",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts": "80f44281c92e4cc73405438b7499b0e686815f69dd7441ed70006db9af4cea2c"
+  },
+  "patchSha256": "b1e53e83bb89a9e11ec99e042cd0eab99c66071b4deb7c61cf88fc2d6c12dd44",
+  "nativeCapture": {
+    "sourceRevision": "active-node-v4",
+    "allTenReviewedFilesUnchanged": true,
+    "allBuildInputsVerified": 134,
+    "postCaptureRebuildByteIdentical": true,
+    "bundleSha256": "29add179f7a5cea18ec9a48701c32d5dade3b0d71585a194da74f33295da1ddd",
+    "probeBinarySha256": "dd6f741dda1a31417802d9483270459c1f88a9f808e32e889b4b4588e5898ee4",
+    "eventsSha256": "a46cee963057e06b6da454013afc35f9d7ce0d5af2eb4cc3c346a72b31d15527",
+    "captureManifestSha256": "b4a3f834e2e47929c663b15492d8d5d1c7dc2c2ae649f4619ffb36d1c1b9dde6",
+    "scenarioPlanSha256": "0932d6cb6c274d6dafcb10dcf1d226edfc22a3f29837c9a8cb9df31b7c8b9b63",
+    "patchSha256": "b1e53e83bb89a9e11ec99e042cd0eab99c66071b4deb7c61cf88fc2d6c12dd44",
+    "nativeCaptureExit": 0,
+    "nativeVerifierExit": 0,
+    "restore": {
+      "elementRestoreCode": 0,
+      "inputSourceRestored": true,
+      "inputSourceStatus": 0,
+      "previousApplicationActivated": true,
+      "previousApplicationFocused": true,
+      "previousFocusElementAvailable": true,
+      "previousFocusElementRestored": true,
+      "timestamp": "2026-10-17T10:12:25Z",
+      "type": "restored",
+      "windowRestoreCode": 0
+    }
+  }
+}

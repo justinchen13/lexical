@@ -1,0 +1,12 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "generate-node-json"
+  ],
+  "started": "2026-10-17T08:37:16.605Z",
+  "finished": "2026-10-17T08:37:19.031Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "xcrun",
+    "swiftc",
+    "<probe>/Probe.swift",
+    "-o",
+    "<probe>/probe"
+  ],
+  "started": "2026-10-17T09:43:01.286Z",
+  "finished": "2026-10-17T09:43:01.810Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

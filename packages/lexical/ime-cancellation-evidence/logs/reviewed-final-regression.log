@@ -1,0 +1,224 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
+
+ RUN  v5.0.1 <lexical-checkout>
+
+ ❯ |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (58 tests | 30 failed) 1761ms
+   ❯ Safari composition (richText=false) (29)
+     × cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":false}) 102ms
+     × cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":false}) 46ms
+     × cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":true}) 45ms
+     × cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":true}) 44ms
+     × cancellation retains a model insert made while composing 47ms
+     × cancellation retains a model delete made while composing 45ms
+     × placeholder cleanup preserves model edits ({"method":"splice","operation":"insert"}) 45ms
+     × placeholder cleanup preserves model edits ({"method":"splice","operation":"delete"}) 45ms
+     × placeholder cleanup preserves model edits ({"method":"set","operation":"insert"}) 44ms
+     × placeholder cleanup preserves model edits ({"method":"set","operation":"delete"}) 45ms
+     × a consumed insertion command does not prove a placeholder exists 45ms
+     × a unhandled insertion command does not prove a placeholder exists 44ms
+     × a real-nbsp insertion command does not prove a placeholder exists 45ms
+     × placeholder ownership survives only identifiable edits (delete-owned) 43ms
+     × placeholder ownership survives only identifiable edits (ambiguous-replacement) 44ms
+   ❯ Safari composition (richText=true) (29)
+     × cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":false}) 58ms
+     × cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":false}) 49ms
+     × cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":true}) 51ms
+     × cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":true}) 51ms
+     × cancellation retains a model insert made while composing 52ms
+     × cancellation retains a model delete made while composing 45ms
+     × placeholder cleanup preserves model edits ({"method":"splice","operation":"insert"}) 43ms
+     × placeholder cleanup preserves model edits ({"method":"splice","operation":"delete"}) 45ms
+     × placeholder cleanup preserves model edits ({"method":"set","operation":"insert"}) 44ms
+     × placeholder cleanup preserves model edits ({"method":"set","operation":"delete"}) 44ms
+     × a consumed insertion command does not prove a placeholder exists 44ms
+     × a unhandled insertion command does not prove a placeholder exists 42ms
+     × a real-nbsp insertion command does not prove a placeholder exists 44ms
+     × placeholder ownership survives only identifiable edits (delete-owned) 43ms
+     × placeholder ownership survives only identifiable edits (ambiguous-replacement) 44ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 30 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":false})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":false})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":false})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":false})
+AssertionError: expected 'ab' to be 'abZ' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----cancellation-keeps-the-unselected-text-across-paragraphs----backward--false--nbsp--false--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----cancellation-keeps-the-unselected-text-across-paragraphs----backward--true--nbsp--false--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----cancellation-keeps-the-unselected-text-across-paragraphs----backward--false--nbsp--false--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----cancellation-keeps-the-unselected-text-across-paragraphs----backward--true--nbsp--false--.png
+
+Expected: "abZ"
+Received: "ab"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:162:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":true})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":true})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > cancellation keeps the unselected text across paragraphs ({"backward":false,"nbsp":true})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > cancellation keeps the unselected text across paragraphs ({"backward":true,"nbsp":true})
+AssertionError: expected 'a ' to be 'a  Z' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----cancellation-keeps-the-unselected-text-across-paragraphs----backward--false--nbsp--true--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----cancellation-keeps-the-unselected-text-across-paragraphs----backward--true--nbsp--true--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----cancellation-keeps-the-unselected-text-across-paragraphs----backward--false--nbsp--true--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----cancellation-keeps-the-unselected-text-across-paragraphs----backward--true--nbsp--true--.png
+
+Expected: "a  Z"
+Received: "a "
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:162:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > cancellation retains a model insert made while composing
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > cancellation retains a model insert made while composing
+AssertionError: expected 'abc' to be 'Xabc' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----cancellation-retains-a-model-insert-made-while-composing.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----cancellation-retains-a-model-insert-made-while-composing.png
+
+Expected: "Xabc"
+Received: "abc"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:182:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > cancellation retains a model delete made while composing
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > cancellation retains a model delete made while composing
+AssertionError: expected 'abc' to be 'bc' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----cancellation-retains-a-model-delete-made-while-composing.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----cancellation-retains-a-model-delete-made-while-composing.png
+
+Expected: "bc"
+Received: "abc"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:182:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > placeholder cleanup preserves model edits ({"method":"splice","operation":"insert"})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > placeholder cleanup preserves model edits ({"method":"set","operation":"insert"})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > placeholder cleanup preserves model edits ({"method":"splice","operation":"insert"})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > placeholder cleanup preserves model edits ({"method":"set","operation":"insert"})
+AssertionError: expected 'ab' to be 'Xab' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----placeholder-cleanup-preserves-model-edits----method---splice---operation---insert---.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----placeholder-cleanup-preserves-model-edits----method---set---operation---insert---.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----placeholder-cleanup-preserves-model-edits----method---splice---operation---insert---.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----placeholder-cleanup-preserves-model-edits----method---set---operation---insert---.png
+
+Expected: "Xab"
+Received: "ab"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:215:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > placeholder cleanup preserves model edits ({"method":"splice","operation":"delete"})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > placeholder cleanup preserves model edits ({"method":"set","operation":"delete"})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > placeholder cleanup preserves model edits ({"method":"splice","operation":"delete"})
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > placeholder cleanup preserves model edits ({"method":"set","operation":"delete"})
+AssertionError: expected 'ab' to be 'b' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----placeholder-cleanup-preserves-model-edits----method---splice---operation---delete---.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----placeholder-cleanup-preserves-model-edits----method---set---operation---delete---.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----placeholder-cleanup-preserves-model-edits----method---splice---operation---delete---.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----placeholder-cleanup-preserves-model-edits----method---set---operation---delete---.png
+
+Expected: "b"
+Received: "ab"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:215:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > a consumed insertion command does not prove a placeholder exists
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > a unhandled insertion command does not prove a placeholder exists
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > a consumed insertion command does not prove a placeholder exists
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > a unhandled insertion command does not prove a placeholder exists
+AssertionError: expected 'ac' to be 'abc' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----a-consumed-insertion-command-does-not-prove-a-placeholder-exists.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----a-unhandled-insertion-command-does-not-prove-a-placeholder-exists.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----a-consumed-insertion-command-does-not-prove-a-placeholder-exists.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----a-unhandled-insertion-command-does-not-prove-a-placeholder-exists.png
+
+Expected: "abc"
+Received: "ac"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:236:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > a real-nbsp insertion command does not prove a placeholder exists
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > a real-nbsp insertion command does not prove a placeholder exists
+AssertionError: expected 'ab' to be 'a b' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----a-real-nbsp-insertion-command-does-not-prove-a-placeholder-exists.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----a-real-nbsp-insertion-command-does-not-prove-a-placeholder-exists.png
+
+Expected: "a b"
+Received: "ab"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:236:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/30]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > placeholder ownership survives only identifiable edits (delete-owned)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > placeholder ownership survives only identifiable edits (ambiguous-replacement)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > placeholder ownership survives only identifiable edits (delete-owned)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > placeholder ownership survives only identifiable edits (ambiguous-replacement)
+AssertionError: expected 'ab' to be 'a b' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----placeholder-ownership-survives-only-identifiable-edits--delete-owned-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----placeholder-ownership-survives-only-identifiable-edits--ambiguous-replacement-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----placeholder-ownership-survives-only-identifiable-edits--delete-owned-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----placeholder-ownership-survives-only-identifiable-edits--ambiguous-replacement-.png
+
+Expected: "a b"
+Received: "ab"
+
+ ❯ Object.expectText <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:107:74
+ ❯ <lexical-checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:266:5
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/30]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  30 failed | 28 passed (58)
+   Start at  16:20:42
+   Duration  2.66s (tests 86%, import 11%, worker 4%)
+
+[ELIFECYCLE] Command failed with exit code 1.

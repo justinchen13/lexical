@@ -1,0 +1,11 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-browser",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts"
+  ],
+  "exit": 1,
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "finished": "2026-10-17T08:25:00.390Z"
+}

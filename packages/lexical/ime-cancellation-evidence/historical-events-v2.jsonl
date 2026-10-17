@@ -1,0 +1,682 @@
+{"inputSource":"com.apple.inputmethod.SCIM.ITABC","os":"Version 27.0.1 (Build 26A434)","selectResult":0,"type":"environment","webkit":"22625.1.29.11.28"}
+{"variant":"before","scenario":"backspace","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"backspace","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"backspace","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"backspace","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"backspace","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"backspace","type":"after-compositionupdate","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"backspace","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keydown","key":"Backspace","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keyup","key":"Backspace","keyCode":8,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"backspace","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keydown","key":"Backspace","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keyup","key":"Backspace","keyCode":8,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-keyup","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"scenario":"backspace","state":{"commands":[],"composing":true,"compositionKey":"3","dom":"abc ","model":"abc","phase":"ending-safari","selection":{"anchor":3,"focus":3}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"backspace","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"beforeinput","data":null,"inputType":"insertParagraph","isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"backspace","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"backspace","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"backspace","type":"after-keyup","model":"abc\n","dom":"abc","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":[]}
+{"scenario":"backspace","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"abc\n","phase":"ending-safari","selection":{"anchor":2,"focus":2}},"type":"enter-result","variant":"before"}
+{"variant":"before","scenario":"escape","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"escape","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"escape","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"before","scenario":"escape","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"escape","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"escape","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"escape","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"escape","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"escape","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"escape","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"escape","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"escape","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"escape","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"before","scenario":"escape","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"escape","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"escape","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"escape","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"escape","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"escape","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"escape","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-keyup","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"scenario":"escape","state":{"commands":[],"composing":true,"compositionKey":"7","dom":"abc ","model":"abc","phase":"ending-safari","selection":{"anchor":3,"focus":3}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"escape","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"beforeinput","data":null,"inputType":"insertParagraph","isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"escape","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"7","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"escape","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"escape","type":"after-keyup","model":"abc\n","dom":"abc","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":[]}
+{"scenario":"escape","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"abc\n","phase":"ending-safari","selection":{"anchor":2,"focus":2}},"type":"enter-result","variant":"before"}
+{"variant":"before","scenario":"confirm","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"confirm","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"confirm","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"confirm","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"confirm","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"confirm","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"confirm","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"confirm","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"confirm","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"confirm","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"confirm","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"confirm","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"confirm","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"confirm","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"beforeinput","data":"你","inputType":"insertFromComposition","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"confirm","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"11","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"compositionend","data":"你","isTrusted":true,"dom":"abc你"}
+{"variant":"before","scenario":"confirm","type":"after-compositionend","model":"abc你","dom":"abc你","composing":false,"phase":"composing","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"keydown","key":" ","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"before","scenario":"confirm","type":"after-keydown","model":"abc你","dom":"abc你","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"keyup","key":" ","keyCode":32,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"before","scenario":"confirm","type":"after-keyup","model":"abc你","dom":"abc你","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"scenario":"confirm","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc你","model":"abc你","phase":"idle","selection":{"anchor":4,"focus":4}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"confirm","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"before","scenario":"confirm","type":"after-keydown","model":"abc你","dom":"abc你","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"confirm","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"before","scenario":"confirm","type":"after-keyup","model":"abc你","dom":"abc你","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":["enter"]}
+{"scenario":"confirm","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"abc你","model":"abc你","phase":"idle","selection":{"anchor":4,"focus":4}},"type":"enter-result","variant":"before"}
+{"variant":"before","scenario":"empty","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"before","scenario":"empty","type":"compositionstart","data":"","isTrusted":true,"dom":""}
+{"variant":"before","scenario":"empty","type":"after-compositionstart","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"before","scenario":"empty","type":"compositionupdate","data":"n","isTrusted":true,"dom":"  "}
+{"variant":"before","scenario":"empty","type":"after-compositionupdate","model":" ","dom":"  ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"  "}
+{"variant":"before","scenario":"empty","type":"after-beforeinput","model":" ","dom":"  ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-input","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-keydown","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-keyup","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-compositionupdate","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-beforeinput","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"before","scenario":"empty","type":"after-input","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":0,"focus":2},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"before","scenario":"empty","type":"after-keydown","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"before","scenario":"empty","type":"after-keyup","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"empty","type":"compositionupdate","data":"n","isTrusted":true,"dom":"ni "}
+{"variant":"before","scenario":"empty","type":"after-compositionupdate","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"empty","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"before","scenario":"empty","type":"after-beforeinput","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"empty","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-input","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keydown","key":"Backspace","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-keydown","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keyup","key":"Backspace","keyCode":8,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-keyup","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"before","scenario":"empty","type":"after-beforeinput","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"14","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"empty","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":" "}
+{"variant":"before","scenario":"empty","type":"after-input","model":"","dom":"","composing":false,"phase":"composing","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"before","scenario":"empty","type":"compositionend","data":"","isTrusted":true,"dom":""}
+{"variant":"before","scenario":"empty","type":"after-compositionend","model":"","dom":"","composing":false,"phase":"composing","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keydown","key":"Backspace","keyCode":229,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"before","scenario":"empty","type":"after-keydown","model":"","dom":"","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keyup","key":"Backspace","keyCode":8,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"before","scenario":"empty","type":"after-keyup","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"scenario":"empty","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"","model":"","phase":"idle","selection":{"anchor":0,"focus":0}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"empty","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"before","scenario":"empty","type":"after-keydown","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"before","scenario":"empty","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"before","scenario":"empty","type":"after-keyup","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":["enter"]}
+{"scenario":"empty","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"","model":"","phase":"idle","selection":{"anchor":0,"focus":0}},"type":"enter-result","variant":"before"}
+{"variant":"before","scenario":"selection","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abcDEF","dom":"abcDEF","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":6},"commands":[]}
+{"variant":"before","scenario":"selection","type":"compositionstart","data":"DEF","isTrusted":true,"dom":"abcDEF"}
+{"variant":"before","scenario":"selection","type":"after-compositionstart","model":"abcDEF","dom":"abcDEF","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":6},"commands":[]}
+{"variant":"before","scenario":"selection","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc  "}
+{"variant":"before","scenario":"selection","type":"after-compositionupdate","model":"abc ","dom":"abc  ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"before","scenario":"selection","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc  "}
+{"variant":"before","scenario":"selection","type":"after-beforeinput","model":"abc ","dom":"abc  ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"before","scenario":"selection","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"selection","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"before","scenario":"selection","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"selection","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"selection","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"selection","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"selection","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"selection","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"selection","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"before","scenario":"selection","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"selection","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"selection","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"before","scenario":"selection","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"selection","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"selection","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"selection","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"selection","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"before","scenario":"selection","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"selection","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"selection","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"selection","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"selection","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"17","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"selection","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"selection","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"17","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"selection","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"selection","type":"after-keyup","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"17","selection":{"anchor":3,"focus":3},"commands":[]}
+{"scenario":"selection","state":{"commands":[],"composing":true,"compositionKey":"17","dom":"abc ","model":"abc","phase":"ending-safari","selection":{"anchor":3,"focus":3}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"selection","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"selection","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"17","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"selection","type":"beforeinput","data":null,"inputType":"insertParagraph","isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"selection","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"17","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"selection","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"selection","type":"after-keyup","model":"abc\n","dom":"abc","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":[]}
+{"scenario":"selection","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"abc\n","phase":"ending-safari","selection":{"anchor":2,"focus":2}},"type":"enter-result","variant":"before"}
+{"variant":"before","scenario":"nbsp","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"compositionstart","data":"","isTrusted":true,"dom":"a b "}
+{"variant":"before","scenario":"nbsp","type":"after-compositionstart","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"compositionupdate","data":"n","isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-compositionupdate","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-beforeinput","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"before","scenario":"nbsp","type":"after-input","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":5},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"before","scenario":"nbsp","type":"after-keydown","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"before","scenario":"nbsp","type":"after-keyup","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"a b n "}
+{"variant":"before","scenario":"nbsp","type":"after-compositionupdate","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"before","scenario":"nbsp","type":"after-beforeinput","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"before","scenario":"nbsp","type":"after-input","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":6},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"before","scenario":"nbsp","type":"after-keydown","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":6,"focus":6},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"before","scenario":"nbsp","type":"after-keyup","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":6,"focus":6},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"before","scenario":"nbsp","type":"after-beforeinput","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":6,"focus":6},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-input","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"compositionend","data":"","isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-compositionend","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-keydown","model":"a b ","dom":"a b  ","composing":true,"phase":"ending-safari","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-keyup","model":"a b ","dom":"a b  ","composing":true,"phase":"ending-safari","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"scenario":"nbsp","state":{"commands":[],"composing":true,"compositionKey":"21","dom":"a b  ","model":"a b ","phase":"ending-safari","selection":{"anchor":4,"focus":4}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"nbsp","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-keydown","model":"a b ","dom":"a b  ","composing":true,"phase":"ending-safari","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"beforeinput","data":null,"inputType":"insertParagraph","isComposing":false,"isTrusted":true,"dom":"a b  "}
+{"variant":"before","scenario":"nbsp","type":"after-beforeinput","model":"a b ","dom":"a b  ","composing":true,"phase":"ending-safari","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"nbsp","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"a b "}
+{"variant":"before","scenario":"nbsp","type":"after-keyup","model":"a b \n","dom":"a b ","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":[]}
+{"scenario":"nbsp","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"a b ","model":"a b \n","phase":"ending-safari","selection":{"anchor":2,"focus":2}},"type":"enter-result","variant":"before"}
+{"variant":"before","scenario":"multi","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abcd\n\nDEFZ","dom":"abcdDEFZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"compositionstart","data":"cd\nDEF","isTrusted":true,"dom":"abcdDEFZ"}
+{"variant":"before","scenario":"multi","type":"after-compositionstart","model":"abcd\n\nDEFZ","dom":"abcdDEFZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"compositionupdate","data":"n","isTrusted":true,"dom":"ab Z "}
+{"variant":"before","scenario":"multi","type":"after-compositionupdate","model":"ab Z","dom":"ab Z ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"ab Z "}
+{"variant":"before","scenario":"multi","type":"after-beforeinput","model":"ab Z","dom":"ab Z ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"before","scenario":"multi","type":"after-input","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"before","scenario":"multi","type":"after-keydown","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"before","scenario":"multi","type":"after-keyup","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abnZ "}
+{"variant":"before","scenario":"multi","type":"after-compositionupdate","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"before","scenario":"multi","type":"after-beforeinput","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"multi","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"before","scenario":"multi","type":"after-input","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":2,"focus":4},"commands":[]}
+{"variant":"before","scenario":"multi","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"before","scenario":"multi","type":"after-keydown","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"multi","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"before","scenario":"multi","type":"after-keyup","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"multi","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"before","scenario":"multi","type":"after-beforeinput","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"before","scenario":"multi","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abZ "}
+{"variant":"before","scenario":"multi","type":"after-input","model":"abZ","dom":"abZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"multi","type":"compositionend","data":"","isTrusted":true,"dom":"abZ "}
+{"variant":"before","scenario":"multi","type":"after-compositionend","model":"abZ","dom":"abZ ","composing":true,"phase":"composing","compositionKey":"25","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"multi","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abZ "}
+{"variant":"before","scenario":"multi","type":"after-keydown","model":"abZ","dom":"abZ ","composing":true,"phase":"ending-safari","compositionKey":"25","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"multi","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abZ "}
+{"variant":"before","scenario":"multi","type":"after-keyup","model":"abZ","dom":"abZ ","composing":true,"phase":"ending-safari","compositionKey":"25","selection":{"anchor":2,"focus":2},"commands":[]}
+{"scenario":"multi","state":{"commands":[],"composing":true,"compositionKey":"25","dom":"abZ ","model":"abZ","phase":"ending-safari","selection":{"anchor":2,"focus":2}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"multi","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abZ "}
+{"variant":"before","scenario":"multi","type":"after-keydown","model":"abZ","dom":"abZ ","composing":true,"phase":"ending-safari","compositionKey":"25","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"multi","type":"beforeinput","data":null,"inputType":"insertParagraph","isComposing":false,"isTrusted":true,"dom":"abZ "}
+{"variant":"before","scenario":"multi","type":"after-beforeinput","model":"abZ","dom":"abZ ","composing":true,"phase":"ending-safari","compositionKey":"25","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"multi","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abZ"}
+{"variant":"before","scenario":"multi","type":"after-keyup","model":"ab\nZ","dom":"abZ","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"scenario":"multi","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abZ","model":"ab\nZ","phase":"ending-safari","selection":{"anchor":0,"focus":0}},"type":"enter-result","variant":"before"}
+{"variant":"before","scenario":"intercepted","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"intercepted","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"before","scenario":"intercepted","type":"after-input","model":"abc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"before","scenario":"intercepted","type":"after-keydown","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"before","scenario":"intercepted","type":"after-keyup","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"anbc "}
+{"variant":"before","scenario":"intercepted","type":"after-compositionupdate","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"before","scenario":"intercepted","type":"after-beforeinput","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"before","scenario":"intercepted","type":"after-input","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":1,"focus":3},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"before","scenario":"intercepted","type":"after-keydown","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"before","scenario":"intercepted","type":"after-keyup","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"before","scenario":"intercepted","type":"after-beforeinput","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-keyup","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"scenario":"intercepted","state":{"commands":[],"composing":true,"compositionKey":"32","dom":"abc ","model":"abc","phase":"ending-safari","selection":{"anchor":1,"focus":1}},"type":"cancel-result","variant":"before"}
+{"variant":"before","scenario":"intercepted","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-keydown","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"beforeinput","data":null,"inputType":"insertParagraph","isComposing":false,"isTrusted":true,"dom":"abc "}
+{"variant":"before","scenario":"intercepted","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"ending-safari","compositionKey":"32","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"before","scenario":"intercepted","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"before","scenario":"intercepted","type":"after-keyup","model":"a\nbc","dom":"abc","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"scenario":"intercepted","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"a\nbc","phase":"ending-safari","selection":{"anchor":0,"focus":0}},"type":"enter-result","variant":"before"}
+{"variant":"after","scenario":"backspace","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"backspace","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"backspace","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"backspace","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"backspace","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"backspace","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"backspace","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"backspace","type":"after-compositionupdate","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"backspace","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keydown","key":"Backspace","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keyup","key":"Backspace","keyCode":8,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"backspace","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"backspace","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"backspace","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"3","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keydown","key":"Backspace","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"backspace","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keyup","key":"Backspace","keyCode":8,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"backspace","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"scenario":"backspace","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":3,"focus":3}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"backspace","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"backspace","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"backspace","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"backspace","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":["enter"]}
+{"scenario":"backspace","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":3,"focus":3}},"type":"enter-result","variant":"after"}
+{"variant":"after","scenario":"escape","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"escape","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"escape","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"escape","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"escape","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"after","scenario":"escape","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"escape","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"escape","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"escape","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"escape","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"escape","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"escape","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"escape","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"escape","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"escape","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"after","scenario":"escape","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"escape","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"escape","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"escape","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"escape","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"escape","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"escape","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"escape","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"escape","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"6","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"escape","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"escape","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"scenario":"escape","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":3,"focus":3}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"escape","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"escape","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"escape","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"escape","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":["enter"]}
+{"scenario":"escape","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":3,"focus":3}},"type":"enter-result","variant":"after"}
+{"variant":"after","scenario":"confirm","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"confirm","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"confirm","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"confirm","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"confirm","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"confirm","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"confirm","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"confirm","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"confirm","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"confirm","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"confirm","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"confirm","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"confirm","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"confirm","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"beforeinput","data":"你","inputType":"insertFromComposition","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"confirm","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"9","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"compositionend","data":"你","isTrusted":true,"dom":"abc你"}
+{"variant":"after","scenario":"confirm","type":"after-compositionend","model":"abc你","dom":"abc你","composing":false,"phase":"composing","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"keydown","key":" ","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"after","scenario":"confirm","type":"after-keydown","model":"abc你","dom":"abc你","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"keyup","key":" ","keyCode":32,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"after","scenario":"confirm","type":"after-keyup","model":"abc你","dom":"abc你","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"scenario":"confirm","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc你","model":"abc你","phase":"ending-safari","selection":{"anchor":4,"focus":4}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"confirm","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"after","scenario":"confirm","type":"after-keydown","model":"abc你","dom":"abc你","composing":false,"phase":"ending-safari","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"confirm","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc你"}
+{"variant":"after","scenario":"confirm","type":"after-keyup","model":"abc你","dom":"abc你","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":["enter"]}
+{"scenario":"confirm","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"abc你","model":"abc你","phase":"idle","selection":{"anchor":4,"focus":4}},"type":"enter-result","variant":"after"}
+{"variant":"after","scenario":"empty","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"after","scenario":"empty","type":"compositionstart","data":"","isTrusted":true,"dom":""}
+{"variant":"after","scenario":"empty","type":"after-compositionstart","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"after","scenario":"empty","type":"compositionupdate","data":"n","isTrusted":true,"dom":"  "}
+{"variant":"after","scenario":"empty","type":"after-compositionupdate","model":" ","dom":"  ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"  "}
+{"variant":"after","scenario":"empty","type":"after-beforeinput","model":" ","dom":"  ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-input","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-keydown","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-keyup","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-compositionupdate","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-beforeinput","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"after","scenario":"empty","type":"after-input","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":0,"focus":2},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"after","scenario":"empty","type":"after-keydown","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"after","scenario":"empty","type":"after-keyup","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"empty","type":"compositionupdate","data":"n","isTrusted":true,"dom":"ni "}
+{"variant":"after","scenario":"empty","type":"after-compositionupdate","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"empty","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"ni "}
+{"variant":"after","scenario":"empty","type":"after-beforeinput","model":"ni","dom":"ni ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"empty","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-input","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":0,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keydown","key":"Backspace","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-keydown","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keyup","key":"Backspace","keyCode":8,"isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-keyup","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"n "}
+{"variant":"after","scenario":"empty","type":"after-beforeinput","model":"n","dom":"n ","composing":true,"phase":"composing","compositionKey":"12","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"empty","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":" "}
+{"variant":"after","scenario":"empty","type":"after-input","model":"","dom":"","composing":false,"phase":"composing","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"after","scenario":"empty","type":"compositionend","data":"","isTrusted":true,"dom":""}
+{"variant":"after","scenario":"empty","type":"after-compositionend","model":"","dom":"","composing":false,"phase":"composing","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keydown","key":"Backspace","keyCode":229,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"after","scenario":"empty","type":"after-keydown","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keyup","key":"Backspace","keyCode":8,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"after","scenario":"empty","type":"after-keyup","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"scenario":"empty","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"","model":"","phase":"idle","selection":{"anchor":0,"focus":0}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"empty","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"after","scenario":"empty","type":"after-keydown","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":[]}
+{"variant":"after","scenario":"empty","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":""}
+{"variant":"after","scenario":"empty","type":"after-keyup","model":"","dom":"","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":0,"focus":0},"commands":["enter"]}
+{"scenario":"empty","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"","model":"","phase":"idle","selection":{"anchor":0,"focus":0}},"type":"enter-result","variant":"after"}
+{"variant":"after","scenario":"selection","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abcDEF","dom":"abcDEF","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":6},"commands":[]}
+{"variant":"after","scenario":"selection","type":"compositionstart","data":"DEF","isTrusted":true,"dom":"abcDEF"}
+{"variant":"after","scenario":"selection","type":"after-compositionstart","model":"abcDEF","dom":"abcDEF","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":6},"commands":[]}
+{"variant":"after","scenario":"selection","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc  "}
+{"variant":"after","scenario":"selection","type":"after-compositionupdate","model":"abc ","dom":"abc  ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"after","scenario":"selection","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc  "}
+{"variant":"after","scenario":"selection","type":"after-beforeinput","model":"abc ","dom":"abc  ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"after","scenario":"selection","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"selection","type":"after-input","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":3,"focus":4},"commands":[]}
+{"variant":"after","scenario":"selection","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"selection","type":"after-keydown","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"selection","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"selection","type":"after-keyup","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"selection","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"selection","type":"after-compositionupdate","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"selection","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcn "}
+{"variant":"after","scenario":"selection","type":"after-beforeinput","model":"abcn","dom":"abcn ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"selection","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"selection","type":"after-input","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":3,"focus":5},"commands":[]}
+{"variant":"after","scenario":"selection","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"selection","type":"after-keydown","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"selection","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"selection","type":"after-keyup","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"selection","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abcni "}
+{"variant":"after","scenario":"selection","type":"after-beforeinput","model":"abcni","dom":"abcni ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"selection","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"selection","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"selection","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"selection","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"15","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"selection","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"selection","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"selection","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"selection","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"scenario":"selection","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":3,"focus":3}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"selection","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"selection","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"selection","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"selection","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":3,"focus":3},"commands":["enter"]}
+{"scenario":"selection","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":3,"focus":3}},"type":"enter-result","variant":"after"}
+{"variant":"after","scenario":"nbsp","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"compositionstart","data":"","isTrusted":true,"dom":"a b "}
+{"variant":"after","scenario":"nbsp","type":"after-compositionstart","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"compositionupdate","data":"n","isTrusted":true,"dom":"a b  "}
+{"variant":"after","scenario":"nbsp","type":"after-compositionupdate","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b  "}
+{"variant":"after","scenario":"nbsp","type":"after-beforeinput","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"after","scenario":"nbsp","type":"after-input","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":4,"focus":5},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"after","scenario":"nbsp","type":"after-keydown","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"after","scenario":"nbsp","type":"after-keyup","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"a b n "}
+{"variant":"after","scenario":"nbsp","type":"after-compositionupdate","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b n "}
+{"variant":"after","scenario":"nbsp","type":"after-beforeinput","model":"a b n","dom":"a b n ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":5,"focus":5},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"after","scenario":"nbsp","type":"after-input","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":4,"focus":6},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"after","scenario":"nbsp","type":"after-keydown","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":6,"focus":6},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"after","scenario":"nbsp","type":"after-keyup","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":6,"focus":6},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"a b ni "}
+{"variant":"after","scenario":"nbsp","type":"after-beforeinput","model":"a b ni","dom":"a b ni ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":6,"focus":6},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"a b  "}
+{"variant":"after","scenario":"nbsp","type":"after-input","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"compositionend","data":"","isTrusted":true,"dom":"a b  "}
+{"variant":"after","scenario":"nbsp","type":"after-compositionend","model":"a b ","dom":"a b  ","composing":true,"phase":"composing","compositionKey":"18","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"a b "}
+{"variant":"after","scenario":"nbsp","type":"after-keydown","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"a b "}
+{"variant":"after","scenario":"nbsp","type":"after-keyup","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"scenario":"nbsp","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"a b ","model":"a b ","phase":"idle","selection":{"anchor":4,"focus":4}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"nbsp","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"a b "}
+{"variant":"after","scenario":"nbsp","type":"after-keydown","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"nbsp","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"a b "}
+{"variant":"after","scenario":"nbsp","type":"after-keyup","model":"a b ","dom":"a b ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":4,"focus":4},"commands":["enter"]}
+{"scenario":"nbsp","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"a b ","model":"a b ","phase":"idle","selection":{"anchor":4,"focus":4}},"type":"enter-result","variant":"after"}
+{"variant":"after","scenario":"multi","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abcd\n\nDEFZ","dom":"abcdDEFZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"compositionstart","data":"cd\nDEF","isTrusted":true,"dom":"abcdDEFZ"}
+{"variant":"after","scenario":"multi","type":"after-compositionstart","model":"abcd\n\nDEFZ","dom":"abcdDEFZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"compositionupdate","data":"n","isTrusted":true,"dom":"ab Z "}
+{"variant":"after","scenario":"multi","type":"after-compositionupdate","model":"ab Z","dom":"ab Z ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"ab Z "}
+{"variant":"after","scenario":"multi","type":"after-beforeinput","model":"ab Z","dom":"ab Z ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"after","scenario":"multi","type":"after-input","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":2,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"after","scenario":"multi","type":"after-keydown","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"after","scenario":"multi","type":"after-keyup","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"abnZ "}
+{"variant":"after","scenario":"multi","type":"after-compositionupdate","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abnZ "}
+{"variant":"after","scenario":"multi","type":"after-beforeinput","model":"abnZ","dom":"abnZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"multi","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"after","scenario":"multi","type":"after-input","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":2,"focus":4},"commands":[]}
+{"variant":"after","scenario":"multi","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"after","scenario":"multi","type":"after-keydown","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"multi","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"after","scenario":"multi","type":"after-keyup","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"multi","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abniZ "}
+{"variant":"after","scenario":"multi","type":"after-beforeinput","model":"abniZ","dom":"abniZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":4,"focus":4},"commands":[]}
+{"variant":"after","scenario":"multi","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abZ "}
+{"variant":"after","scenario":"multi","type":"after-input","model":"abZ","dom":"abZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"multi","type":"compositionend","data":"","isTrusted":true,"dom":"abZ "}
+{"variant":"after","scenario":"multi","type":"after-compositionend","model":"abZ","dom":"abZ ","composing":true,"phase":"composing","compositionKey":"21","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"multi","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abZ"}
+{"variant":"after","scenario":"multi","type":"after-keydown","model":"abZ","dom":"abZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"multi","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abZ"}
+{"variant":"after","scenario":"multi","type":"after-keyup","model":"abZ","dom":"abZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":[]}
+{"scenario":"multi","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abZ","model":"abZ","phase":"idle","selection":{"anchor":2,"focus":2}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"multi","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abZ"}
+{"variant":"after","scenario":"multi","type":"after-keydown","model":"abZ","dom":"abZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"multi","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abZ"}
+{"variant":"after","scenario":"multi","type":"after-keyup","model":"abZ","dom":"abZ","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":2,"focus":2},"commands":["enter"]}
+{"scenario":"multi","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"abZ","model":"abZ","phase":"idle","selection":{"anchor":2,"focus":2}},"type":"enter-result","variant":"after"}
+{"variant":"after","scenario":"intercepted","type":"ready","ua":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko)","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"compositionstart","data":"","isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"intercepted","type":"after-compositionstart","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"compositionupdate","data":"n","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"intercepted","type":"after-compositionupdate","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"beforeinput","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"intercepted","type":"after-beforeinput","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"input","data":"n","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"after","scenario":"intercepted","type":"after-input","model":"abc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"keydown","key":"n","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"after","scenario":"intercepted","type":"after-keydown","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"keyup","key":"n","keyCode":78,"isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"after","scenario":"intercepted","type":"after-keyup","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"compositionupdate","data":"ni","isTrusted":true,"dom":"anbc "}
+{"variant":"after","scenario":"intercepted","type":"after-compositionupdate","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"beforeinput","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"anbc "}
+{"variant":"after","scenario":"intercepted","type":"after-beforeinput","model":"anbc","dom":"anbc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":2,"focus":2},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"input","data":"ni","inputType":"insertCompositionText","isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"after","scenario":"intercepted","type":"after-input","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":1,"focus":3},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"keydown","key":"i","keyCode":229,"isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"after","scenario":"intercepted","type":"after-keydown","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"keyup","key":"i","keyCode":73,"isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"after","scenario":"intercepted","type":"after-keyup","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"beforeinput","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"anibc "}
+{"variant":"after","scenario":"intercepted","type":"after-beforeinput","model":"anibc","dom":"anibc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":3,"focus":3},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"input","data":null,"inputType":"deleteCompositionText","isComposing":true,"isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"intercepted","type":"after-input","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"compositionend","data":"","isTrusted":true,"dom":"abc "}
+{"variant":"after","scenario":"intercepted","type":"after-compositionend","model":"abc","dom":"abc ","composing":true,"phase":"composing","compositionKey":"26","selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"keydown","key":"Escape","keyCode":229,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"intercepted","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"keyup","key":"Escape","keyCode":27,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"intercepted","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":[]}
+{"scenario":"intercepted","state":{"commands":[],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":1,"focus":1}},"type":"cancel-result","variant":"after"}
+{"variant":"after","scenario":"intercepted","type":"keydown","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"intercepted","type":"after-keydown","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":[]}
+{"variant":"after","scenario":"intercepted","type":"keyup","key":"Enter","keyCode":13,"isComposing":false,"isTrusted":true,"dom":"abc"}
+{"variant":"after","scenario":"intercepted","type":"after-keyup","model":"abc","dom":"abc","composing":false,"phase":"idle","compositionKey":null,"selection":{"anchor":1,"focus":1},"commands":["enter"]}
+{"scenario":"intercepted","state":{"commands":["enter"],"composing":false,"compositionKey":null,"dom":"abc","model":"abc","phase":"idle","selection":{"anchor":1,"focus":1}},"type":"enter-result","variant":"after"}
+{"type":"finished"}

@@ -1,0 +1,313 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts -t 'ephemeral|selection slices|single NBSP'
+
+ RUN  v5.0.1 <lexical-checkout>
+
+ ❯ |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (96 tests | 18 failed | 68 skipped) 719ms
+   ❯ Safari composition (richText=false) (48)
+     × ephemeral set edits leave the live placeholder unchanged 85ms
+     × ephemeral splice edits leave the live placeholder unchanged 46ms
+     × ephemeral json edits leave the live placeholder unchanged 34ms
+     × an ephemeral set insertion cannot establish live ownership 34ms
+     × an ephemeral splice insertion cannot establish live ownership 33ms
+     × an ephemeral json insertion cannot establish live ownership 32ms
+     × selection slices respect live ownership ({"mode":"live","start":1}) 35ms
+     × selection slices respect live ownership ({"mode":"live","start":2}) 33ms
+     × a live slice identifies the single NBSP at offset 1 42ms
+   ❯ Safari composition (richText=true) (48)
+     × ephemeral set edits leave the live placeholder unchanged 49ms
+     × ephemeral splice edits leave the live placeholder unchanged 33ms
+     × ephemeral json edits leave the live placeholder unchanged 34ms
+     × an ephemeral set insertion cannot establish live ownership 32ms
+     × an ephemeral splice insertion cannot establish live ownership 34ms
+     × an ephemeral json insertion cannot establish live ownership 34ms
+     × selection slices respect live ownership ({"mode":"live","start":1}) 33ms
+     × selection slices respect live ownership ({"mode":"live","start":2}) 34ms
+     × a live slice identifies the single NBSP at offset 1 44ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 18 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > ephemeral set edits leave the live placeholder unchanged
+AssertionError: expected { key: '2', offset: 3 } to deeply equal { key: '2', offset: 1 }
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----ephemeral-set-edits-leave-the-live-placeholder-unchanged.png
+
+- Expected
++ Received
+
+  {
+    "key": "2",
+-   "offset": 1,
++   "offset": 3,
+  }
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:273:62
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > ephemeral splice edits leave the live placeholder unchanged
+AssertionError: expected { key: '5', offset: 3 } to deeply equal { key: '5', offset: 1 }
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----ephemeral-splice-edits-leave-the-live-placeholder-unchanged.png
+
+- Expected
++ Received
+
+  {
+    "key": "5",
+-   "offset": 1,
++   "offset": 3,
+  }
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:273:62
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > ephemeral json edits leave the live placeholder unchanged
+AssertionError: expected { key: '8', offset: 3 } to deeply equal { key: '8', offset: 1 }
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----ephemeral-json-edits-leave-the-live-placeholder-unchanged.png
+
+- Expected
++ Received
+
+  {
+    "key": "8",
+-   "offset": 1,
++   "offset": 3,
+  }
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:273:62
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > an ephemeral set insertion cannot establish live ownership
+AssertionError: expected { key: '11', offset: 2 } to be null
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----an-ephemeral-set-insertion-cannot-establish-live-ownership.png
+
+- Expected:
+null
+
++ Received:
+{
+  "key": "11",
+  "offset": 2,
+}
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:300:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > an ephemeral splice insertion cannot establish live ownership
+AssertionError: expected { key: '14', offset: 1 } to be null
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----an-ephemeral-splice-insertion-cannot-establish-live-ownership.png
+
+- Expected:
+null
+
++ Received:
+{
+  "key": "14",
+  "offset": 1,
+}
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:300:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > an ephemeral json insertion cannot establish live ownership
+AssertionError: expected { key: '17', offset: 2 } to be null
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----an-ephemeral-json-insertion-cannot-establish-live-ownership.png
+
+- Expected:
+null
+
++ Received:
+{
+  "key": "17",
+  "offset": 2,
+}
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:300:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > selection slices respect live ownership ({"mode":"live","start":1})
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > selection slices respect live ownership ({"mode":"live","start":1})
+AssertionError: expected ' b c' to be 'b c' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----selection-slices-respect-live-ownership----mode---live---start--1--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----selection-slices-respect-live-ownership----mode---live---start--1--.png
+
+Expected: "b c"
+Received: " b c"
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:109:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:333:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > selection slices respect live ownership ({"mode":"live","start":2})
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > selection slices respect live ownership ({"mode":"live","start":2})
+AssertionError: expected 'bc' to be 'b c' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----selection-slices-respect-live-ownership----mode---live---start--2--.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----selection-slices-respect-live-ownership----mode---live---start--2--.png
+
+Expected: "b c"
+Received: "bc"
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:109:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:333:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > a live slice identifies the single NBSP at offset 1
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > a live slice identifies the single NBSP at offset 1
+AssertionError: expected ' ' to be '' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----a-live-slice-identifies-the-single-NBSP-at-offset-1.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----a-live-slice-identifies-the-single-NBSP-at-offset-1.png
+
+- Expected
++ Received
+
++  
+
+ ❯ expectText <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:109:78
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:350:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > ephemeral set edits leave the live placeholder unchanged
+AssertionError: expected { key: '44', offset: 3 } to deeply equal { key: '44', offset: 1 }
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----ephemeral-set-edits-leave-the-live-placeholder-unchanged.png
+
+- Expected
++ Received
+
+  {
+    "key": "44",
+-   "offset": 1,
++   "offset": 3,
+  }
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:273:62
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > ephemeral splice edits leave the live placeholder unchanged
+AssertionError: expected { key: '47', offset: 3 } to deeply equal { key: '47', offset: 1 }
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----ephemeral-splice-edits-leave-the-live-placeholder-unchanged.png
+
+- Expected
++ Received
+
+  {
+    "key": "47",
+-   "offset": 1,
++   "offset": 3,
+  }
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:273:62
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > ephemeral json edits leave the live placeholder unchanged
+AssertionError: expected { key: '50', offset: 3 } to deeply equal { key: '50', offset: 1 }
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----ephemeral-json-edits-leave-the-live-placeholder-unchanged.png
+
+- Expected
++ Received
+
+  {
+    "key": "50",
+-   "offset": 1,
++   "offset": 3,
+  }
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:273:62
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > an ephemeral set insertion cannot establish live ownership
+AssertionError: expected { key: '53', offset: 2 } to be null
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----an-ephemeral-set-insertion-cannot-establish-live-ownership.png
+
+- Expected:
+null
+
++ Received:
+{
+  "key": "53",
+  "offset": 2,
+}
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:300:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > an ephemeral splice insertion cannot establish live ownership
+AssertionError: expected { key: '56', offset: 1 } to be null
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----an-ephemeral-splice-insertion-cannot-establish-live-ownership.png
+
+- Expected:
+null
+
++ Received:
+{
+  "key": "56",
+  "offset": 1,
+}
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:300:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/18]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > an ephemeral json insertion cannot establish live ownership
+AssertionError: expected { key: '59', offset: 2 } to be null
+
+Failure screenshot:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----an-ephemeral-json-insertion-cannot-establish-live-ownership.png
+
+- Expected:
+null
+
++ Received:
+{
+  "key": "59",
+  "offset": 2,
+}
+
+ ❯ <lexical-checkout>/src/__tests__/browser/LexicalSafariComposition.test.ts:300:63
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/18]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  18 failed | 10 passed | 68 skipped (96)
+   Start at  17:13:11
+   Duration  1.54s (tests 72%, import 22%, worker 6%, setup 1%)
+
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,0 +1,26 @@
+{
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "packageVersion": "0.52.0",
+  "captureRevision": "range-cleanup-v2",
+  "currentRevision": "json-cleanup-v3",
+  "captureHashes": {
+    "before.js": "0686c79e7ac65b0e9c079bc22e64d36b11a12c113e152938330983681e21011d",
+    "after.js": "3307299b5655c3fa2bf1058a3d209c32cdfb4e17073e7a98d5d823c4c4b54c47",
+    "events.jsonl": "97635e96bb9b9f66acd702ffff9a534f07ce827fba09a30d0d675473ac9116d1"
+  },
+  "currentBundleHashes": {
+    "before.js": "4d7099cb61917095374925b137d89f55f027cbee2f45cf69e1014343f9da6fea",
+    "after.js": "30068205a3fc930d90710c099fce8d7f94189d2576ff1175e5771612dd33e1f4"
+  },
+  "checks": [
+    "Baseline bundle tokens identical (probe path comment differs).",
+    "Patched bundle tokens identical outside textNodeSchema and updateTextNode.",
+    "packages/lexical/src/LexicalEvents.ts: byte-identical to capture.",
+    "packages/lexical/src/LexicalEditor.ts: byte-identical to capture.",
+    "packages/lexical/src/LexicalUtils.ts: byte-identical to capture.",
+    "packages/lexical/src/LexicalSelection.ts: byte-identical to capture.",
+    "Every TextNode method/constructor is byte-identical to capture; only schema/import/comments changed.",
+    "Eight-scenario native fixture constructs nodes directly and never loads/updates JSON."
+  ],
+  "conclusion": "Reuse the eight historical trusted WKWebView scenarios for unchanged event/setter/splice/split/merge paths. This is static call-path and byte-comparison evidence, not a new final-bundle physical IME capture. JSON updates have synthetic browser coverage only; full bundle bytes differ."
+}

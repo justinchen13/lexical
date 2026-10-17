@@ -1,0 +1,16 @@
+2026-10-17 18:12:01.196 probe[99107:157775798] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+2026-10-17 18:12:01.207 probe[99107:157775798] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+Native scenario 1/14: backspace passed
+Native scenario 2/14: escape passed
+Native scenario 3/14: confirm-space passed
+Native scenario 4/14: confirm-enter passed
+Native scenario 5/14: empty passed
+Native scenario 6/14: nbsp passed
+Native scenario 7/14: multi passed
+Native scenario 8/14: copies passed
+Native scenario 9/14: copy-insertion passed
+Native scenario 10/14: json-insert passed
+Native scenario 11/14: json-replace passed
+Native scenario 12/14: slice-live passed
+Native scenario 13/14: slice-owned passed
+Native scenario 14/14: slice-real passed

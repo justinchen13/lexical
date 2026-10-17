@@ -1,0 +1,27 @@
+{
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "currentRevision": "active-node-v4",
+  "captureRevision": "range-cleanup-v2",
+  "unchangedFiles": [
+    "packages/lexical/src/LexicalEditor.ts",
+    "packages/lexical/src/LexicalEvents.ts"
+  ],
+  "unchangedUtilityFunctions": [
+    "$updateTextNodeFromDOMContent",
+    "$getCompositionKey",
+    "$setCompositionKey"
+  ],
+  "changedTextNodeMethods": [
+    "setTextContent",
+    "spliceText",
+    "splitText",
+    "mergeWithSibling"
+  ],
+  "changedUtilityFunctions": [
+    "$getCompositionInputState (new)",
+    "$updateCompositionPlaceholder"
+  ],
+  "eventsSha256": "97635e96bb9b9f66acd702ffff9a534f07ce827fba09a30d0d675473ac9116d1",
+  "reuse": "The eight historical trusted scenarios remain evidence of macOS/system-Pinyin event order and unchanged DOM compositionend/keydown dispatch. They are not physical end-to-end tests of active-node-v4: setters, splice/split/merge and ownership helper bytes changed. The new identity branch is exercised synthetically/model-side only; no new foreground input was performed.",
+  "prepared": "native-prepared builds baseline/current bundles without foreground use. A physical rerun, if required later, needs a newly confirmed foreground slot; the final v4 kernel has not been physically exercised."
+}

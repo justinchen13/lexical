@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "<prior-prepared-probe>/build.mjs",
+    "."
+  ],
+  "started": "2026-10-17T09:34:33.748Z",
+  "finished": "2026-10-17T09:34:33.954Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

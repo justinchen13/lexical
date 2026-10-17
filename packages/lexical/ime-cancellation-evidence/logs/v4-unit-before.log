@@ -1,0 +1,79 @@
+$ vitest --project unit --project scripts-unit --no-watch 'packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts' -t 'without an active editor'
+
+ RUN  v5.0.1 <lexical-checkout>
+
+ ❯ |unit| packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts (23 tests | 3 failed | 20 skipped) 13ms
+   ❯ $sliceSelectedTextNodeContent (23)
+     ❯ clone (7)
+       × ephemeral set edits work without an active editor 10ms
+       × ephemeral splice edits work without an active editor 1ms
+       × ephemeral json edits work without an active editor 1ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |unit| packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts > $sliceSelectedTextNodeContent > clone > ephemeral set edits work without an active editor
+Error: Unable to find an active editor. This method can only be used synchronously during the callback of editor.update(), editor.read(), or editor.getEditorState().read(..., {editor}). Detected on the page: 0 compatible editor(s) with version "0.52.0+git"
+ ❯ invariant packages/lexical-internal/src/invariant.ts:28:9
+     26|   }
+     27|
+     28|   throw new Error(
+       |         ^
+     29|     args.reduce((msg, arg) => msg.replace('%s', String(arg)), message),
+     30|   );
+ ❯ getActiveEditor packages/lexical/src/LexicalUpdates.ts:171:5
+ ❯ $getEditor packages/lexical/src/LexicalUtils.ts:2951:10
+ ❯ TextNode.setTextContent packages/lexical/src/nodes/LexicalTextNode.ts:880:24
+ ❯ packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts:116:18
+ ❯ readEditorState packages/lexical/src/LexicalUpdates.ts:581:12
+ ❯ EditorState.read packages/lexical/src/LexicalEditorState.ts:192:12
+ ❯ packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts:114:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  |unit| packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts > $sliceSelectedTextNodeContent > clone > ephemeral splice edits work without an active editor
+Error: Unable to find an active editor. This method can only be used synchronously during the callback of editor.update(), editor.read(), or editor.getEditorState().read(..., {editor}). Detected on the page: 0 compatible editor(s) with version "0.52.0+git"
+ ❯ invariant packages/lexical-internal/src/invariant.ts:28:9
+     26|   }
+     27|
+     28|   throw new Error(
+       |         ^
+     29|     args.reduce((msg, arg) => msg.replace('%s', String(arg)), message),
+     30|   );
+ ❯ getActiveEditor packages/lexical/src/LexicalUpdates.ts:171:5
+ ❯ $updateCompositionPlaceholder packages/lexical/src/LexicalUtils.ts:639:22
+ ❯ TextNode.spliceText packages/lexical/src/nodes/LexicalTextNode.ts:1025:5
+ ❯ packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts:118:18
+ ❯ readEditorState packages/lexical/src/LexicalUpdates.ts:581:12
+ ❯ EditorState.read packages/lexical/src/LexicalEditorState.ts:192:12
+ ❯ packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts:114:33
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  |unit| packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts > $sliceSelectedTextNodeContent > clone > ephemeral json edits work without an active editor
+Error: Unable to find an active editor. This method can only be used synchronously during the callback of editor.update(), editor.read(), or editor.getEditorState().read(..., {editor}). Detected on the page: 0 compatible editor(s) with version "0.52.0+git"
+ ❯ invariant packages/lexical-internal/src/invariant.ts:28:9
+     26|   }
+     27|
+     28|   throw new Error(
+       |         ^
+     29|     args.reduce((msg, arg) => msg.replace('%s', String(arg)), message),
+     30|   );
+ ❯ getActiveEditor packages/lexical/src/LexicalUpdates.ts:171:5
+ ❯ $getEditor packages/lexical/src/LexicalUtils.ts:2951:10
+ ❯ TextNode.setTextContent packages/lexical/src/nodes/LexicalTextNode.ts:880:24
+ ❯ Object.updateTextNode packages/lexical/src/LexicalGeneratedJSON.ts:353:10
+ ❯ $applyJSONSetters packages/lexical/src/LexicalUtils.ts:4853:22
+ ❯ TextNode.updateFromJSON packages/lexical/src/LexicalNode.ts:1850:12
+ ❯ packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts:120:18
+ ❯ readEditorState packages/lexical/src/LexicalUpdates.ts:581:12
+ ❯ EditorState.read packages/lexical/src/LexicalEditorState.ts:192:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 20 skipped (23)
+   Start at  17:07:15
+   Duration  875ms (transform 69%, import 21%, worker 5%, environment 3%, tests 2%, setup 1%)
+
+[ELIFECYCLE] Command failed with exit code 1.

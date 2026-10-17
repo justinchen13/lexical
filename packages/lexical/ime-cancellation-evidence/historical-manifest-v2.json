@@ -1,0 +1,18 @@
+{
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "files": {
+    "packages/lexical/src/LexicalEvents.ts": "7fe39334f78b3e2c55c9756222a39949d02b203842efed594fc99ab367a75b37",
+    "packages/lexical/src/LexicalEditor.ts": "923ecaa18a052cd8aecda34fbbebbce68e192c67d6a4d196324ce48edcc5b733",
+    "packages/lexical/src/LexicalUtils.ts": "2855b4e602c39cc3eec17e61172bab4ec91b380819f367e46fb7025ce069aebe",
+    "packages/lexical/src/LexicalSelection.ts": "149045b7cdbaa1e71d57c9b55c67028883bfd2748a3160a39737e3245cfe33c5",
+    "packages/lexical/src/nodes/LexicalTextNode.ts": "91d8217ba13475cff4ace8b26b6f1c7b329cb2d008217cb1e0c02fc2add5e706"
+  },
+  "version": "range-cleanup-v2",
+  "captureHashes": {
+    "before.js": "0686c79e7ac65b0e9c079bc22e64d36b11a12c113e152938330983681e21011d",
+    "after.js": "3307299b5655c3fa2bf1058a3d209c32cdfb4e17073e7a98d5d823c4c4b54c47",
+    "events.jsonl": "97635e96bb9b9f66acd702ffff9a534f07ce827fba09a30d0d675473ac9116d1"
+  },
+  "patchSha256": "26189be5238a39211971eb2354a4dd6196507bddc2966484f5296ac24a6eb439",
+  "reviewedPatchSha256": "f8eef82a47d977776615af6ef19552c7e9905f427d83d1921121e8107d7aab4d"
+}

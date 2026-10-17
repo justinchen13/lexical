@@ -1,0 +1,14 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-unit",
+    "packages/lexical/src",
+    "packages/lexical-code-core/src"
+  ],
+  "started": "2026-10-17T08:37:44.049Z",
+  "finished": "2026-10-17T08:37:48.719Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

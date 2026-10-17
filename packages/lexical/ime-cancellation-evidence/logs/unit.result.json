@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-unit",
+    "packages/lexical/src",
+    "packages/lexical-plain-text",
+    "packages/lexical-rich-text",
+    "packages/lexical-yjs"
+  ],
+  "started": "2026-10-17T08:17:29.521Z",
+  "finished": "2026-10-17T08:17:36.166Z",
+  "exit": 0,
+  "signal": null,
+  "node": "v25.2.1"
+}

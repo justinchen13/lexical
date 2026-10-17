@@ -1,0 +1,91 @@
+{
+  "scope": "All production JS/TS under packages, not limited to src or selected packages",
+  "excludedDirectories": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage",
+    "__tests__",
+    "__mocks__",
+    "__fixtures__",
+    "test",
+    "tests",
+    ".vitest"
+  ],
+  "scannedFiles": 641,
+  "textMentionFiles": [
+    "packages/lexical/src/LexicalGeneratedJSON.ts",
+    "packages/lexical/src/LexicalNode.ts",
+    "packages/lexical/src/LexicalNodeState.ts",
+    "packages/lexical/src/LexicalNormalization.ts",
+    "packages/lexical/src/LexicalReconciler.ts",
+    "packages/lexical/src/nodes/LexicalElementNode.ts",
+    "packages/lexical/src/nodes/LexicalTabNode.ts",
+    "packages/lexical/src/nodes/LexicalTextNode.ts",
+    "packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts",
+    "packages/lexical-code-prism/src/CodeHighlighterPrism.ts",
+    "packages/lexical-code-shiki/src/CodeHighlighterShiki.ts",
+    "packages/lexical-devtools/src/serializeEditorState.ts",
+    "packages/lexical-history/src/index.ts",
+    "packages/lexical-link/src/LexicalLinkGeneratedJSON.ts",
+    "packages/lexical-list/src/LexicalListGeneratedJSON.ts",
+    "packages/lexical-list/src/LexicalListItemNode.ts",
+    "packages/lexical-mark/src/LexicalMarkGeneratedJSON.ts",
+    "packages/lexical-offset/src/index.ts",
+    "packages/lexical-playground/src/nodes/EmojiNode.tsx",
+    "packages/lexical-playground/src/nodes/MentionNode.ts",
+    "packages/lexical-playground/src/nodes/SpecialTextNode.tsx",
+    "packages/lexical-playground/src/plugins/RubyExtension/RubyNode.ts",
+    "packages/lexical-playground/src/plugins/VisibleNonPrintingExtension.ts",
+    "packages/lexical-playground/src/themes/PlaygroundEditorTheme.ts",
+    "packages/lexical-rich-text/src/LexicalRichTextGeneratedJSON.ts",
+    "packages/lexical-selection/src/lexical-node.ts",
+    "packages/lexical-table/src/LexicalTableGeneratedJSON.ts",
+    "packages/lexical-yjs/src/CollabTextNode.ts",
+    "packages/lexical-yjs/src/SyncEditorStates.ts",
+    "packages/lexical-yjs/src/SyncV2.ts",
+    "packages/lexical-yjs/src/Utils.ts"
+  ],
+  "writes": [
+    {
+      "file": "packages/lexical/src/LexicalGeneratedJSON.ts",
+      "line": 257,
+      "kind": "assignment",
+      "code": "node.__text = prevNode.__text"
+    },
+    {
+      "file": "packages/lexical/src/nodes/LexicalTextNode.ts",
+      "line": 463,
+      "kind": "assignment",
+      "code": "this.__text = text"
+    },
+    {
+      "file": "packages/lexical/src/nodes/LexicalTextNode.ts",
+      "line": 925,
+      "kind": "assignment",
+      "code": "self.__text = text"
+    },
+    {
+      "file": "packages/lexical/src/nodes/LexicalTextNode.ts",
+      "line": 1034,
+      "kind": "assignment",
+      "code": "writableSelf.__text = updatedText"
+    },
+    {
+      "file": "packages/lexical-devtools/src/serializeEditorState.ts",
+      "line": 66,
+      "kind": "initializer/property",
+      "code": "__text: OBFUSCATION_CHAR.repeat(text.length)"
+    },
+    {
+      "file": "packages/lexical-selection/src/lexical-node.ts",
+      "line": 89,
+      "kind": "assignment",
+      "code": "textNode.__text = text"
+    }
+  ],
+  "dynamicPathsReviewed": [
+    "LexicalUtils.$walkSetters: text schema resolves to method setter (TextNode and CodeHighlight generated/walk parity tested)",
+    "LexicalUtils synthesized afterCloneFrom: copies current storage to clone; does not change logical-node text"
+  ]
+}

@@ -1,0 +1,325 @@
+[
+  {
+    "scenario": "backspace",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 3,
+        "focusKey": "3",
+        "focus": 3
+      },
+      "commands": [],
+      "hookCount": 0,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "escape",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 3,
+        "focusKey": "3",
+        "focus": 3
+      },
+      "commands": [],
+      "hookCount": 0,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "confirm-space",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 3,
+        "focusKey": "3",
+        "focus": 3
+      },
+      "commands": [],
+      "hookCount": 0,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "confirm-enter",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 3,
+        "focusKey": "3",
+        "focus": 3
+      },
+      "commands": [],
+      "hookCount": 0,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "empty",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": {
+        "key": "3",
+        "offset": 0
+      },
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 0,
+        "focusKey": "3",
+        "focus": 1
+      },
+      "commands": [],
+      "hookCount": 0,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "nbsp",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "a b ",
+      "dom": "a b  ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 4,
+        "focusKey": "3",
+        "focus": 4
+      },
+      "commands": [],
+      "hookCount": 0,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "multi",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": {
+        "key": "3",
+        "offset": 2
+      },
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 2,
+        "focusKey": "3",
+        "focus": 3
+      },
+      "commands": [],
+      "hookCount": 0,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "copies",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "a b c",
+      "dom": "a b c ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": {
+        "key": "3",
+        "offset": 1
+      },
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 1,
+        "focusKey": "3",
+        "focus": 2
+      },
+      "commands": [],
+      "hookCount": 1,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "copy-insertion",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 1,
+        "focusKey": "3",
+        "focus": 1
+      },
+      "commands": [],
+      "hookCount": 1,
+      "insertionChecks": 3,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "json-insert",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "Xa b c",
+      "dom": "Xa b c ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": {
+        "key": "3",
+        "offset": 2
+      },
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 2,
+        "focusKey": "3",
+        "focus": 2
+      },
+      "commands": [],
+      "hookCount": 1,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "json-replace",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "X Z",
+      "dom": "X Z ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 1,
+        "focusKey": "3",
+        "focus": 1
+      },
+      "commands": [],
+      "hookCount": 1,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "slice-live",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": "b c",
+      "dom": "b c ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 0,
+        "focusKey": "3",
+        "focus": 0
+      },
+      "commands": [],
+      "hookCount": 1,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "slice-owned",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": {
+        "key": "3",
+        "offset": 0
+      },
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 0,
+        "focusKey": "3",
+        "focus": 0
+      },
+      "commands": [],
+      "hookCount": 1,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  },
+  {
+    "scenario": "slice-real",
+    "evidence": "synthetic compositionstart fixture/hook preflight only",
+    "state": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "compositionKey": "3",
+      "placeholder": null,
+      "selection": {
+        "anchorKey": "3",
+        "anchor": 0,
+        "focusKey": "3",
+        "focus": 0
+      },
+      "commands": [],
+      "hookCount": 1,
+      "insertionChecks": 0,
+      "errors": []
+    }
+  }
+]

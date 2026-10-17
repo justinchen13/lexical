@@ -1,0 +1,9 @@
+Baseline bundle tokens identical (probe path comment differs).
+Patched bundle tokens identical outside textNodeSchema and updateTextNode.
+packages/lexical/src/LexicalEvents.ts: byte-identical to capture.
+packages/lexical/src/LexicalEditor.ts: byte-identical to capture.
+packages/lexical/src/LexicalUtils.ts: byte-identical to capture.
+packages/lexical/src/LexicalSelection.ts: byte-identical to capture.
+Every TextNode method/constructor is byte-identical to capture; only schema/import/comments changed.
+Eight-scenario native fixture constructs nodes directly and never loads/updates JSON.
+Reuse the eight historical trusted WKWebView scenarios for unchanged event/setter/splice/split/merge paths. This is static call-path and byte-comparison evidence, not a new final-bundle physical IME capture. JSON updates have synthetic browser coverage only; full bundle bytes differ.

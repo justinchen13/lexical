@@ -1,0 +1,2 @@
+Native WKWebView: 8 final-source scenarios passed; 6 baseline Enter failures reproduced.
+All recorded keydown and compositionend events are trusted. No Option shortcut was used.

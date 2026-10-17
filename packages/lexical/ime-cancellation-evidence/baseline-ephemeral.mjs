@@ -1,0 +1,9 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {createRequire} from 'node:module';import {execFileSync} from 'node:child_process';
+const root=process.cwd(),dir=path.dirname(fileURLToPath(import.meta.url));const require=createRequire(path.join(root,'package.json'));const {build}=require('esbuild');const {webkit,chromium}=require('playwright');
+const files=new Set(['packages/lexical/src/LexicalEditor.ts','packages/lexical/src/LexicalEvents.ts','packages/lexical/src/LexicalGeneratedJSON.ts','packages/lexical/src/LexicalSelection.ts','packages/lexical/src/LexicalUtils.ts','packages/lexical/src/nodes/LexicalTextNode.ts','packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts','packages/lexical-selection/src/lexical-node.ts']);
+const r=await build({entryPoints:[path.join(dir,'extra.ts')],outfile:path.join(dir,'baseline.js'),bundle:true,format:'iife',tsconfig:path.join(root,'tsconfig.json'),conditions:['source'],plugins:[{name:'baseline',setup(b){b.onLoad({filter:/\.ts$/},args=>{const f=path.relative(root,args.path);if(files.has(f))return{contents:execFileSync('git',['show','cb21da40de69c1eedc2b9ec60001fef0d3b1770a:'+f],{cwd:root,encoding:'utf8'}),loader:'ts'};});}}],define:{__DEV__:'true','process.env.NODE_ENV':'"development"','process.env.LEXICAL_VERSION':'"review"'}});
+const results=[];
+for(const [engine,api]of [['webkit',webkit],['chromium',chromium]]){
+ const browser=await api.launch({headless:true});try{const p=await browser.newPage();await p.setContent('<body></body>');await p.addScriptTag({path:path.join(dir,'baseline.js')});const r=await p.evaluate(()=>globalThis.runExtra('ephemeral-no-editor'));results.push({engine,...r});console.log(JSON.stringify({engine,...r}));}finally{await browser.close();}
+}
+fs.writeFileSync(path.join(dir,'baseline-ephemeral-results.json'),JSON.stringify(results,null,2));

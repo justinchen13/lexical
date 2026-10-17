@@ -1,0 +1,36 @@
+--- captured-range-cleanup-v2/after.js
++++ json-cleanup-v3/after.js
+@@ -4528,7 +4528,7 @@
+       const style = json.style;
+       node.__style = typeof style === "string" ? style : "";
+       const text = json.text;
+-      node.__text = typeof text === "string" ? text : "";
++      node.setTextContent(typeof text === "string" ? text : "");
+       return node;
+     }
+     return {
+@@ -5692,11 +5692,10 @@
+     style: withField(stringValue(), {
+       field: "__style"
+     }),
+-    // The accessors are getTextContent/setTextContent rather than the
+-    // conventional getText/setText, which TextNode does not have.
+-    text: withField(stringValue(), {
+-      field: "__text",
+-      getter: "getTextContent",
++    // Reads can use the field; writes must maintain composition placeholder
++    // ownership through setTextContent, including generated JSON updates.
++    text: withAccessors(stringValue(), {
++      getter: { field: "__text", method: "getTextContent" },
+       setter: "setTextContent"
+     })
+   });
+@@ -19706,7 +19705,7 @@
+     register: registerPlainText
+   });
+ 
+-  // captured-probe.ts
++  // current-probe.ts
+   var host = globalThis;
+   host.factories ??= {};
+   host.factories["after"] = (root, scenario) => {

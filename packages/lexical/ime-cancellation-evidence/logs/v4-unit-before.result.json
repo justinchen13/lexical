@@ -1,0 +1,15 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-unit",
+    "packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts",
+    "-t",
+    "without an active editor"
+  ],
+  "started": "2026-10-17T09:07:14.571Z",
+  "finished": "2026-10-17T09:07:16.385Z",
+  "exit": 1,
+  "signal": null,
+  "node": "v25.2.1"
+}

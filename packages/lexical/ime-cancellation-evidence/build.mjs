@@ -1,0 +1,9 @@
+import fs from 'node:fs';import path from 'node:path';import crypto from 'node:crypto';import {createRequire}from'node:module';import{fileURLToPath}from'node:url';
+const root=path.resolve(process.argv[2]??'.'),directory=path.dirname(fileURLToPath(import.meta.url));
+const require=createRequire(path.join(root,'package.json'));const {build,version}=require('esbuild');
+const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
+const result=await build({absWorkingDir:root,stdin:{contents:fs.readFileSync(path.join(directory,'probe.ts'),'utf8'),resolveDir:root,sourcefile:'ime-native-probe.ts',loader:'ts'},outfile:path.join(directory,'after.js'),bundle:true,format:'iife',metafile:true,tsconfig:path.join(root,'tsconfig.json'),conditions:['source'],define:{__DEV__:'true','process.env.NODE_ENV':'"development"','process.env.LEXICAL_VERSION':'"0.52.0+cb21da40.active-node-v4"'}});
+const inputs={};for(const input of Object.keys(result.metafile.inputs)){const absolute=input==='ime-native-probe.ts'?path.join(directory,'probe.ts'):path.resolve(root,input);let key=path.relative(root,absolute);if(absolute===path.join(directory,'probe.ts'))key='probe.ts';inputs[key]=sha(fs.readFileSync(absolute));}
+const record={revision:'active-node-v4',baseline:'cb21da40de69c1eedc2b9ec60001fef0d3b1770a',packageVersion:'0.52.0',node:process.version,esbuild:version,variant:'final-only; historical baseline is reused',inputs,bundleSha256:sha(fs.readFileSync(path.join(directory,'after.js'))),fixtureHashes:{}};
+for(const name of ['probe.ts','index.html','scenarios.json','build.mjs','Probe.swift'])if(fs.existsSync(path.join(directory,name)))record.fixtureHashes[name]=sha(fs.readFileSync(path.join(directory,name)));
+fs.writeFileSync(path.join(directory,'build-manifest.json'),JSON.stringify(record,null,2)+'\n');console.log('Built frozen active-node-v4 final-only bundle; SHA256 '+record.bundleSha256);

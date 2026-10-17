@@ -1,0 +1,2362 @@
+[
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "external-insert",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "Xabc",
+      "dom": "Xabc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "Xabc",
+      "dom": "Xabc ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "Xabc",
+      "dom": "Xabc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "external-delete",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "bc",
+      "dom": "bc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "bc",
+      "dom": "bc ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "bc",
+      "dom": "bc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "reject-placeholder",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc",
+      "dom": "abc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "token-middle",
+    "started": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "",
+      "dom": "",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "12",
+        "offset": 0
+      },
+      "nodes": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "move-selection",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "15",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc\n\nother",
+      "dom": "abcother ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc\n\nother",
+      "dom": "abcother ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc\n\nother",
+      "dom": "abcother",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "multi-selection",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "aZ",
+      "dom": "aZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "20",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "aZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "multi-backward",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "aZ",
+      "dom": "aZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "25",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "aZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "before",
+    "kind": "multi-ascii",
+    "started": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abZ",
+      "dom": "abZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "abZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "external-insert",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "Xabc",
+      "dom": "Xabc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "Xabc",
+      "dom": "Xabc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "Xabc",
+      "dom": "Xabc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "external-delete",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "bc",
+      "dom": "bc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "bc",
+      "dom": "bc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "bc",
+      "dom": "bc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "reject-placeholder",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc",
+      "dom": "abc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc",
+      "dom": "abc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "token-middle",
+    "started": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "",
+      "dom": "",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "12",
+        "offset": 0
+      },
+      "nodes": []
+    },
+    "forced": {
+      "model": "",
+      "dom": "",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "12",
+        "offset": 0
+      },
+      "nodes": []
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "move-selection",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "15",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc\n\nother",
+      "dom": "abcother ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc\n\nother",
+      "dom": "abcother",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc\n\nother",
+      "dom": "abcother",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "multi-selection",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "multi-backward",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "webkit",
+    "variant": "after",
+    "kind": "multi-ascii",
+    "started": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abZ",
+      "dom": "abZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "abZ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abZ",
+      "dom": "abZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "abZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "external-insert",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "Xabc",
+      "dom": "Xabc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "Xabc",
+      "dom": "Xabc ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "Xabc",
+      "dom": "Xabc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "external-delete",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "bc",
+      "dom": "bc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "bc",
+      "dom": "bc ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "bc",
+      "dom": "bc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "reject-placeholder",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc",
+      "dom": "abc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "token-middle",
+    "started": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "",
+      "dom": "",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "12",
+        "offset": 0
+      },
+      "nodes": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "move-selection",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "15",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc\n\nother",
+      "dom": "abcother ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc\n\nother",
+      "dom": "abcother ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc\n\nother",
+      "dom": "abcother",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "multi-selection",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "aZ",
+      "dom": "aZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "20",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "aZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "multi-backward",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "aZ",
+      "dom": "aZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "25",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "aZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "before",
+    "kind": "multi-ascii",
+    "started": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "ending-safari",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abZ",
+      "dom": "abZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "abZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "external-insert",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "Xabc",
+      "dom": "Xabc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "Xabc",
+      "dom": "Xabc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "Xabc",
+      "dom": "Xabc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "2",
+        "offset": 4
+      },
+      "nodes": [
+        {
+          "key": "2",
+          "text": "Xabc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "external-delete",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "bc",
+      "dom": "bc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "bc",
+      "dom": "bc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "bc",
+      "dom": "bc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "5",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "5",
+          "text": "bc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "reject-placeholder",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc",
+      "dom": "abc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc",
+      "dom": "abc",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "8",
+        "offset": 1
+      },
+      "nodes": [
+        {
+          "key": "8",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "token-middle",
+    "started": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": " ",
+      "dom": "  ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "13",
+        "offset": 0
+      },
+      "nodes": [
+        {
+          "key": "13",
+          "text": " ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "",
+      "dom": "",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "12",
+        "offset": 0
+      },
+      "nodes": []
+    },
+    "forced": {
+      "model": "",
+      "dom": "",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "12",
+        "offset": 0
+      },
+      "nodes": []
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "move-selection",
+    "started": {
+      "model": "abc",
+      "dom": "abc ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "15",
+        "offset": 3
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "abc\n\nother",
+      "dom": "abcother ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abc\n\nother",
+      "dom": "abcother",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abc\n\nother",
+      "dom": "abcother",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "17",
+        "offset": 5
+      },
+      "nodes": [
+        {
+          "key": "15",
+          "text": "abc",
+          "mode": "normal"
+        },
+        {
+          "key": "17",
+          "text": "other",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "multi-selection",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "20",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "20",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "multi-backward",
+    "started": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "a   Z",
+      "dom": "a   Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a   Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "a  Z",
+      "dom": "a  Z",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "25",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "25",
+          "text": "a  Z",
+          "mode": "normal"
+        }
+      ]
+    }
+  },
+  {
+    "engine": "chromium",
+    "variant": "after",
+    "kind": "multi-ascii",
+    "started": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "beforeEnd": {
+      "model": "ab Z",
+      "dom": "ab Z ",
+      "composing": true,
+      "phase": "composing",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "ab Z",
+          "mode": "normal"
+        }
+      ]
+    },
+    "ended": {
+      "model": "abZ",
+      "dom": "abZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "abZ",
+          "mode": "normal"
+        }
+      ]
+    },
+    "forced": {
+      "model": "abZ",
+      "dom": "abZ",
+      "composing": false,
+      "phase": "idle",
+      "selection": {
+        "key": "30",
+        "offset": 2
+      },
+      "nodes": [
+        {
+          "key": "30",
+          "text": "abZ",
+          "mode": "normal"
+        }
+      ]
+    }
+  }
+]
