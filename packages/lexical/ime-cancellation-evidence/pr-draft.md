@@ -70,7 +70,7 @@ Checking formatting...
 All matched files use Prettier code style!
 ```
 
-ESLint emitted no diagnostics. The independent probe verifier now reports `16 passed; 0 failed (synthetic/model evidence).`, exit 0; CodeHighlight and custom setter JSON controls remain correct.
+ESLint exited 0 with 0 errors and 1 warning in the test `slice` callback (`@lexical/rules-of-lexical`); see logs/v4-lint-final.log. The frozen callback spelling is retained. The independent probe verifier now reports `16 passed; 0 failed (synthetic/model evidence).`, exit 0; CodeHighlight and custom setter JSON controls remain correct.
 
 A production JS/TS AST audit across all packages (641 files) classified direct text writes: new-node initialization, clone copying, guarded setter/splice, independent DevTools snapshots, and the corrected live/copy selection slice. Generic schema setters and clone loops were also checked. No further direct update bypass was found within this ownership invariant.
 
