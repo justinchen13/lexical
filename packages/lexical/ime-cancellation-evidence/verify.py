@@ -25,7 +25,23 @@ assert not restored['previousFocusElementAvailable'] or restored['previousFocusE
 if (directory/'after.js').exists():assert sha((directory/'after.js').read_bytes())==build['bundleSha256']
 if args.local_binary:assert sha((directory/'probe').read_bytes())==start['binarySha256']
 if args.checkout:
-    source=json.loads((directory/'source-manifest.json').read_text())
+    captured_source_bytes=(directory/'source-manifest.json').read_bytes()
+    captured_source=json.loads(captured_source_bytes)
+    current_path=directory/'current-source-manifest.json'
+    source=json.loads(current_path.read_text()) if current_path.exists() else captured_source
+    if current_path.exists():
+        assert sha(captured_source_bytes)==source['captureSourceManifestSha256']
+        test='packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts'
+        changed=[name for name,digest in source['files'].items() if digest!=captured_source['files'][name]]
+        assert changed==[test] and test not in build['inputs'],changed
+        text=(args.checkout/test).read_text()
+        for before,after in [('const $slice = () => {','const slice = () => {'),('t.editor.update($slice, {discrete: true});','t.editor.update(slice, {discrete: true});'),('t.editor.read($slice);','t.editor.read(slice);')]:
+            assert text.count(before)==1,before
+            text=text.replace(before,after)
+        assert sha(text.encode())==captured_source['files'][test]
+        assert sha((directory/'fix.patch').read_bytes())==source['patchSha256']
+        assert sha((directory/'capture-fix.patch').read_bytes())==captured_source['patchSha256']
+        assert len(build['inputs'])==134
     for file,digest in source['files'].items():assert sha((args.checkout/file).read_bytes())==digest,file
     for file,digest in build['inputs'].items():
         path=directory/file if file=='probe.ts' else args.checkout/file
@@ -87,3 +103,5 @@ print('Native final active-node-v4: 14/14 scenarios passed (6 PlainText, 8 RichT
 print(f'All {len(events)} DOM input/composition/key events and {len(keys)} keydowns are trusted; no modifier shortcut was used.')
 print('Exact system Pinyin verified; previous input source and application/focus restored.')
 print('Historical exact-upstream baseline reused: 6 missing-Enter failures; no baseline rerun.')
+
+if args.checkout and (directory/'current-source-manifest.json').exists():print('Source reuse verified: 9/10 captured file hashes unchanged; exact test callback rename; 134/134 native inputs unchanged. No new physical run.')

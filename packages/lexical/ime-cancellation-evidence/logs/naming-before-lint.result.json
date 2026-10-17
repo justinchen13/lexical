@@ -1,0 +1,9 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "eslint",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts"
+  ],
+  "exit": 0
+}

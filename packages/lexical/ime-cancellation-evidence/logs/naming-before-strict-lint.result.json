@@ -1,0 +1,11 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "eslint",
+    "--max-warnings",
+    "0",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts"
+  ],
+  "exit": 1
+}

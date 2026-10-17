@@ -2,105 +2,79 @@
 
 ## Description
 
-With macOS system Pinyin in a desktop WKWebView, deleting unconfirmed `ni` with two Backspaces or cancelling with Escape can leave Lexical composing after an empty DOM compositionend. The next ordinary Enter does not dispatch KEY_ENTER_COMMAND.
+With macOS system Pinyin in a desktop WKWebView, start after existing text (`abc`), type unconfirmed `ni`, then press Backspace twice or Escape. WebKit sends an empty DOM `compositionend` without `insertFromComposition`, but Lexical retains its composition key. The next ordinary Enter is dropped before `KEY_ENTER_COMMAND` can dispatch.
 
-Finish empty desktop WebKit compositions immediately and consume trailing keyCode 229 already handled by the IME. Ordinary Backspace/Enter and #7061's no-extra-deletion behavior remain. Cancellation synchronizes current text and clears only a proven editor-owned placeholder, without old-node rollback or blanket NBSP removal. Actual insertion establishes ownership; text edits, splits and merges maintain it. JSON updates use setTextContent through the schema, including generated TextNode and CodeHighlight updaters.
+Finish empty desktop WebKit compositions immediately. Keep ignoring the trailing `keyCode=229` already consumed by the IME, preserving #7061's protection against extra body deletion; ordinary Backspace/Enter (`8`/`13`) work normally. Nonempty WebKit completion retains its deferred path. This system-Pinyin cancellation differs from the third-party Xunfei case in closed #8181.
 
-Ownership now belongs to the actual active node object. Ephemeral setter/splice/JSON edits cannot alter same-key live metadata and do not require an active editor. Selection self slicing uses its exact range to maintain ownership, including a single owned versus real NBSP; clone/export copies retain independent direct field writes. This preserves existing editor-free export-copy behavior.
+Cancellation synchronizes current text and removes only a proven editor-owned placeholder. This requires tracking actual insertion and maintaining or invalidating its range through text edits, split/merge, JSON updates and active selection slices. The metadata belongs to the active node object: same-key ephemeral/export copies cannot change it, and editor-free copy edits remain supported. The text schema routes JSON writes through `setTextContent`; both affected generated updaters follow that schema. There is no old whole-node rollback or blanket NBSP removal; public APIs and node JSON format are unchanged.
 
-Regressions use DOM compositionend and cover PlainText/RichText, cancelled/confirmed compositions, trailing keys, real NBSP, empty roots, selections, formatting, tokens/subclasses, model/JSON edits, ephemeral isolation and live/clone slicing. Public APIs and node JSON format are unchanged.
+The regressions enter through native DOM `compositionend` handlers, covering PlainText/RichText, trailing keys, real NBSP, empty roots, selection/format/type boundaries, model/JSON updates and live/copy isolation. The browser replays are synthetic. A separate system-Pinyin/HID capture validates the frozen implementation physically.
+
+Reproduction sources, versioned failures, raw native records and exact commands are in the [commit-pinned evidence README](README.md), [current source/build identity](current-source-manifest.json), and [content-hash index](evidence-index.json). Evidence lives on a separate fork branch; this PR contains only the ten source/test files.
 
 ## Test plan
 
 ### Before
 
-Exact upstream baseline is cb21da40de69c1eedc2b9ec60001fef0d3b1770a (0.52.0). The previously recorded original 58-case file failed as follows (before the JSON/ephemeral cases were added):
+Exact upstream baseline: `cb21da40de69c1eedc2b9ec60001fef0d3b1770a` (0.52.0). Historical run of the **original 58-case** regression file, before later JSON/copy cases were added:
 
 ```sh
 VITEST_BROWSER=chromium pnpm run test-browser packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
 ```
 
-Actual output, exit 1:
+Actual output, exit 1 ([log](logs/reviewed-final-regression.log)):
 
-```
+```text
  Test Files  1 failed (1)
       Tests  58 failed (58)
 ```
 
-The historical native dataset's before variant used this exact unmodified upstream snapshot and reproduced six missing-Enter cases. After cancellation its editor remained composing; the following ordinary Enter produced no KEY_ENTER_COMMAND. These valid baseline records are reused rather than rerun.
-
-The added model/export regressions also protect existing baseline behavior: ephemeral copies can be edited without an active editor, and selection export copies stay independent from live text.
+The [historical native dataset](historical-events-v2.jsonl)'s **before** variant used this exact unmodified upstream commit and reproduced six missing-Enter failures. It is reused as the baseline; its older after variant is not final-fix evidence. Additional intermediate-version failures are indexed in the README.
 
 ### After
+
+The browser/unit results below were recorded on the physically captured active-node-v4 source and are reused after a pure test callback rename. The follow-up changes only `slice` to `$slice` and its two references; production source and all 134 native build inputs are unchanged. [Current source identity and reuse proof](current-source-manifest.json).
 
 ```sh
 MOZ_DISABLE_CONTENT_SANDBOX=1 VITEST_BROWSER=chromium,firefox,webkit pnpm run test-browser packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts packages/lexical/src/__tests__/browser/LexicalComposition.test.ts
 ```
 
-Actual output, exit 0:
+Actual output, exit 0 ([log](logs/v4-browser.log)):
 
-```
+```text
  Test Files  6 passed (6)
       Tests  358 passed | 2 skipped (360)
-   Start at  17:12:40
-   Duration  6.75s (tests 57%, worker 26%, import 15%, setup 2%)
 ```
 
 ```sh
 pnpm run test-unit packages/lexical/src packages/lexical-code-core/src packages/lexical-selection/src packages/lexical-clipboard/src packages/lexical-html/src packages/lexical-markdown/src packages/lexical-yjs/src
 ```
 
-Actual output, exit 0:
+Actual output, exit 0 ([log](logs/v4-unit.log)):
 
-```
+```text
  Test Files  142 passed (142)
       Tests  3524 passed (3524)
-   Start at  17:12:39
-   Duration  4.77s (transform 26%, tests 24%, environment 21%, import 16%, worker 7%, setup 6%)
 ```
 
-The schema and two generated JSON outputs are unchanged from the preceding revision. Current unit checks include generator drift, generated/schema parity and clone/serialization coverage. No manual generated-code edits or additional regeneration were needed.
+Source/test TypeScript (`pnpm run tsc`, `pnpm run tsc-test`), ESLint and Prettier on all ten changed files exited 0. The test naming follow-up passes `pnpm exec eslint --max-warnings 0 --format json packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts` with **0 errors / 0 warnings** and its Prettier check exits 0. The normal project pre-commit hook passes without changing the normalized file. [Lint result](logs/naming-lint.log), [format output](logs/naming-format.log), [hook output](logs/naming-commit-hook.log). Generator drift, schema parity and clone/serialization are covered by the unit run. The previous Flow full-check reported `Found 0 errors` (exit 0); its 152 definition/config/lock inputs are unchanged, so it was reused. [Quality scope and log references](quality-scope.json).
 
-Source/test TypeScript, ESLint and Prettier on all ten changed files exited 0. Actual type/format output:
+Final native capture: macOS 27.0.1 (26A434), arm64, system WKWebView/WebKit 22625.1.29.11.28; exact input source `com.apple.inputmethod.SCIM.ITABC`. The separate source fixture rebuild and evidence verification commands are:
 
-```
-$ tsc
-$ tsc -p ./tsconfig.test.json
-Checking formatting...
-All matched files use Prettier code style!
+```sh
+node /path/to/ime-repro/build.mjs .
+python3 /path/to/ime-repro/verify.py --checkout .
 ```
 
-ESLint exited 0 with 0 errors and 1 warning in the test `slice` callback (`@lexical/rules-of-lexical`); see logs/v4-lint-final.log. The frozen callback spelling is retained. The independent probe verifier now reports `16 passed; 0 failed (synthetic/model evidence).`, exit 0; CodeHighlight and custom setter JSON controls remain correct.
+Actual verifier output, exit 0 ([log](logs/final-native-verify.log), [raw events](events.jsonl)):
 
-A production JS/TS AST audit across all packages (641 files) classified direct text writes: new-node initialization, clone copying, guarded setter/splice, independent DevTools snapshots, and the corrected live/copy selection slice. Generic schema setters and clone loops were also checked. No further direct update bypass was found within this ownership invariant.
-
-The frozen final source passed one native HID/system-Pinyin run in system WKWebView: **14/14 scenarios (6 PlainText, 8 RichText)**, with no baseline rerun. The original exact-upstream native baseline is reused separately: six missing-Enter failures from the older dataset's before variant.
-
-| Final native scope | Result |
-| --- | --- |
-| Double Backspace / Escape cancellation | Existing abc retained; next ordinary Enter dispatches once; ordinary Backspace deletes one character |
-| Space / Enter confirmation | System commits 你 / raw ni respectively; IME-consumed Enter 229 does not dispatch; following 13/8 operate normally |
-| Empty root, real NBSP, cross-paragraph replacement | Empty stays empty, true NBSP retained, unselected suffix Z retained in abZ |
-| Ephemeral setter/splice/JSON, editor-free copies and export slices | Live marker/text unchanged by copies; cancellation retains ab NBSP c |
-| Insertion command modifying only copies | No live placeholder ownership; abc retained |
-| Active JSON prefix / replacement | Marker moves 1→2 or is invalidated; real NBSP preserved |
-| Live self slices, including single owned/real NBSP | Known range maintained; owned-only slice clears, real-only NBSP survives |
-
-The model-API scenarios run programmatic operations after a trusted native compositionstart, then continue actual OS n/i and cancellation. They explicitly reposition the caret after a live edit. No synthetic DOM composition or keyboard events are dispatched. This verifies the defined API/IME interactions; it is not remote-collaboration coverage.
-
-Actual native verifier output, exit 0:
-
-```
+```text
 Native final active-node-v4: 14/14 scenarios passed (6 PlainText, 8 RichText).
 All 276 DOM input/composition/key events and 64 keydowns are trusted; no modifier shortcut was used.
 Exact system Pinyin verified; previous input source and application/focus restored.
 Historical exact-upstream baseline reused: 6 missing-Enter failures; no baseline rerun.
 ```
 
-Environment: macOS 27.0.1 (26A434), arm64, system WebKit 22625.1.29.11.28, input source com.apple.inputmethod.SCIM.ITABC verified before every native keydown. One dedicated window ran for 26.162 seconds; previous input source, application and focused element were restored. Cancelled compositions emit deleteCompositionText, empty compositionend, then consumed keyCode 229, without insertFromComposition. Both confirmation paths include insertFromComposition. Ordinary Enter is 13; ordinary Backspace is 8. This remains distinct from #8181's third-party IME case.
+All 14 following ordinary Enter presses dispatched once; consumed `229` keys did not cause an extra command/deletion. Space confirmation committed “你”; Enter confirmation committed raw “ni”. Cancellation, real NBSP, cross-paragraph text, active JSON/slices and independent copies passed. Seven cases invoke programmatic model APIs after a trusted native compositionstart, then continue real OS input/cancellation; these are explicit API/IME interactions, not remote collaboration. All 134 build inputs matched and the original post-capture bundle rebuild was byte-identical. The naming follow-up rechecks all 134 inputs and the eight business-source hashes against those immutable capture manifests; all still match. The test is not a native build input. The 14 physical cases are reused, with no new foreground run or full suite.
 
-All ten reviewed source fingerprints and the full patch stayed unchanged. All 134 build inputs matched; rebuilding after capture produced a byte-identical bundle. Recorded bundle SHA-256: 29add179f7a5cea18ec9a48701c32d5dade3b0d71585a194da74f33295da1ddd. Native compile/run, verification and post-capture rebuild exited 0. The native fixtures and raw evidence are separate from the upstream source/test diff.
-
-The browser/unit/type/lint/format results above are reused for this identical frozen source. Existing Flow full-check reported Found 0 errors (exit 0); all 152 relevant definition/config/lock inputs are unchanged, so it was reused. Full monorepo/browser suites, the complete ci-check/CI matrix, playground E2E and release builds were not repeated.
-
-Not physically exercised: standalone Safari/Chrome/Firefox, other OSes/IMEs, CodeHighlight/custom-node matrices, cancellation before any text arrives, or live remote Yjs. These remain synthetic/model coverage where applicable. Tools: Node 25.2.1, pnpm 11.24.0, esbuild 0.28.2, Vitest 5.0.1, Playwright 1.63.0; synthetic matrix Chromium 153.0.8010.12, Firefox 155.0, WebKit 26.6. Firefox's sandbox variable is process-only for this host; repository configuration is unchanged.
+Physical coverage is limited to this system WKWebView/Pinyin setup. Standalone Safari/Chrome/Firefox, other OSes/IMEs, CodeHighlight/custom-node native matrices, no-input immediate cancellation and live remote Yjs were not physically exercised. The full monorepo/CI matrix, E2E and release/site builds were not repeated; older full-suite results are historical only. Detailed environment/tool versions and reuse boundaries are in the evidence README.

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "git",
+    "commit",
+    "-F",
+    "<publication-check>/commit-message.md"
+  ],
+  "exit": 0,
+  "hookEnabled": true,
+  "huskyOverride": null,
+  "expectedTree": "44edacd2c13716f9728f78772e7eeed8cc8a3780"
+}

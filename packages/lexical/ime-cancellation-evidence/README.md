@@ -1,6 +1,6 @@
 # Lexical system Pinyin cancellation — frozen active-node-v4 evidence
 
-Final source: package **0.52.0**, baseline **cb21da40de69c1eedc2b9ec60001fef0d3b1770a**, reviewed uncommitted revision label **active-node-v4**. This is not a new release or commit. Apply `fix.patch` to the exact baseline. The ten-file patch stayed unchanged during final validation; SHA-256 is b1e53e83bb89a9e11ec99e042cd0eab99c66071b4deb7c61cf88fc2d6c12dd44.
+Captured implementation: package **0.52.0**, baseline **cb21da40de69c1eedc2b9ec60001fef0d3b1770a**, runtime label **active-node-v4**, code commit **8caa57128218797d6acfe43ca918bab81b99e461**. The physical capture predates the test-only naming follow-up **901bc60381d55834793e2e6c8edd4997a53394d7**. Current `fix.patch` includes exactly the callback `slice` → `$slice` and two reference renames; apply it to the exact baseline. Current patch SHA-256: **c750fdb077f61d223f258d2bcffc302069726eb3cf9ff2a51df7e04d559acc67**. The original captured patch remains `capture-fix.patch` (b1e53e83bb89a9e11ec99e042cd0eab99c66071b4deb7c61cf88fc2d6c12dd44).
 
 ## Final real system-IME capture
 
@@ -40,7 +40,7 @@ Historical exact-upstream baseline reused: 6 missing-Enter failures; no baseline
 
 ## Source/build identity
 
-`source-manifest.json` pins all ten reviewed files, the unchanged patch, and final evidence. `capture-build-manifest.json` is the immutable manifest referenced directly by capture-start. It records all **134** build inputs and the probe fixtures. `post-capture-identity.json` proves the source stayed frozen and the post-capture rebuild was byte-identical.
+`source-manifest.json` remains the original ten-file **capture** manifest and refers to `capture-fix.patch`. `current-source-manifest.json` pins the current source commit, ten files and current `fix.patch`; `LexicalSafariComposition.test.ts` is the current test snapshot. Only that test hash changed. All eight business files, the other published test, and all **134** native build inputs still match. `naming-native-reuse.json` records the comparison. `capture-build-manifest.json`, `build-manifest.json`, `source-manifest.json`, raw events and captured identity/summary files are unchanged historical originals. `post-capture-identity.json` still records the original byte-identical post-capture rebuild; no rebuild or new physical run is claimed for this naming follow-up.
 
 | Artifact | SHA-256 |
 | --- | --- |
@@ -61,7 +61,7 @@ node /path/to/ime-repro/build.mjs .
 python3 /path/to/ime-repro/verify.py --checkout .
 ```
 
-These commands do not open a native window or send HID keys. The build recreates after.js; with the pinned source/dependency/tool inputs its bytes match the captured bundle. The verifier checks raw trusted records, outcomes, restoration, source/input hashes, and the reused historical baseline. It uses the immutable capture-build-manifest.json rather than overwriting that capture identity with the new build manifest.
+These commands do not open a native window or send HID keys. The build recreates after.js; with the pinned source/dependency/tool inputs its bytes match the captured bundle. The verifier checks raw trusted records, outcomes, restoration, current source/input hashes, and the reused historical baseline. When a current manifest is supplied, it also proves that reversing exactly the three callback naming replacements restores the captured test hash; other source changes are rejected. It uses the immutable capture-build-manifest.json rather than overwriting that capture identity with the new build manifest.
 
 For a **new** native run, use a fresh fixture directory: copy the source fixtures, source manifest and historical baseline files, excluding the supplied events.jsonl, capture-summary.json and capture-build-manifest.json. Build and compile there:
 
@@ -86,12 +86,13 @@ The probe refuses to overwrite existing events, stops on focus loss or an observ
 
 Patch versions are independent alternatives for clean baseline checkouts:
 
-- fix.patch: frozen final active-node-v4.
+- fix.patch: current active-node-v4 plus the test-only callback naming normalization.
+- capture-fix.patch: original physically captured active-node-v4 patch, before test normalization.
 - pre-active-fix.patch: json-cleanup-v3, for the ephemeral/live-slice before failures.
 - pre-json-fix.patch: range-cleanup-v2, for the JSON bypass before failures.
 - reviewed.patch: old unsafe whole-node snapshot rollback, historical only.
 
-Current frozen-source library evidence remains valid and was not repeated: browser composition matrix **358 passed / 2 skipped**, affected core/CodeCore/Selection/Clipboard/HTML/Markdown/Yjs units **3524 passed**, source/test TypeScript and ten-file lint/format exit 0. The ESLint record contains **0 errors and 1 warning**: the test callback `slice` calls `$getRoot` without a `$` prefix (`@lexical/rules-of-lexical`). The recorded output is in `logs/v4-lint-final.log`. The callback spelling remains as captured/reviewed; the warning is not a claim of zero diagnostics. Generator drift, schema parity and clone/serialization passed; schema and both generated updaters are unchanged from v3. Existing Flow full-check reported 0 errors; 152 relevant definition/config/lock inputs are unchanged. `quality-scope.json` records this reuse, not a claim that full ci-check/CI ran again.
+The captured-v4 browser composition matrix **358 passed / 2 skipped** and affected unit result **3524 passed** are reused for the pure test callback rename. Source/test TypeScript, formatting and Flow results retain their documented scope. The current test file passes strict ESLint with **0 errors / 0 warnings** and Prettier, both exit 0; the normal pre-commit hook completed Prettier and ESLint without further changes. Commands and actual output are in `logs/naming-*`; the older `logs/v4-lint-final.log` warning is historical and has been resolved. Generator drift, schema parity and clone/serialization passed; schema and both generated updaters are unchanged from v3. Existing Flow full-check reported 0 errors; 152 relevant definition/config/lock inputs are unchanged. `quality-scope.json` records this reuse, not a claim that full ci-check/CI ran again.
 
 Preserved before evidence: final 28 added browser cases on v3 were **18 failed / 10 passed / 68 skipped**, editor-free unit subset **3 failed**, and independent dual-engine probe before **8 passed / 8 failed**, after **16 passed / 0 failed**. Original 58-case upstream failures and older snapshots remain versioned separately. `logs/v4-*` are final source regression records; `logs/final-*` are this native-validation phase. `logs/json-*` and unprefixed logs are earlier revisions. Intermediate candidate logs are not final success evidence.
 

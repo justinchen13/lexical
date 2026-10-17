@@ -1,0 +1,14 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "eslint",
+    "--max-warnings",
+    "0",
+    "--format",
+    "json",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts"
+  ],
+  "started": "2026-10-17T10:49:08.569581+00:00",
+  "exit": 0
+}

@@ -1,0 +1,18 @@
+[fix/webkit-pinyin-cancellation 901bc6038] [lexical] Chore: Prefix the composition test selection callback
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+⋯ Backing up original state…
+✔ Done backing up original state (066616902)!
+⋯ Running tasks for staged files…
+    *.(js|mjs|jsx|css|html|d.ts|ts|mts|tsx|yml|mdx|json) — 1 file
+      ⋯ prettier --write
+    *.(js|mjs|jsx|ts|mts|tsx) — 1 file
+      ⋯ eslint --fix
+
+✔ prettier --write
+✔ eslint --fix
+
+✔ Done running tasks for staged files!
+⋯ Staging changes from tasks…
+✔ Done staging changes from tasks!
+⋯ Cleaning up temporary files…
+✔ Done cleaning up temporary files!

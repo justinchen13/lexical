@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-10-17T10:49:23.931393+00:00",
+  "capturedVersion": "active-node-v4",
+  "capturedCodeCommit": "8caa57128218797d6acfe43ca918bab81b99e461",
+  "testOnlyChange": {
+    "file": "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+    "previousSha256": "80f44281c92e4cc73405438b7499b0e686815f69dd7441ed70006db9af4cea2c",
+    "currentSha256": "bfe038cc13a418ab8a1e99db4326c6ee0c85b6e8d9b39075d64d50336d3db88a",
+    "change": "slice callback declaration and its two references renamed to $slice",
+    "nativeBuildInput": false
+  },
+  "businessSourceFiles": {
+    "packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts": "debb8a7a969b8f5a41fd7222387717d2ce443accb6b232fac73e47c4b0844bd5",
+    "packages/lexical-selection/src/lexical-node.ts": "10f0ff7f5d67427509ecc095065410dcac9c5b9711d27e416276e68afbaf187f",
+    "packages/lexical/src/LexicalEditor.ts": "923ecaa18a052cd8aecda34fbbebbce68e192c67d6a4d196324ce48edcc5b733",
+    "packages/lexical/src/LexicalEvents.ts": "7fe39334f78b3e2c55c9756222a39949d02b203842efed594fc99ab367a75b37",
+    "packages/lexical/src/LexicalGeneratedJSON.ts": "58c42eb6324ef521679f1f4d27bfb0babb142d1f4ab7d353ec5d145c55273521",
+    "packages/lexical/src/LexicalSelection.ts": "72f64652fd81282d9df93757f65134015dbe5423211514cfe089424f8b37a605",
+    "packages/lexical/src/LexicalUtils.ts": "7e8bfc2b6d82df4d747d500d0bc56bc964cc0cf742c38812b7739f55ff092169",
+    "packages/lexical/src/nodes/LexicalTextNode.ts": "46dff46a321c89b50c5034e8fb1d84e6642c3aa060fedf991528cb48c37acf30"
+  },
+  "allEightBusinessSourceHashesMatch": true,
+  "allOtherPublishedSourceFilesUnchanged": 9,
+  "nativeBuildInputsCompared": 134,
+  "allNativeBuildInputsMatch": true,
+  "capturedBuildManifestSha256": "b4a3f834e2e47929c663b15492d8d5d1c7dc2c2ae649f4619ffb36d1c1b9dde6",
+  "capturedBundleSha256": "29add179f7a5cea18ec9a48701c32d5dade3b0d71585a194da74f33295da1ddd",
+  "existingBundleHashMatches": true,
+  "bundleRebuiltThisPhase": false,
+  "newPhysicalRun": false,
+  "nativeReuse": "14/14 trusted system Pinyin/WKWebView cases; all executed inputs and business behavior unchanged",
+  "historicalCaptureFiles": {
+    "source-manifest.json": "b6176c1917b6b35469fe797e5b1b1be596598265af2a898438f5a23abefb1845",
+    "capture-build-manifest.json": "b4a3f834e2e47929c663b15492d8d5d1c7dc2c2ae649f4619ffb36d1c1b9dde6",
+    "build-manifest.json": "b4a3f834e2e47929c663b15492d8d5d1c7dc2c2ae649f4619ffb36d1c1b9dde6",
+    "post-capture-identity.json": "db1f3f16440ebe4357a15d80cc92ca56c71aa6abcfb12f62e9882bae606e520c",
+    "prepared-identity.json": "0aa7e833c01d352031a48e32f9773c5d2ad80918bd82c4821ff1c9b2ff6f5eaf",
+    "capture-summary.json": "ef74529461b504f86d15cc3b0710d4f3095d7b2489a6777369fd137e4d926fdb",
+    "events.jsonl": "a46cee963057e06b6da454013afc35f9d7ce0d5af2eb4cc3c346a72b31d15527"
+  },
+  "currentSourceCommit": "901bc60381d55834793e2e6c8edd4997a53394d7"
+}

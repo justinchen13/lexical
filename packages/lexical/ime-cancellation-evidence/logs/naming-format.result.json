@@ -1,0 +1,11 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "prettier",
+    "--check",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts"
+  ],
+  "started": "2026-10-17T10:49:08.571000+00:00",
+  "exit": 0
+}

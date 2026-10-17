@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "<ime-repro>/verify.py",
+    "--checkout",
+    "."
+  ],
+  "exit": 0,
+  "physicalRun": false
+}
