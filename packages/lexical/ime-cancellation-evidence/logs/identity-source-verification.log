@@ -1,0 +1,5 @@
+Native final active-node-v4: 14/14 scenarios passed (6 PlainText, 8 RichText).
+All 276 DOM input/composition/key events and 64 keydowns are trusted; no modifier shortcut was used.
+Exact system Pinyin verified; previous input source and application/focus restored.
+Historical exact-upstream baseline reused: 6 missing-Enter failures; no baseline rerun.
+Source reuse verified: 9/10 captured file hashes unchanged; exact test callback rename; 134/134 native inputs unchanged. No new physical run.

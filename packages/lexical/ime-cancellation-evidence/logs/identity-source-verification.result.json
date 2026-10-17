@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "<ime-repro>/verify.py",
+    "--checkout",
+    "."
+  ],
+  "exit": 0,
+  "sourceCommit": "b77e004c1087afc812f145cdcc937d5a4491665a",
+  "newPhysicalRun": false,
+  "newLibraryTestRun": false
+}

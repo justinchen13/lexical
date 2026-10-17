@@ -2,6 +2,36 @@
 
 Captured implementation: package **0.52.0**, baseline **cb21da40de69c1eedc2b9ec60001fef0d3b1770a**, runtime label **active-node-v4**, code commit **8caa57128218797d6acfe43ca918bab81b99e461**. The physical capture predates the test-only naming follow-up **901bc60381d55834793e2e6c8edd4997a53394d7**. Current `fix.patch` includes exactly the callback `slice` → `$slice` and two reference renames; apply it to the exact baseline. Current patch SHA-256: **c750fdb077f61d223f258d2bcffc302069726eb3cf9ff2a51df7e04d559acc67**. The original captured patch remains `capture-fix.patch` (b1e53e83bb89a9e11ec99e042cd0eab99c66071b4deb7c61cf88fc2d6c12dd44).
 
+## Contributor identity normalization
+
+The PR remains #9362 in facebook/lexical. Following the account rename, the two
+published source commits were rewritten with author and committer
+`Justin Chen <45264536+justinchen13@users.noreply.github.com>`:
+
+| Previous commit | Current commit | Tree |
+| --- | --- | --- |
+| 8caa57128218797d6acfe43ca918bab81b99e461 | 7cd8a5627848e316adbe84010458f3129c758799 | 08b04d0629b7197fd20f9548ba16a4560b7084c6 |
+| 901bc60381d55834793e2e6c8edd4997a53394d7 | b77e004c1087afc812f145cdcc937d5a4491665a | 44edacd2c13716f9728f78772e7eeed8cc8a3780 |
+
+Both trees, messages and original dates are identical. Only the author/committer
+identity and the second commit's parent changed. The current source commit is
+**b77e004c1087afc812f145cdcc937d5a4491665a**; all ten file hashes and fix.patch
+bytes are unchanged. `commit-identity-map.json` and the four raw Git commit
+preimages make the old/new SHA and tree correspondence independently verifiable
+without fetching unreachable historical commits. Run:
+
+```sh
+python3 /path/to/ime-repro/verify-commit-identity.py
+```
+
+The capture/source/build manifests, raw events and `naming-native-reuse.json`
+remain historical originals with their original commit labels. The 14 physical
+cases and library checks are reused, with no new native run or test suite.
+`current-source-manifest.json` is the current index; it links the identity map
+and preserves the original capture-manifest hash. See the actual outputs in
+`logs/identity-verification.log` and `logs/identity-source-verification.log`.
+This identity update does not submit or complete the contributor's CLA.
+
 ## Final real system-IME capture
 
 **14/14 passed: 6 PlainText, 8 RichText.** One final-only native window ran for 26.162 seconds, 2026-10-17 10:11:59–10:12:25 UTC. No baseline was rerun. Environment: macOS 27.0.1 (26A434), arm64, system WKWebView / WebKit 22625.1.29.11.28. Input source **com.apple.inputmethod.SCIM.ITABC** was checked before every native keydown.

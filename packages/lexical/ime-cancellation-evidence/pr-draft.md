@@ -33,6 +33,8 @@ The [historical native dataset](historical-events-v2.jsonl)'s **before** variant
 
 ### After
 
+Commit identities were subsequently normalized to `Justin Chen` and the current account noreply address. Both original commit trees, messages and dates are unchanged; [the exact old/new SHA mapping](commit-identity-map.json) preserves the provenance of the historical capture and test logs. Current source: `b77e004c1087afc812f145cdcc937d5a4491665a`. No physical run or library suite was repeated for this metadata-only rewrite.
+
 The browser/unit results below were recorded on the physically captured active-node-v4 source and are reused after a pure test callback rename. The follow-up changes only `slice` to `$slice` and its two references; production source and all 134 native build inputs are unchanged. [Current source identity and reuse proof](current-source-manifest.json).
 
 ```sh

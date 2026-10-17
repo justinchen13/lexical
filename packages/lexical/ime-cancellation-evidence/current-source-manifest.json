@@ -1,8 +1,8 @@
 {
   "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
   "packageVersion": "0.52.0",
-  "version": "active-node-v4 + test callback naming normalization",
-  "sourceCommit": "901bc60381d55834793e2e6c8edd4997a53394d7",
+  "version": "active-node-v4 + test callback naming normalization + contributor identity normalization",
+  "sourceCommit": "b77e004c1087afc812f145cdcc937d5a4491665a",
   "capturedSourceCommit": "8caa57128218797d6acfe43ca918bab81b99e461",
   "files": {
     "packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts": "debb8a7a969b8f5a41fd7222387717d2ce443accb6b232fac73e47c4b0844bd5",
@@ -21,5 +21,7 @@
   "capturedPatchSha256": "b1e53e83bb89a9e11ec99e042cd0eab99c66071b4deb7c61cf88fc2d6c12dd44",
   "onlyChangedCapturedFile": "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
   "nativeReuse": "naming-native-reuse.json",
-  "nativeCaptureManifestUnmodified": true
+  "nativeCaptureManifestUnmodified": true,
+  "previousSourceCommit": "901bc60381d55834793e2e6c8edd4997a53394d7",
+  "identityRewrite": "commit-identity-map.json"
 }

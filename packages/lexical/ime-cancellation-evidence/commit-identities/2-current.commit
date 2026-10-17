@@ -1,0 +1,60 @@
+tree 44edacd2c13716f9728f78772e7eeed8cc8a3780
+parent 7cd8a5627848e316adbe84010458f3129c758799
+author Justin Chen <45264536+justinchen13@users.noreply.github.com> 1792234186 +0800
+committer Justin Chen <45264536+justinchen13@users.noreply.github.com> 1792234186 +0800
+
+[lexical] Chore: Prefix the composition test selection callback
+
+## Description
+
+Rename the Safari composition regression's local slice callback to $slice and
+update its two references. This satisfies rules-of-lexical without changing
+any test setup, assertion, production source or native build input.
+
+All eight business-source fingerprints and all 134 inputs of the recorded
+14-case system-Pinyin/WKWebView capture still match. The captured manifests
+remain historical originals; regression results and native evidence are reused.
+
+## Test plan
+
+### Before
+
+```sh
+pnpm exec eslint --max-warnings 0 packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
+```
+
+Actual output (exit 1):
+
+```
+  389:11  warning  $getRoot called from slice, without $ prefix or read/update context  @lexical/rules-of-lexical
+
+✖ 1 problem (0 errors, 1 warning)
+  0 errors and 1 warning potentially fixable with the `--fix` option.
+
+ESLint found too many warnings (maximum: 0).
+```
+
+### After
+
+```sh
+pnpm exec eslint --max-warnings 0 --format json packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
+pnpm exec prettier --check packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
+```
+
+ESLint exited 0. Actual JSON fields:
+
+```json
+{"errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0}
+```
+
+Actual Prettier output (exit 0):
+
+```
+Checking formatting...
+All matched files use Prettier code style!
+```
+
+The original 358 browser passes / 2 skips and 3524 unit passes remain applicable
+to this pure callback rename. No physical IME run or full suite was repeated;
+standalone browsers, other OSes/IMEs and remote Yjs remain outside physical
+coverage. The project pre-commit hook is enabled for this follow-up commit.
