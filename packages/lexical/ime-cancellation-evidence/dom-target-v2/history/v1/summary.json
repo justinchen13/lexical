@@ -1,0 +1,26 @@
+{
+  "revision": "dom-target-v1",
+  "nativePassed": 5,
+  "nativeAttempted": 6,
+  "scenarioPlan": 20,
+  "exit": 1,
+  "stoppedAt": "rich-format-middle-escape",
+  "events": 124,
+  "trustedEvents": 124,
+  "keydown": 29,
+  "allBuildInputsMatch": true,
+  "bundleByteIdentical": true,
+  "bundleMatchesCapture": true,
+  "restored": {
+    "elementRestoreCode": 0,
+    "inputSourceRestored": true,
+    "inputSourceStatus": 0,
+    "previousApplicationActivated": true,
+    "previousApplicationFocused": true,
+    "previousFocusElementAvailable": true,
+    "previousFocusElementRestored": true,
+    "timestamp": "2026-10-17T17:58:14Z",
+    "type": "restored",
+    "windowRestoreCode": 0
+  }
+}

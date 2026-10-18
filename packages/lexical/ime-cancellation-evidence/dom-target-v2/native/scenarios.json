@@ -1,0 +1,182 @@
+[
+  {
+    "id": "plain-backspace",
+    "richText": false,
+    "initial": "abc",
+    "cancel": "backspace",
+    "prepared": "abc",
+    "expected": "abc",
+    "backspaceExpected": "ab"
+  },
+  {
+    "id": "rich-escape",
+    "richText": true,
+    "initial": "abc",
+    "cancel": "escape",
+    "prepared": "abc",
+    "expected": "abc",
+    "backspaceExpected": "ab"
+  },
+  {
+    "id": "plain-confirm-space",
+    "richText": false,
+    "initial": "abc",
+    "cancel": "space",
+    "prepared": "abc",
+    "expectedMode": "committed-data",
+    "ordinaryBackspace": true
+  },
+  {
+    "id": "rich-confirm-enter",
+    "richText": true,
+    "initial": "abc",
+    "cancel": "enter",
+    "prepared": "abc",
+    "expectedMode": "committed-data",
+    "ordinaryBackspace": true
+  },
+  {
+    "id": "plain-empty-backspace",
+    "richText": false,
+    "initial": "",
+    "cancel": "backspace",
+    "prepared": "",
+    "expected": "",
+    "backspaceExpected": ""
+  },
+  {
+    "id": "rich-format-middle-escape",
+    "richText": true,
+    "initial": "abc",
+    "placement": "format",
+    "cancel": "escape",
+    "prepared": "abc",
+    "expected": "abc"
+  },
+  {
+    "id": "rich-token-confirm-space",
+    "richText": true,
+    "initial": "abc",
+    "placement": "token",
+    "cancel": "space",
+    "prepared": "abc",
+    "expectedMode": "committed-data"
+  },
+  {
+    "id": "plain-empty-confirm-space",
+    "richText": false,
+    "initial": "",
+    "cancel": "space",
+    "prepared": "",
+    "expectedMode": "committed-data",
+    "ordinaryBackspace": true
+  },
+  {
+    "id": "rich-nbsp-escape",
+    "richText": true,
+    "initial": "a b ",
+    "cancel": "escape",
+    "prepared": "a b ",
+    "expected": "a b ",
+    "backspaceExpected": "a b"
+  },
+  {
+    "id": "plain-nbsp-confirm-space",
+    "richText": false,
+    "initial": "a b ",
+    "cancel": "space",
+    "prepared": "a b ",
+    "expectedMode": "committed-data",
+    "ordinaryBackspace": true
+  },
+  {
+    "id": "rich-multi-forward-escape",
+    "richText": true,
+    "initial": "abcd",
+    "placement": "multi-forward",
+    "cancel": "escape",
+    "prepared": "abZ",
+    "expected": "abZ"
+  },
+  {
+    "id": "plain-multi-backward-nbsp",
+    "richText": false,
+    "initial": "a bc",
+    "placement": "multi-backward",
+    "cancel": "backspace",
+    "prepared": "a  Z",
+    "expected": "a  Z"
+  },
+  {
+    "id": "plain-selection-escape",
+    "richText": false,
+    "initial": "a bc",
+    "placement": "selection",
+    "cancel": "escape",
+    "prepared": "a ",
+    "expected": "a "
+  },
+  {
+    "id": "rich-export-copies",
+    "richText": true,
+    "initial": "a b c",
+    "operation": "copies",
+    "cancel": "escape",
+    "prepared": "ab c",
+    "expected": "ab c"
+  },
+  {
+    "id": "rich-consumed-copy-handler",
+    "richText": true,
+    "initial": "abc",
+    "operation": "copy-insertion",
+    "cancel": "escape",
+    "prepared": "abc",
+    "expected": "abc"
+  },
+  {
+    "id": "plain-json-replace",
+    "richText": false,
+    "initial": "a b c",
+    "operation": "json-replace",
+    "cancel": "escape",
+    "prepared": "ab c",
+    "expected": "X Z"
+  },
+  {
+    "id": "rich-live-slice",
+    "richText": true,
+    "initial": "a b c",
+    "operation": "slice-live",
+    "cancel": "escape",
+    "prepared": "ab c",
+    "expected": "b c"
+  },
+  {
+    "id": "plain-live-nbsp-slice",
+    "richText": false,
+    "initial": "a b c",
+    "operation": "slice-real",
+    "cancel": "escape",
+    "prepared": "ab c",
+    "expected": " "
+  },
+  {
+    "id": "rich-custom-confirm-space",
+    "richText": true,
+    "initial": "abc",
+    "placement": "custom",
+    "cancel": "space",
+    "prepared": "abc",
+    "expectedMode": "committed-data"
+  },
+  {
+    "id": "rich-segmented-middle-escape",
+    "richText": true,
+    "initial": "abc",
+    "placement": "segmented",
+    "cancel": "escape",
+    "prepared": "abc",
+    "expected": "abc"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "revision": "dom-target-v2",
+  "files": 89,
+  "zipSha256": "f2872ecd7896def35b4b7b3f71967d1e0feff3405a99a2341360185a0b14b2be",
+  "bytes": 218491,
+  "patchSha256": "bc362a0f0ce00bb35d9c050e75cf86057bb3401b5025d586af6764ef4481a70b",
+  "sourceCommit": "77c26a908ea9f482295d2539433f56a66292f7ec",
+  "sourceTree": "78982fe4e60e3084d9992757c94fc69493955b4f",
+  "privateLocationsFound": false,
+  "compiledBundlesOrBinariesIncluded": false
+}

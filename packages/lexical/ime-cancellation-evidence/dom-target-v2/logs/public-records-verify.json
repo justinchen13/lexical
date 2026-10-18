@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "<evidence>/verify.mjs",
+    "--records-only"
+  ],
+  "cwd": "repository root",
+  "started": "2026-10-18T04:32:26.985Z",
+  "node": "v22.22.3",
+  "VITEST_BROWSER": null,
+  "sourcePatchSha256": "a1c02d2eecc8ebdcf4ae8c95d3f2dfa76306f91424dc975740b7416c762fee77",
+  "finished": "2026-10-18T04:32:27.045Z",
+  "exit": 0,
+  "signal": null
+}

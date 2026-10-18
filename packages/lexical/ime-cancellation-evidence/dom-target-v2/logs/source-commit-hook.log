@@ -1,0 +1,18 @@
+⋯ Backing up original state…
+✔ Done backing up original state (46dafa888)!
+⋯ Running tasks for staged files…
+    *.(js|mjs|jsx|css|html|d.ts|ts|mts|tsx|yml|mdx|json) — 12 files
+      ⋯ prettier --write
+    *.(js|mjs|jsx|ts|mts|tsx) — 12 files
+      ⋯ eslint --fix
+
+✔ prettier --write
+✔ eslint --fix
+
+✔ Done running tasks for staged files!
+⋯ Staging changes from tasks…
+✔ Done staging changes from tasks!
+⋯ Cleaning up temporary files…
+✔ Done cleaning up temporary files!
+[fix/webkit-pinyin-cancellation 77c26a908] [lexical][lexical-code-core][lexical-selection] Refactor: Keep IME preparation in input handling
+ 12 files changed, 389 insertions(+), 329 deletions(-)

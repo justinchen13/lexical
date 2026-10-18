@@ -1,0 +1,9 @@
+{
+  "priorBroadRun": "affected-browser.json",
+  "actualBroadResult": "2073 passed / 2 failed / 8 skipped; both failures were the new Firefox Selection.toString NBSP normalization assertion",
+  "testOnlyChange": "Read the raw DOM Range text rather than Firefox Selection.toString rendered text",
+  "allProductionAndHelperDiffSectionsIdentical": true,
+  "onlyChangedFile": "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+  "currentFileRun": "composition-final.json: all 366 cases passed across 3 engines",
+  "combinedValidScope": "2075 passed / 8 skipped across 84 engine-files: 81 unchanged engine-files reused, 3 current file runs; not a fresh all-84-file pass"
+}

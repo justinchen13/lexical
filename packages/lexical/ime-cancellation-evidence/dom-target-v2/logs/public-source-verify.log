@@ -1,0 +1,3 @@
+Native records: 20/20 scenarios, 397/397 trusted DOM events, 91/91 trusted keydowns; ordinary 8/13 and consumed 229 checks passed.
+Current code: all 134 capture inputs and 7 changed files match; rebuilt native bundle is byte-identical to capture.
+Working-tree HEAD metadata may differ in a fresh checkout. Capture manifests are immutable; file and bundle bytes define the tested implementation.

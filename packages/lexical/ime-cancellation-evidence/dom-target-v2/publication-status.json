@@ -1,0 +1,13 @@
+{
+  "phase": "source committed and pushed; enclosing Git commit identifies this evidence publication",
+  "revision": "dom-target-v2",
+  "sourceRepository": "justinchen13/lexical",
+  "sourceBranch": "fix/webkit-pinyin-cancellation",
+  "sourceCommit": "77c26a908ea9f482295d2539433f56a66292f7ec",
+  "sourceTree": "78982fe4e60e3084d9992757c94fc69493955b4f",
+  "sourcePushed": true,
+  "sourcePatchSha256": "bc362a0f0ce00bb35d9c050e75cf86057bb3401b5025d586af6764ef4481a70b",
+  "pullRequest": "https://github.com/facebook/lexical/pull/9362",
+  "evidenceBranch": "evidence/macos-pinyin-cancellation",
+  "captureManifestsUnchanged": true
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-browser",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+    "-t",
+    "browser editing replaces the DOM suffix"
+  ],
+  "cwd": "repository root",
+  "started": "2026-10-17T18:07:46.678Z",
+  "node": "v22.22.3",
+  "VITEST_BROWSER": "chromium,webkit",
+  "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be",
+  "finished": "2026-10-17T18:07:48.327Z",
+  "exit": 0,
+  "signal": null
+}

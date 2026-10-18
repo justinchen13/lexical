@@ -1,0 +1,26 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-unit",
+    "packages/lexical/src/__tests__/unit/LexicalSelection",
+    "packages/lexical/src/__tests__/unit/LexicalNormalization",
+    "packages/lexical/src/__tests__/unit/LexicalEditor",
+    "packages/lexical/src/__tests__/unit/LexicalGeneratedJSON",
+    "packages/lexical/src/__tests__/unit/LexicalSchema",
+    "packages/lexical/src/__tests__/unit/LexicalAndroidChromeComposition",
+    "packages/lexical/src/__tests__/unit/LexicalFirefoxCompositionEndTag",
+    "packages/lexical/src/nodes/__tests__/unit/LexicalTextNode",
+    "packages/lexical-history/src/__tests__/unit/LexicalHistory",
+    "packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts",
+    "scripts/__tests__/unit/generateNodeJSON.test.ts"
+  ],
+  "cwd": "repository root",
+  "started": "2026-10-17T17:47:04.898Z",
+  "node": "v22.22.3",
+  "VITEST_BROWSER": null,
+  "sourcePatchSha256": "76067845e8aa786d1e61c1a5aa78366f39ad98790cdb514da320e47e3537b789",
+  "finished": "2026-10-17T17:47:12.279Z",
+  "exit": 0,
+  "signal": null
+}

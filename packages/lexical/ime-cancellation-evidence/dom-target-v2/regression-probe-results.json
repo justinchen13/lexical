@@ -1,0 +1,2218 @@
+{
+  "meta": {
+    "method": "Synthetic DOM replay against actual current source; no production overrides",
+    "source": {
+      "revision": "dom-target-v2",
+      "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+      "workingTreeHead": "b77e004c1087afc812f145cdcc937d5a4491665a",
+      "sourceIsUncommitted": true,
+      "packageVersion": "0.52.0",
+      "patchSha256": "e859a798cc8c6ffa4ab8a6ed9f8da660f2a55c42f8fcf49b167236ad4b17ed50",
+      "files": [
+        {
+          "file": "packages/lexical/src/LexicalEditor.ts",
+          "sha256": "6d4a77340c77783c0adf9000dbbe5dffad21c33b88e10db558efb6ec493fc6b5"
+        },
+        {
+          "file": "packages/lexical/src/LexicalEvents.ts",
+          "sha256": "8972cd2f7d60ec7c3434110b58ddc792681318e5ebbd4993b1e56ed9d21e8f1e"
+        },
+        {
+          "file": "packages/lexical/src/LexicalNormalization.ts",
+          "sha256": "981211ae47735535231d3f59ac074d90519bbf9246fc4a8bfc02819c00a1278b"
+        },
+        {
+          "file": "packages/lexical/src/LexicalSelection.ts",
+          "sha256": "32197e2286aba99e3ed5d55be213ed280a27c9ec999ac342128e9b0c81eacd8d"
+        },
+        {
+          "file": "packages/lexical/src/LexicalUtils.ts",
+          "sha256": "ecb6e479bff9caeb511d1b97f53f318f27a019627586db4e902ef940485b7d7a"
+        },
+        {
+          "file": "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+          "sha256": "4b3619387b0c3a4c244ffbcc340007ea37026e56f65fb0c77ae4a7ce939d6a91"
+        },
+        {
+          "file": "packages/lexical/src/__tests__/browser/utils/compose.ts",
+          "sha256": "573c060e5edc4835ef51bf7355cd870681ceb2c2d5efdcae534ec1d55083ede4"
+        }
+      ]
+    },
+    "sliceAdaptation": {
+      "from": "s.setTextNodeRange(n,2,n,5);",
+      "to": "s.setTextNodeRange(n,n.getTextContent().indexOf('b'),n,n.getTextContentSize());",
+      "adaptedSha256": "35d43a9ffb97cfbc3f50b80c9149cb01eb6db4c23bf9db5281534627ff26c97d"
+    },
+    "fixtures": {
+      "review": "ea2b2a913717cdd05049b1221f01ec32b871a0e0ea8ddb58a434ed8b187e00e5",
+      "edge": "98902458b27c3a3ac1386cd54b7780ea4c486a8b61ca7add83918ee697ce4467",
+      "extra": "9792d2dbde407736f5ea7d035dfde0881181d3bdc64b8ae163e56df1d864a818"
+    },
+    "inputHashes": {
+      "packages/lexical-internal/src/devInvariant.ts": "53781539c4aea5e867b42877ac2ecee9d32546bcdcd1de608f0749a5bc7c2864",
+      "packages/lexical-internal/src/invariant.ts": "15af2ea7982eecf78d5742fad2393579bdcdc3f1c62b125b3e7d1bcf89321048",
+      "packages/lexical/src/environment.ts": "a96c4faef12ad3e55e1a491d5075e60f61cb99f47e494af806f7bf12ed4eb901",
+      "packages/lexical/src/LexicalConstants.ts": "a23cf9aa0d85e9f61e6d4bf137a2a786e4e365a70756e610f7503f913284ddca",
+      "packages/lexical-internal/src/warnOnlyOnce.ts": "6d7491394daae3c51b8841dd4a886c364edde6c928e6705303c6740c27bb9594",
+      "packages/lexical/src/LexicalCommands.ts": "dcf57f97e1ebdbf6264d9729c95e709609050c289a3563582c6db1b1c81a8076",
+      "packages/lexical/src/LexicalKeyboardShortcuts.ts": "f9a5a43fcb716ef62c6827d9938db29476201bb9d9379befd82dd0eee5a7d5c0",
+      "packages/lexical/src/LexicalRefCountedRegistry.ts": "d49d69fe92f658645337b425c148ca13831b8e26841ac64130fdf78f01fe369f",
+      "packages/lexical-internal/src/createDevError.ts": "29e47c8bf1c7838a7a71d01322c0e0a659e27ae7873ae77ad88350e8c346d818",
+      "packages/lexical-internal/src/createError.ts": "2ad61f91e74686a5915d9bf64b3e8c1553e0ce53d06752c1f278d317ea14b819",
+      "packages/lexical-internal/src/version.ts": "d8cdb4a364054a41b67ff25b04a17c766c894588623e635ba91c86e995deabf8",
+      "packages/lexical/src/LexicalDequeSet.ts": "77e5786c96636b1e11cb00a7799f8045be8ff286833b16a68f8944cfcbd9e7f8",
+      "packages/lexical/src/LexicalGenMap.ts": "5135c2d8b4ff354d26773f7547ed9e991bef60139946b2171042937d60a5b1a6",
+      "packages/lexical/src/LexicalSerializedExport.ts": "d38a743fc0c8265477c1c856f52daec375906ad7d76fa6542133dfd0f9e50aaa",
+      "packages/lexical/src/LexicalDOMSlot.ts": "776a7470b5512cc34bfb05c0e84fb0ae1218c69ea81b97870a77f9677ad85552",
+      "packages/lexical/src/LexicalMutations.ts": "a0a1b474cd7de9026bb2588941aeca290d5f80295b65c876ad5743f4433b9a59",
+      "packages/lexical/src/LexicalSchema.ts": "8361eee193fb974f374c7bca02237b6e9c4630d7b5ab246e1b529cb49fe64dcf",
+      "packages/lexical/src/LexicalNodeState.ts": "dc73008c9f37ad8078b0a6d5d8b964c254f8fe62e8833f1f5e0e13d950dabdbe",
+      "packages/lexical/src/LexicalReconciler.ts": "f9dc5843910653262985f18fe3b615313dc15135b7fb9f5962a3d477dad60072",
+      "packages/lexical/src/LexicalNode.ts": "c13564e3923d502bb9316e0250d24001d084c3807b71e964d50838f6a26ecd70",
+      "packages/lexical/src/LexicalNormalization.ts": "981211ae47735535231d3f59ac074d90519bbf9246fc4a8bfc02819c00a1278b",
+      "packages/lexical/src/LexicalGeneratedJSON.ts": "0f11aa26b04975df96e86538ae7d3098bd47a58c1a0964e5f1fa58a22874b1e9",
+      "packages/lexical/src/nodes/LexicalElementNode.ts": "acad838f4b12ea8b3b1c86633071a4d36393f7a85fd439065449720aa74bb627",
+      "packages/lexical/src/nodes/LexicalDecoratorNode.ts": "02219ccaea0625398db6bfa09cb29c38bf2ef97596fc2c7304f062e5fada9e21",
+      "packages/lexical/src/nodes/LexicalRootNode.ts": "1fcf8d55fd8d0d04d79a1ab687550e3aad0b8f1f21ce08ff8425b132faba6d91",
+      "packages/lexical/src/utils/setDOMStyle.ts": "a828ce75fbfb6f33d3f72623160090872154507632c6cc1682e7fcd76510b774",
+      "packages/lexical/src/nodes/LexicalTextNode.ts": "bc26229f030d8b0a7fd473ffd7abfaa08c3a0af296a7b2f2bafa1ddae25b42c2",
+      "packages/lexical/src/caret/LexicalCaretUtils.ts": "ebc9ba3ec7fb682a0f5e95d1e9440a50eccbcab4f9764e93a05130a5cc04db73",
+      "packages/lexical/src/nodes/LexicalParagraphNode.ts": "3f74a5c83aeefb4ff4e8b0de2899a875d88cce944bb0017a1357ca9855de410a",
+      "packages/lexical/src/nodes/LexicalTabNode.ts": "2c09a0e3f6917cf3da275831804263e91fbc2913323eaf70fa42cd020f3f3283",
+      "packages/lexical/src/LexicalUtils.ts": "ecb6e479bff9caeb511d1b97f53f318f27a019627586db4e902ef940485b7d7a",
+      "packages/lexical/src/LexicalEditorState.ts": "19520458331fe6566b06a2361951c155fb72033cd4a0c114da142e4806c3d61a",
+      "packages/lexical/src/LexicalUpdateTags.ts": "6da7ae1b40cf7c14fcae701bad395e64112ae9b4ff8f942acbde6dec9d6d3972",
+      "packages/lexical/src/nodes/ArtificialNode.ts": "e325bfc298b00a30ae5d4a9007bbff725b650fd17139445672238172f3517819",
+      "packages/lexical/src/nodes/LexicalLineBreakNode.ts": "24d181747409a91245d992078a508a5ac39e8b4b9066da98aabfa48bfe83e3f2",
+      "packages/lexical/src/LexicalEditor.ts": "6d4a77340c77783c0adf9000dbbe5dffad21c33b88e10db558efb6ec493fc6b5",
+      "packages/lexical/src/LexicalGC.ts": "d254206b10eca9381162d1139649c15a6cfed6ede91004fdd788839fa70b9bc0",
+      "packages/lexical/src/LexicalUpdates.ts": "8eb08a12e53b4b6aacb15a14d652e3ed3024b070b562b402dd6988391ee1be6b",
+      "packages/lexical/src/utils/mergeRegister.ts": "4e0fd79b5a27f81f71737f997f30c1bc6237aa6e5935a2d046689f495009a276",
+      "packages/lexical/src/utils/registerEventListener.ts": "9abea7a1f1af44be2dfacf2267e646d9d6ae1c2a1c57c28331ee3011d01be556",
+      "packages/lexical/src/utils/registerEventListeners.ts": "96d89dcdf1477bc5a2ef506aee183437f2308d5aa8c2e9a71a37b7ec184eea46",
+      "packages/lexical/src/LexicalEvents.ts": "8972cd2f7d60ec7c3434110b58ddc792681318e5ebbd4993b1e56ed9d21e8f1e",
+      "packages/lexical/src/LexicalSelection.ts": "32197e2286aba99e3ed5d55be213ed280a27c9ec999ac342128e9b0c81eacd8d",
+      "packages/lexical/src/caret/LexicalCaretTree.ts": "d0f21095931bfe41503550bf526230c6c27a299d89b6aa6d6d601c0f21fdc117",
+      "packages/lexical/src/LexicalSlot.ts": "2e9792756a326ab480e480ab44e60b5dc3591d62a0c69cb5480a1b19f7f89c94",
+      "packages/lexical/src/caret/LexicalCaret.ts": "d428db62ad8398df28439a29000bc34cfc4180277ac10d9d241f23ec6e2c5d3c",
+      "packages/lexical/src/extension-core/defineExtension.ts": "2605d32219376afbe73bb05b465a3f01e2dc46d1d6aa0584ffea65ce59494b93",
+      "packages/lexical/src/extension-core/internal.ts": "d49a34403c6a4bd691989f1dd0e6ee7789ba6667b88186a704088d29450a8e0e",
+      "packages/lexical/src/extension-core/safeCast.ts": "c68f98027e8d689c72afa9e39f2da135df9d088e5bbd1f4550727bfa9dcd4b8f",
+      "packages/lexical/src/extension-core/shallowMergeConfig.ts": "a09136f6793e8622e861f4974e19e8cb00aa265b0284796565be0ee30f9c01af",
+      "packages/lexical/src/extension-core/types.ts": "bade4ddbf53e9ca0e240de3708e1f4846e5c5933d506c5ac14b1fe63191bc8b1",
+      "packages/lexical/src/extension-core/index.ts": "e4daf915bd8d9309ea7d06f5e1cc262a4bb814120fdf2e4ce3c332d7da041623",
+      "packages/lexical/src/utils/classNames.ts": "d99b6fdab208a1390683c2ba4ddd501c266f0b1b9193f125070af2b2bbfb5fb8",
+      "packages/lexical/src/index.ts": "b2cb54005df4f9491ebb9e59444749b000a1f302b2ca40235e943f3d3fda462b",
+      "packages/lexical-extension/src/signals.ts": "947f5fb6b3934d6cbe919e4e808ef33fed344f5c11d67a6072cb1a18e2fbc838",
+      "packages/lexical-extension/src/namedSignals.ts": "f59f70d2b7e448d76d8ce836b16a450f4b259b67cb716a1f0aa28caa11e6d967",
+      "packages/lexical-extension/src/AutoFocusExtension.ts": "90336c2dbc971c443c5075b0f326c983fa36761df2d7b43aeba082f50295ec2c",
+      "packages/lexical-extension/src/ClearEditorExtension.ts": "bd869d06707653e7dc49c658d14ac898177929cc66da537b671e3e01a35f61d2",
+      "packages/lexical-extension/src/ClickAfterLastBlockExtension.ts": "9407a54a01ba01d91d89caa69501a8a0b20edac90d2191f235d6b7d467dfa419",
+      "packages/lexical-extension/src/config.ts": "eb5ff1686451521223b6146013addba6bc226878d5a87b0aa824659d9b666875",
+      "packages/lexical-extension/src/DecoratorTextExtension.ts": "b193948750274adeda8f0b52303e940d22ce6e340ac12a035d4a22208708c415",
+      "packages/lexical-extension/src/watchedSignal.ts": "9f638b296c31d885ab4d7b6f8bbfcfdb7e0f9c03fb02d9b7b9e52d1fc0dae4aa",
+      "packages/lexical-extension/src/EditorStateExtension.ts": "7cc3efb476b80c153199f11ee964b603ac2006deb6bb9833a24fe94c2f42108e",
+      "packages/lexical-extension/src/InitialStateExtension.ts": "49716d7d166d01192ecfd253cef5601bb5d31dc0abab041904c389420cc9b53b",
+      "packages/lexical-extension/src/internal/deepThemeMergeInPlace.ts": "f9c450d1a62a6466bb93c4b6280a3e57fc05bc7c9d931cf11a2657b6ac405c1b",
+      "packages/lexical-extension/src/internal/ExtensionRep.ts": "cb8b0c802860197b05db0c5c59781a7bd045591b67edb9038960de87a984f4b5",
+      "packages/lexical-extension/src/LexicalBuilder.ts": "3b6a4ce0179177e9c57373f301e6dbcb07fb8a0163f8ec7cb1a62d78212102e9",
+      "packages/lexical-extension/src/getExtensionDependencyFromEditor.ts": "814d4378f75cba626a4d878d9b9404598125fd09f27ccf94cd06a46af0d71036",
+      "packages/lexical-extension/src/getPeerDependencyFromEditor.ts": "c992f19cea371bc521c1180d9a65093a7c6e5fa1e6c6a927ea0b610b49e0fb94",
+      "packages/lexical-extension/src/getExtensionDependency.ts": "ba2c2be1aca1d07977cdd8adbfb2bb9689284af3fc599b3cf3eb00f4e73912f6",
+      "packages/lexical-extension/src/internal/editorStateFamily.ts": "89b87a377bd6c692cfbc03afbf13c55db4988484422b49245cb4dad921ee3dce",
+      "packages/lexical-extension/src/RootElementExtension.ts": "6926a927f3ad1ac6a752b5994d94047aa732be9066f9042537609310a5108f8e",
+      "packages/lexical-extension/src/WatchEditableExtension.ts": "26d1b4cfb70bd9ea6f70b77d4d7519367bb59c4463bd0463da26596771cdd1b9",
+      "packages/lexical-extension/src/HMRExtension.ts": "78b9dbfc4130205bb2ae9925892078964e82a92495ac99fc85460ab55811560e",
+      "packages/lexical-selection/src/utils.ts": "3c16c9bd5525fe145963609acc412a1d4f3ee9ad3dd344f9b2c9916d862f02ce",
+      "packages/lexical-selection/src/lexical-node.ts": "401f72933c89ee59fee609f70e553792a31f014e2483fdc7c32d42fb16190db2",
+      "packages/lexical-selection/src/range-selection.ts": "6a2e31d17688335d0b2429b68ac6b994086aaa313ff46f20926b0972518bb785",
+      "packages/lexical-selection/src/index.ts": "e3176531044b2c41d5aaac130c13f5ac126a41f48f89bcfaf7e3e050ee4e0fbe",
+      "packages/lexical-utils/src/dedupeSelectionRects.ts": "1037606c6ab478374266ba7aab32c96d8bf4b61794ce4933f3df9a64fb0ce1fe",
+      "packages/lexical-utils/src/px.ts": "4f4ea005a1436d67eb11839e79579dcb91d504912d81a82790101648f2e6eda6",
+      "packages/lexical-utils/src/positionNodeOnRange.ts": "58e955ef8d793feb7b271bb2dba1afec2e80481dab2b1fcf75b1b6e8c02d67b2",
+      "packages/lexical-utils/src/markSelection.ts": "0bbca05a46b671ea38999e39cbded471c896b56c3b6049c046fd4b02bd855ee4",
+      "packages/lexical-utils/src/selectionAlwaysOnDisplay.ts": "d2c291c9995c29472ee1f3dc45efd5be5f97fbab9fd089580d0d55ee66f6480e",
+      "packages/lexical-utils/src/getScrollParent.ts": "60f978271322c1e88c7e4a93bdde20875920c598396b68f313d4cd604c7121d5",
+      "packages/lexical-utils/src/index.ts": "2caf10147d4a9c44796d103f4e7a4cc9edd869c8563daa649deb1f7b765fae00",
+      "packages/lexical-extension/src/NodeSelectionExtension.ts": "5b4ac792b2029625ca99a19073d00a23e1ae3c74797a800a582176a6ad068874",
+      "packages/lexical-extension/src/HorizontalRuleExtension.ts": "7e842b24fff34a080045e79041cb4bc85db5e039ec5c0dd8c3ed10483fd5cb7e",
+      "packages/lexical-extension/src/IMEExtension.ts": "71b860aefd47f0b771143577d433c8ecab84abe924dafe5ebdda623dd0ff5d7e",
+      "packages/lexical-extension/src/KeyboardShortcutsExtension.ts": "712252d9b0ec6f3ff4a075dbecbfd3b1d3255b41215ec57e424dca51286319b4",
+      "packages/lexical-extension/src/NestedEditorExtension.ts": "f9545ad47965985a3fd04f86eeb3388c0680ff9a65d7e31265697c80e1d15329",
+      "packages/lexical-extension/src/NodeSelectionDataSelectedExtension.ts": "c17630d198a4dc1ff45ca8107ad3c43cc4f87ff60234d5caee9fa41b2128c360",
+      "packages/lexical-extension/src/NormalizeInlineElementsExtension.ts": "82d43b55f2891bd5941336ea4232cae35031d9b8aa38f50374921a99763e03e2",
+      "packages/lexical-extension/src/NormalizeTripleClickSelectionExtension.ts": "529ebdf6f0c2bbbb0a0df5d1b9a145f083cd6f46201db1a4618dc6ca774f4909",
+      "packages/lexical-extension/src/PreventSelectAllExtension.ts": "a3f98a823b302886f446f7e67010a175a4ed06a1cc5b64ad40850802015fdd0a",
+      "packages/lexical-extension/src/SelectBlockExtension.ts": "2ee6c5d0b70cdee043b453eba03c3c7cc686f6b09a84a6beb8be74a9b881665c",
+      "packages/lexical-extension/src/SelectionAlwaysOnDisplayExtension.ts": "7fc8d949d537522071f7ea8c531defa613f143063833282bc2e88dd49f1a8599",
+      "packages/lexical-extension/src/TabIndentationExtension.ts": "608a39cbdfe1349b326ef1ba0719e02f5115de297ef55ea12495758cfd7acf3b",
+      "packages/lexical-extension/src/index.ts": "05af396901373fc5ce3096f17c82ec3e914c885d19b4cc0730c835ebbfd2cc75",
+      "packages/lexical-clipboard/src/caretFromPoint.ts": "6f9627ce7bbe3b912341a5b4c73127ebb2ac17dfd4621ce56320a33a0d1a042e",
+      "packages/lexical-html/src/ContextRecord.ts": "b3f1db7d8b0f4b8ddb6758d1df33baa1f471e941cce1d595565d3f38146b7f9c",
+      "packages/lexical-html/src/import/inlineStylesFromStyleSheets.ts": "3b32b42ad3abdf151c2b37b6a51f4bc2b8ca261d4db86461421e01e89544a03d",
+      "packages/lexical-html/src/constants.ts": "6c4163ccb16ad6711b3ef1c4f5f8deb0f0c8318fa57eb42fbe623613d794d5a0",
+      "packages/lexical-html/src/RenderContext.ts": "86641d42de290e2272c120fb004f60fd21abc7d0bc9a17dd3f103c438e321822",
+      "packages/lexical-html/src/domOverride.ts": "5338a7193adbd19d893f112a499a393afe010cf291c21f6f5f196ce6aa7341b2",
+      "packages/lexical-html/src/compileDOMRenderConfigOverrides.ts": "b40c615f3724e464f9dc055d9c44d245499ab73232336b5c352d8ed5042c19e6",
+      "packages/lexical-html/src/DOMRenderRuntime.ts": "c67cbfdddc978a6c8aa6578aeaf880a33ac7503b4b1590ee58a1bcb6624845f1",
+      "packages/lexical-html/src/DOMRenderExtension.ts": "1adee752e4efe68cb24875aaafd3f2d867e37dac38f75c526fbbc0e190762686",
+      "packages/lexical-html/src/import/sel.ts": "5443095db177737560835b5ffc0a0fc7965aaac33343728bad1f1b9dd45ceeca",
+      "packages/lexical-html/src/import/parseCss.ts": "fd8ed6a4cd45727144b678a15e5354ff47a4937b8e6fcdfe4856375e95e32001",
+      "packages/lexical-html/src/import/defineImportRule.ts": "ec15267188d2ae44a583fe24a3335e6371279b9b41690249c910509a5481860e",
+      "packages/lexical-html/src/import/ImportContext.ts": "2b294e8b36f0cd4449f0ec83afd38fe5433e98286533464fd306445da1c95ecc",
+      "packages/lexical-html/src/import/schemas.ts": "5ab6f92c4601b5adbd3833960a48a437a7e93081e5210690860e319c1ea33a31",
+      "packages/lexical-html/src/import/coreImportRules.ts": "9e6d746e10f3d001a292847356bb251a050c3c07ab97e452142cb9520e3f0cbf",
+      "packages/lexical-html/src/import/compileImportRules.ts": "3fb64a8387877e47b769714c77ac00af12e3f36e0fa4a8b87ffa6bdb1e929d8d",
+      "packages/lexical-html/src/import/defineOverlayRules.ts": "f079f1d53d6137887973d5bc51d767e873ca1fcc234671dcffec284a285ea4f9",
+      "packages/lexical-html/src/import/runImport.ts": "2f8e65ccba0e9edc3867278036890e5db91c06b30ce3e2ba0d29b97f14bb7caf",
+      "packages/lexical-html/src/import/DOMImportExtension.ts": "c801719ce8bc7d6f3fade809290ad18b40c53867b14d4a9c96516e799aeb8989",
+      "packages/lexical-html/src/import/CoreImportExtension.ts": "62838772658c4b6f70dedb12a76643e99f9c9ff9585b5828ca23b9a4eb3827a6",
+      "packages/lexical-html/src/import/HorizontalRuleImportExtension.ts": "87768f27536a0141c1d29ff4f3d4ad1638d861276708db81c14a5134eea821f6",
+      "packages/lexical-html/src/import/index.ts": "0f0e3036d7cef09ce8e1121cda732305c82919a4a8e7c3ef27ac3ef8971ddf22",
+      "packages/lexical-html/src/index.ts": "3c9669d23e4485d5300fe67fe91d290e4a7cac8d3d036bd7baf1f05ae8b34197",
+      "packages/lexical-clipboard/src/ClipboardImportExtension.ts": "581fdd33c5d2964ce94a84f157dc4abcc27a947204ddd7397a36f84c0e93cd3c",
+      "packages/lexical-clipboard/src/clipboard.ts": "8667ff46f15e96acea756e91bd548ca88250960a8574dc117e3bd818af77292c",
+      "packages/lexical-clipboard/src/index.ts": "cf760f42d2f19e9e73e7555c99a4b13b134399a73103a9ce310dc3d47f73286c",
+      "packages/lexical-dragon/src/index.ts": "fb502997d2aa0f866669e64effb7f605350b59ab95ecbf95855c6b37708fb43d",
+      "packages/lexical-plain-text/src/index.ts": "eb2dcc185c92ce589356a0b97d27ba58acd0a7445ff316c81bdb448f915f314b",
+      "packages/lexical-code-core/src/FlatStructureUtils.ts": "9598dbd92110e210bcc64bda20c51864a57fadc08953d1d6c216e4cc8731ffc5",
+      "packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts": "f4870cf33b5934d5e95d7955b05c9d4ba94720f793bc5c0145110327c4931821",
+      "packages/lexical-code-core/src/CodeNode.ts": "de77595eac92639cde7eac40b7bed1b71ce7cea26d51711843035bcdf14bafaf",
+      "packages/lexical-code-core/src/CodeHighlightNode.ts": "6a98ae1fbf29f01bc51f581397754bc89aad2087dbf2f2c724ef65978a96df03",
+      "packages/lexical-code-core/src/CodeImportExtension.ts": "15d6ce282bf1c69986a1cce1fa2ecb7e79b9c1060c42373238e55481d810ef09",
+      "packages/lexical-code-core/src/CodeExtension.ts": "6d0433f196b79e6ee87ffb871983a782cadd24a1d224918dd9bf3876101d0e3b",
+      "packages/lexical-code-core/src/CodeGutter.ts": "a227add890e78c1090d01c72e3fc366a32042f463e174d552aebd90dd5d0f85c",
+      "packages/lexical-code-core/src/CodeIndentation.ts": "b45d733249d0b445ea85e07ad4a3f360d630ce4c7221e7ec5ba9ee97c8db8e30",
+      "packages/lexical-code-core/src/index.ts": "c3df0294c8250a28a10501984d2fb6e380ca67298132125dad04e51d2130f110"
+    }
+  },
+  "results": [
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "external-insert",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "2",
+          "offset": 3
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "Xabc",
+        "dom": "Xabc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "2",
+          "offset": 4
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "Xabc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "Xabc",
+        "dom": "Xabc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "2",
+          "offset": 4
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "Xabc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "Xabc",
+        "dom": "Xabc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "2",
+          "offset": 4
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "Xabc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "Xabc",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "external-delete",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "5",
+          "offset": 3
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "bc",
+        "dom": "bc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "5",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "bc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "bc",
+        "dom": "bc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "5",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "bc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "bc",
+        "dom": "bc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "5",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "bc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "bc",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "reject-placeholder",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "abc",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "token-middle",
+      "started": {
+        "model": "",
+        "dom": " ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "13",
+          "offset": 0
+        },
+        "nodes": [
+          {
+            "key": "13",
+            "text": "",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "",
+        "dom": " ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "13",
+          "offset": 0
+        },
+        "nodes": [
+          {
+            "key": "13",
+            "text": "",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "12",
+          "offset": 0
+        },
+        "nodes": []
+      },
+      "forced": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "12",
+          "offset": 0
+        },
+        "nodes": []
+      },
+      "expected": "",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "move-selection",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "15",
+          "offset": 3
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "abc\n\nother",
+        "dom": "abcother ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "17",
+          "offset": 5
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          },
+          {
+            "key": "17",
+            "text": "other",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "abc\n\nother",
+        "dom": "abcother",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "17",
+          "offset": 5
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          },
+          {
+            "key": "17",
+            "text": "other",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "abc\n\nother",
+        "dom": "abcother",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "17",
+          "offset": 5
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          },
+          {
+            "key": "17",
+            "text": "other",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "abc\n\nother",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "multi-selection",
+      "started": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "a  Z",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "multi-backward",
+      "started": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "a  Z",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "review",
+      "kind": "multi-ascii",
+      "started": {
+        "model": "abZ",
+        "dom": "abZ ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "abZ",
+        "dom": "abZ ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "abZ",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "edge",
+      "kind": "set-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "35",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "35",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "35",
+          "offset": 1
+        }
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "edge",
+      "kind": "json-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "38",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "38",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "38",
+          "offset": 1
+        }
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "edge",
+      "kind": "set-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "41",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "41",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "41",
+          "offset": 1
+        }
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "edge",
+      "kind": "json-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "44",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "44",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "44",
+          "offset": 1
+        }
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "json-code-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "47",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "47",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "47",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 0
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "json-code-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "50",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "50",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "50",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 0
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "json-custom-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "53",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "53",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "53",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 1
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "json-custom-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "56",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "56",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "56",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 1
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "ephemeral-no-editor",
+      "outcome": {
+        "text": "export-copy"
+      },
+      "live": {
+        "model": "a b",
+        "dom": "a b",
+        "placeholder": null,
+        "selection": {
+          "key": "59",
+          "offset": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "ephemeral-set",
+      "started": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "62",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "62",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "ab c",
+        "dom": "ab c",
+        "placeholder": null,
+        "selection": {
+          "key": "62",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "cloneText": "XXab c"
+      },
+      "expected": "ab c",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "ephemeral-json",
+      "started": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "65",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "65",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "ab c",
+        "dom": "ab c",
+        "placeholder": null,
+        "selection": {
+          "key": "65",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "cloneText": "XXab c"
+      },
+      "expected": "ab c",
+      "pass": true
+    },
+    {
+      "engine": "webkit",
+      "suite": "extra",
+      "kind": "slice-live",
+      "started": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "68",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "b c",
+        "dom": "b c ",
+        "placeholder": null,
+        "selection": {
+          "key": "68",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "b c",
+        "dom": "b c",
+        "placeholder": null,
+        "selection": {
+          "key": "68",
+          "offset": 1
+        }
+      },
+      "expected": "b c",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "external-insert",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "2",
+          "offset": 3
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "Xabc",
+        "dom": "Xabc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "2",
+          "offset": 4
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "Xabc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "Xabc",
+        "dom": "Xabc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "2",
+          "offset": 4
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "Xabc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "Xabc",
+        "dom": "Xabc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "2",
+          "offset": 4
+        },
+        "nodes": [
+          {
+            "key": "2",
+            "text": "Xabc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "Xabc",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "external-delete",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "5",
+          "offset": 3
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "bc",
+        "dom": "bc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "5",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "bc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "bc",
+        "dom": "bc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "5",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "bc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "bc",
+        "dom": "bc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "5",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "5",
+            "text": "bc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "bc",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "reject-placeholder",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "8",
+          "offset": 1
+        },
+        "nodes": [
+          {
+            "key": "8",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "abc",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "token-middle",
+      "started": {
+        "model": "",
+        "dom": " ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "13",
+          "offset": 0
+        },
+        "nodes": [
+          {
+            "key": "13",
+            "text": "",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "",
+        "dom": " ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "13",
+          "offset": 0
+        },
+        "nodes": [
+          {
+            "key": "13",
+            "text": "",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "12",
+          "offset": 0
+        },
+        "nodes": []
+      },
+      "forced": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "12",
+          "offset": 0
+        },
+        "nodes": []
+      },
+      "expected": "",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "move-selection",
+      "started": {
+        "model": "abc",
+        "dom": "abc ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "15",
+          "offset": 3
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "abc\n\nother",
+        "dom": "abcother ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "17",
+          "offset": 5
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          },
+          {
+            "key": "17",
+            "text": "other",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "abc\n\nother",
+        "dom": "abcother",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "17",
+          "offset": 5
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          },
+          {
+            "key": "17",
+            "text": "other",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "abc\n\nother",
+        "dom": "abcother",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "17",
+          "offset": 5
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "text": "abc",
+            "mode": "normal"
+          },
+          {
+            "key": "17",
+            "text": "other",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "abc\n\nother",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "multi-selection",
+      "started": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "20",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "20",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "a  Z",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "multi-backward",
+      "started": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "a  Z",
+        "dom": "a  Z ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "25",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "25",
+            "text": "a  Z",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "a  Z",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "review",
+      "kind": "multi-ascii",
+      "started": {
+        "model": "abZ",
+        "dom": "abZ ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "beforeEnd": {
+        "model": "abZ",
+        "dom": "abZ ",
+        "composing": true,
+        "phase": "composing",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "ended": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "forced": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "selection": {
+          "key": "30",
+          "offset": 2
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "text": "abZ",
+            "mode": "normal"
+          }
+        ]
+      },
+      "expected": "abZ",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "edge",
+      "kind": "set-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "35",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "35",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "35",
+          "offset": 1
+        }
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "edge",
+      "kind": "json-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "38",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "38",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "38",
+          "offset": 1
+        }
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "edge",
+      "kind": "set-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "41",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "41",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "41",
+          "offset": 1
+        }
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "edge",
+      "kind": "json-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "44",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "44",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "44",
+          "offset": 1
+        }
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "json-code-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "47",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "47",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "47",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 0
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "json-code-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "50",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "50",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "50",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 0
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "json-custom-insert",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "53",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "Xab",
+        "dom": "Xab ",
+        "placeholder": null,
+        "selection": {
+          "key": "53",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "Xab",
+        "dom": "Xab",
+        "placeholder": null,
+        "selection": {
+          "key": "53",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 1
+      },
+      "expected": "Xab",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "json-custom-replace",
+      "started": {
+        "model": "ab",
+        "dom": "ab ",
+        "placeholder": null,
+        "selection": {
+          "key": "56",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "X Z",
+        "dom": "X Z ",
+        "placeholder": null,
+        "selection": {
+          "key": "56",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "X Z",
+        "dom": "X Z",
+        "placeholder": null,
+        "selection": {
+          "key": "56",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "setterCalls": 1
+      },
+      "expected": "X Z",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "ephemeral-no-editor",
+      "outcome": {
+        "text": "export-copy"
+      },
+      "live": {
+        "model": "a b",
+        "dom": "a b",
+        "placeholder": null,
+        "selection": {
+          "key": "59",
+          "offset": 1
+        }
+      },
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "ephemeral-set",
+      "started": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "62",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "62",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "ab c",
+        "dom": "ab c",
+        "placeholder": null,
+        "selection": {
+          "key": "62",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "cloneText": "XXab c"
+      },
+      "expected": "ab c",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "ephemeral-json",
+      "started": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "65",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "65",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "ab c",
+        "dom": "ab c",
+        "placeholder": null,
+        "selection": {
+          "key": "65",
+          "offset": 1
+        }
+      },
+      "extra": {
+        "cloneText": "XXab c"
+      },
+      "expected": "ab c",
+      "pass": true
+    },
+    {
+      "engine": "chromium",
+      "suite": "extra",
+      "kind": "slice-live",
+      "started": {
+        "model": "ab c",
+        "dom": "ab c ",
+        "placeholder": null,
+        "selection": {
+          "key": "68",
+          "offset": 1
+        }
+      },
+      "changed": {
+        "model": "b c",
+        "dom": "b c ",
+        "placeholder": null,
+        "selection": {
+          "key": "68",
+          "offset": 1
+        }
+      },
+      "ended": {
+        "model": "b c",
+        "dom": "b c",
+        "placeholder": null,
+        "selection": {
+          "key": "68",
+          "offset": 1
+        }
+      },
+      "expected": "b c",
+      "pass": true
+    }
+  ]
+}

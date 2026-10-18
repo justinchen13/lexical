@@ -1,0 +1,59 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts -t 'browser editing replaces the DOM suffix'
+
+ RUN  v5.0.1 <checkout>
+
+ ❯ |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (122 tests | 2 failed | 120 skipped) 218ms
+   ❯ Safari composition (richText=false) (61)
+     × browser editing replaces the DOM suffix in the prepared formatted target 134ms
+   ❯ Safari composition (richText=true) (61)
+     × browser editing replaces the DOM suffix in the prepared formatted target 83ms
+ ❯ |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (122 tests | 2 failed | 120 skipped) 245ms
+   ❯ Safari composition (richText=false) (61)
+     × browser editing replaces the DOM suffix in the prepared formatted target 155ms
+   ❯ Safari composition (richText=true) (61)
+     × browser editing replaces the DOM suffix in the prepared formatted target 88ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > browser editing replaces the DOM suffix in the prepared formatted target
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > browser editing replaces the DOM suffix in the prepared formatted target
+AssertionError: expected '' to be ' ' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----browser-editing-replaces-the-DOM-suffix-in-the-prepared-formatted-target.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----browser-editing-replaces-the-DOM-suffix-in-the-prepared-formatted-target.png
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m-  [39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:563:32
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > browser editing replaces the DOM suffix in the prepared formatted target
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > browser editing replaces the DOM suffix in the prepared formatted target
+AssertionError: expected '' to be ' ' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----browser-editing-replaces-the-DOM-suffix-in-the-prepared-formatted-target.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----browser-editing-replaces-the-DOM-suffix-in-the-prepared-formatted-target.png
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m-  [39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:563:36
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  4 failed | 240 skipped (244)
+   Start at  02:05:16
+   Duration  2.34s (import 60%, worker 23%, tests 14%, setup 2%)
+
+[ELIFECYCLE] Command failed with exit code 1.

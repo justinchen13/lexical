@@ -1,0 +1,22 @@
+2026-10-18 12:17:01.813 Probe[8395:176004596] error messaging the mach port for IMKCFRunLoopWakeUpReliable
+2026-10-18 12:17:02.086 Probe[8395:176004596] TSM AdjustCapsLockLEDForKeyTransitionHandling - _ISSetPhysicalKeyboardCapsLockLED Inhibit
+Native scenario 1/20: plain-backspace passed
+Native scenario 2/20: rich-escape passed
+Native scenario 3/20: plain-confirm-space passed
+Native scenario 4/20: rich-confirm-enter passed
+Native scenario 5/20: plain-empty-backspace passed
+Native scenario 6/20: rich-format-middle-escape passed
+Native scenario 7/20: rich-token-confirm-space passed
+Native scenario 8/20: plain-empty-confirm-space passed
+Native scenario 9/20: rich-nbsp-escape passed
+Native scenario 10/20: plain-nbsp-confirm-space passed
+Native scenario 11/20: rich-multi-forward-escape passed
+Native scenario 12/20: plain-multi-backward-nbsp passed
+Native scenario 13/20: plain-selection-escape passed
+Native scenario 14/20: rich-export-copies passed
+Native scenario 15/20: rich-consumed-copy-handler passed
+Native scenario 16/20: plain-json-replace passed
+Native scenario 17/20: rich-live-slice passed
+Native scenario 18/20: plain-live-nbsp-slice passed
+Native scenario 19/20: rich-custom-confirm-space passed
+Native scenario 20/20: rich-segmented-middle-escape passed

@@ -1,0 +1,188 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts -t 'composition prepares a DOM target'
+
+ RUN  v5.0.1 <checkout>
+
+ ❯ |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (96 tests | 12 failed | 82 skipped) 622ms
+   ❯ Safari composition (richText=false) (48)
+     × composition prepares a DOM target without changing document text (empty) 109ms
+     × composition prepares a DOM target without changing document text (selection) 50ms
+     × composition prepares a DOM target without changing document text (backward-selection) 47ms
+     × composition prepares a DOM target without changing document text (format) 48ms
+     × composition prepares a DOM target without changing document text (token) 45ms
+     × composition prepares a DOM target without changing document text (segmented-subclass) 44ms
+   ❯ Safari composition (richText=true) (48)
+     × composition prepares a DOM target without changing document text (empty) 46ms
+     × composition prepares a DOM target without changing document text (selection) 45ms
+     × composition prepares a DOM target without changing document text (backward-selection) 45ms
+     × composition prepares a DOM target without changing document text (format) 45ms
+     × composition prepares a DOM target without changing document text (token) 49ms
+     × composition prepares a DOM target without changing document text (segmented-subclass) 45ms
+ ❯ |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (96 tests | 12 failed | 82 skipped) 522ms
+   ❯ Safari composition (richText=false) (48)
+     × composition prepares a DOM target without changing document text (empty) 92ms
+     × composition prepares a DOM target without changing document text (selection) 45ms
+     × composition prepares a DOM target without changing document text (backward-selection) 32ms
+     × composition prepares a DOM target without changing document text (format) 52ms
+     × composition prepares a DOM target without changing document text (token) 32ms
+     × composition prepares a DOM target without changing document text (segmented-subclass) 46ms
+   ❯ Safari composition (richText=true) (48)
+     × composition prepares a DOM target without changing document text (empty) 33ms
+     × composition prepares a DOM target without changing document text (selection) 33ms
+     × composition prepares a DOM target without changing document text (backward-selection) 33ms
+     × composition prepares a DOM target without changing document text (format) 33ms
+     × composition prepares a DOM target without changing document text (token) 40ms
+     × composition prepares a DOM target without changing document text (segmented-subclass) 44ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 24 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (empty)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (empty)
+AssertionError: expected ' ' to be '' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--empty-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--empty-.png
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[31m+  [39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:76
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/24]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (selection)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (backward-selection)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (selection)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (backward-selection)
+AssertionError: expected 'a  ' to be 'a ' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--selection-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--backward-selection-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--selection-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--backward-selection-.png
+
+Expected: [32m"a "[39m
+Received: [31m"a [7m [27m"[39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:76
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/24]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (format)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (token)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (format)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (token)
+AssertionError: expected 'a bc ' to be 'a bc' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--format-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--token-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--format-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--token-.png
+
+Expected: [32m"a bc"[39m
+Received: [31m"a bc[7m [27m"[39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:76
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/24]⎯
+
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (segmented-subclass)
+ FAIL  |browser (chromium)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (segmented-subclass)
+AssertionError: expected 'a bc' to be 'abc' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--segmented-subclass-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--segmented-subclass-.png
+
+Expected: [32m"abc"[39m
+Received: [31m"a[7m [27mbc"[39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:76
+ ❯ node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:20
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/24]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (empty)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (empty)
+AssertionError: expected ' ' to be '' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--empty-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--empty-.png
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[31m+  [39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:80
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/24]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (selection)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (backward-selection)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (selection)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (backward-selection)
+AssertionError: expected 'a  ' to be 'a ' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--selection-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--backward-selection-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--selection-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--backward-selection-.png
+
+Expected: [32m"a "[39m
+Received: [31m"a [7m [27m"[39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:80
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/24]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (format)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (token)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (format)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (token)
+AssertionError: expected 'a bc ' to be 'a bc' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--format-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--token-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--format-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--token-.png
+
+Expected: [32m"a bc"[39m
+Received: [31m"a bc[7m [27m"[39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:80
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/24]⎯
+
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > composition prepares a DOM target without changing document text (segmented-subclass)
+ FAIL  |browser (webkit)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > composition prepares a DOM target without changing document text (segmented-subclass)
+AssertionError: expected 'a bc' to be 'abc' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----composition-prepares-a-DOM-target-without-changing-document-text--segmented-subclass-.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----composition-prepares-a-DOM-target-without-changing-document-text--segmented-subclass-.png
+
+Expected: [32m"abc"[39m
+Received: [31m"a[7m [27mbc"[39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:506:80
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/24]⎯
+
+
+ Test Files  2 failed (2)
+      Tests  24 failed | 4 passed | 164 skipped (192)
+   Start at  01:41:05
+   Duration  1.53s (tests 68%, import 22%, worker 10%, setup 1%)
+
+[ELIFECYCLE] Command failed with exit code 1.

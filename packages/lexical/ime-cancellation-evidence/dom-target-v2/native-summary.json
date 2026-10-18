@@ -1,0 +1,1062 @@
+{
+  "revision": "dom-target-v2",
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "workingTreeHead": "b77e004c1087afc812f145cdcc937d5a4491665a",
+  "sourceIsUncommitted": true,
+  "patchSha256": "bc362a0f0ce00bb35d9c050e75cf86057bb3401b5025d586af6764ef4481a70b",
+  "bundleSha256": "3bcb2135b297fc0beab6cd10b19b1954cf4a9ba6c9f3c6629a828fe2bc4b5086",
+  "binarySha256": "4861c12915b6c412a1d3b4d9c3cf9d5eb578129dc14dd2e467ca795873f52e85",
+  "buildInputs": 134,
+  "allInputsMatch": true,
+  "bundleByteIdentical": true,
+  "system": {
+    "os": "Version 27.0.1 (Build 26A434)",
+    "webkit": "22625.1.29.11.28",
+    "architecture": "arm64",
+    "node": "v22.22.3",
+    "esbuild": "0.28.2"
+  },
+  "scenarioCount": 20,
+  "passed": 20,
+  "DOMEvents": 397,
+  "trustedDOMEvents": 397,
+  "keydown": 91,
+  "trustedKeydown": 91,
+  "repeatedCompositionStarts": 0,
+  "restored": {
+    "elementRestoreCode": 0,
+    "inputSourceRestored": true,
+    "inputSourceStatus": 0,
+    "previousApplicationActivated": true,
+    "previousApplicationFocused": true,
+    "previousFocusElementAvailable": true,
+    "previousFocusElementRestored": true,
+    "timestamp": "2026-10-18T04:17:37Z",
+    "type": "restored",
+    "windowRestoreCode": 0
+  },
+  "started": "2026-10-18T04:17:00Z",
+  "finished": "2026-10-18T04:17:37Z",
+  "failures": [],
+  "scenarios": [
+    {
+      "id": "plain-backspace",
+      "richText": false,
+      "placement": "end",
+      "operation": null,
+      "action": "backspace",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abc",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "3",
+            "mode": "normal",
+            "text": "abc",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 3,
+          "anchorKey": "3",
+          "focus": 3,
+          "focusKey": "3"
+        }
+      }
+    },
+    {
+      "id": "rich-escape",
+      "richText": true,
+      "placement": "end",
+      "operation": null,
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abc",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "6",
+            "mode": "normal",
+            "text": "abc",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 3,
+          "anchorKey": "6",
+          "focus": 3,
+          "focusKey": "6"
+        }
+      }
+    },
+    {
+      "id": "plain-confirm-space",
+      "richText": false,
+      "placement": "end",
+      "operation": null,
+      "action": "space",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        "你"
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc你",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abc你",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "9",
+            "mode": "normal",
+            "text": "abc你",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 4,
+          "anchorKey": "9",
+          "focus": 4,
+          "focusKey": "9"
+        }
+      }
+    },
+    {
+      "id": "rich-confirm-enter",
+      "richText": true,
+      "placement": "end",
+      "operation": null,
+      "action": "enter",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        "ni"
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abcni",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abcni",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "12",
+            "mode": "normal",
+            "text": "abcni",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 5,
+          "anchorKey": "12",
+          "focus": 5,
+          "focusKey": "12"
+        }
+      }
+    },
+    {
+      "id": "plain-empty-backspace",
+      "richText": false,
+      "placement": "end",
+      "operation": null,
+      "action": "backspace",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "",
+        "nodes": [],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 0,
+          "anchorKey": "14",
+          "focus": 0,
+          "focusKey": "14"
+        }
+      }
+    },
+    {
+      "id": "rich-format-middle-escape",
+      "richText": true,
+      "placement": "format",
+      "operation": null,
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abc",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "18",
+            "mode": "normal",
+            "text": "abc",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 1,
+          "anchorKey": "18",
+          "focus": 1,
+          "focusKey": "18"
+        }
+      }
+    },
+    {
+      "id": "rich-token-confirm-space",
+      "richText": true,
+      "placement": "token",
+      "operation": null,
+      "action": "space",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        "你"
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc你",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abc你",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "23",
+            "mode": "token",
+            "text": "abc",
+            "type": "text"
+          },
+          {
+            "format": 0,
+            "identity": "",
+            "key": "24",
+            "mode": "normal",
+            "text": "你",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 1,
+          "anchorKey": "24",
+          "focus": 1,
+          "focusKey": "24"
+        }
+      }
+    },
+    {
+      "id": "plain-empty-confirm-space",
+      "richText": false,
+      "placement": "end",
+      "operation": null,
+      "action": "space",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        "你"
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "你",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "你",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "27",
+            "mode": "normal",
+            "text": "你",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 1,
+          "anchorKey": "27",
+          "focus": 1,
+          "focusKey": "27"
+        }
+      }
+    },
+    {
+      "id": "rich-nbsp-escape",
+      "richText": true,
+      "placement": "end",
+      "operation": null,
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "a b ",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "a b ",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "30",
+            "mode": "normal",
+            "text": "a b ",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 4,
+          "anchorKey": "30",
+          "focus": 4,
+          "focusKey": "30"
+        }
+      }
+    },
+    {
+      "id": "plain-nbsp-confirm-space",
+      "richText": false,
+      "placement": "end",
+      "operation": null,
+      "action": "space",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        "你"
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        },
+        {
+          "command": "backspace",
+          "keyCode": 8,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "a b 你",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "a b 你",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "33",
+            "mode": "normal",
+            "text": "a b 你",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 5,
+          "anchorKey": "33",
+          "focus": 5,
+          "focusKey": "33"
+        }
+      }
+    },
+    {
+      "id": "rich-multi-forward-escape",
+      "richText": true,
+      "placement": "multi-forward",
+      "operation": null,
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abZ",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abZ",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "36",
+            "mode": "normal",
+            "text": "abZ",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 2,
+          "anchorKey": "36",
+          "focus": 2,
+          "focusKey": "36"
+        }
+      }
+    },
+    {
+      "id": "plain-multi-backward-nbsp",
+      "richText": false,
+      "placement": "multi-backward",
+      "operation": null,
+      "action": "backspace",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "a  Z",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "a  Z",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "41",
+            "mode": "normal",
+            "text": "a  Z",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 2,
+          "anchorKey": "41",
+          "focus": 2,
+          "focusKey": "41"
+        }
+      }
+    },
+    {
+      "id": "plain-selection-escape",
+      "richText": false,
+      "placement": "selection",
+      "operation": null,
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "a ",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "a ",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "46",
+            "mode": "normal",
+            "text": "a ",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 2,
+          "anchorKey": "46",
+          "focus": 2,
+          "focusKey": "46"
+        }
+      }
+    },
+    {
+      "id": "rich-export-copies",
+      "richText": true,
+      "placement": "end",
+      "operation": "copies",
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "ab c",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "ab c",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "49",
+            "mode": "normal",
+            "text": "ab c",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 1,
+          "anchorKey": "49",
+          "focus": 1,
+          "focusKey": "49"
+        }
+      }
+    },
+    {
+      "id": "rich-consumed-copy-handler",
+      "richText": true,
+      "placement": "end",
+      "operation": "copy-insertion",
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 3,
+        "model": "abc",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "52",
+            "mode": "normal",
+            "text": "abc",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 1,
+          "anchorKey": "52",
+          "focus": 1,
+          "focusKey": "52"
+        }
+      }
+    },
+    {
+      "id": "plain-json-replace",
+      "richText": false,
+      "placement": "end",
+      "operation": "json-replace",
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "X Z",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "X Z",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "55",
+            "mode": "normal",
+            "text": "X Z",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 1,
+          "anchorKey": "55",
+          "focus": 1,
+          "focusKey": "55"
+        }
+      }
+    },
+    {
+      "id": "rich-live-slice",
+      "richText": true,
+      "placement": "end",
+      "operation": "slice-live",
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "b c",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "b c",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "58",
+            "mode": "normal",
+            "text": "b c",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 0,
+          "anchorKey": "58",
+          "focus": 0,
+          "focusKey": "58"
+        }
+      }
+    },
+    {
+      "id": "plain-live-nbsp-slice",
+      "richText": false,
+      "placement": "end",
+      "operation": "slice-real",
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": " ",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": " ",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "61",
+            "mode": "normal",
+            "text": " ",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 0,
+          "anchorKey": "61",
+          "focus": 0,
+          "focusKey": "61"
+        }
+      }
+    },
+    {
+      "id": "rich-custom-confirm-space",
+      "richText": true,
+      "placement": "custom",
+      "operation": null,
+      "action": "space",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        "你"
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc你",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abc你",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "fixed-test-state",
+            "key": "64",
+            "mode": "normal",
+            "text": "abc你",
+            "type": "probe-custom-text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 4,
+          "anchorKey": "64",
+          "focus": 4,
+          "focusKey": "64"
+        }
+      }
+    },
+    {
+      "id": "rich-segmented-middle-escape",
+      "richText": true,
+      "placement": "segmented",
+      "operation": null,
+      "action": "escape",
+      "passed": true,
+      "compositionStarts": 1,
+      "compositionEndData": [
+        ""
+      ],
+      "commands": [
+        {
+          "command": "enter",
+          "keyCode": 13,
+          "isTrusted": true
+        }
+      ],
+      "final": {
+        "commands": [
+          "enter"
+        ],
+        "composing": false,
+        "compositionKey": null,
+        "dom": "abc",
+        "errors": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "model": "abc",
+        "nodes": [
+          {
+            "format": 0,
+            "identity": "",
+            "key": "68",
+            "mode": "normal",
+            "text": "abc",
+            "type": "text"
+          }
+        ],
+        "phase": "idle",
+        "preparing": false,
+        "selection": {
+          "anchor": 1,
+          "anchorKey": "68",
+          "focus": 1,
+          "focusKey": "68"
+        }
+      }
+    }
+  ]
+}

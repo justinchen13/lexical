@@ -1,0 +1,74 @@
+{
+  "revision": "dom-target-v2",
+  "candidateTree": "78982fe4e60e3084d9992757c94fc69493955b4f",
+  "browser": {
+    "combinedPass": 2075,
+    "skipped": 8,
+    "compositionCurrentPass": 366,
+    "currentEngineFiles": 3,
+    "reusedEngineFiles": 81,
+    "note": "Broad run had only 2 Firefox Selection.toString NBSP normalization assertion failures. Raw Range assertion fixes the test; current file passes all three engines. Production/helper diff sections identical."
+  },
+  "unitCurrent": {
+    "passed": 327,
+    "files": 12,
+    "exit": 0
+  },
+  "unitEarlier": {
+    "revision": "dom-target-v1",
+    "passed": 716,
+    "files": 19,
+    "exit": 0,
+    "scope": "TextNode/JSON/schema/generator/slice implementations remain identical; earlier coverage is explicitly historical, not a new 716 run."
+  },
+  "typescript": {
+    "source": 0,
+    "test": 0,
+    "note": "Final test-only raw Range assertion uses existing DOM types; current production bytes match the successful checks."
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 0,
+    "exit": 0,
+    "files": 7
+  },
+  "prettier": {
+    "exit": 0,
+    "files": 7
+  },
+  "independentReviewProbes": {
+    "synthetic": true,
+    "passed": 40,
+    "total": 40
+  },
+  "nativeFixtureDryRun": {
+    "synthetic": true,
+    "passed": 40,
+    "total": 40
+  },
+  "physicalIME": {
+    "revision": "dom-target-v2",
+    "passed": 20,
+    "total": 20,
+    "trustedDOMEvents": 397,
+    "trustedKeydown": 91,
+    "exit": 0,
+    "inputsMatched": 134,
+    "rebuildByteIdentical": true
+  },
+  "flow": {
+    "reused": true,
+    "newRun": false,
+    "enumeratedUnchangedInputs": 148,
+    "historicalExit": 0
+  },
+  "notRun": [
+    "new full monorepo unit suite",
+    "full ci-check",
+    "E2E",
+    "release build",
+    "physical IME on other OS/browser combinations"
+  ],
+  "published": false,
+  "publishedPRHead": "b77e004c1087afc812f145cdcc937d5a4491665a"
+}

@@ -1,0 +1,67 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser packages/lexical-rich-text/src/__tests__/browser
+
+ RUN  v5.0.1 <checkout>
+
+ ❯ |browser (firefox)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts (122 tests | 2 failed) 1995ms
+   ❯ Safari composition (richText=false) (61)
+     × browser editing replaces the DOM suffix in the prepared formatted target 65ms
+   ❯ Safari composition (richText=true) (61)
+     × browser editing replaces the DOM suffix in the prepared formatted target 31ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 2 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |browser (firefox)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=false) > browser editing replaces the DOM suffix in the prepared formatted target
+ FAIL  |browser (firefox)| packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts > Safari composition (richText=true) > browser editing replaces the DOM suffix in the prepared formatted target
+AssertionError: expected ' ' to be ' ' // Object.is equality
+
+Failure screenshots:
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-false----browser-editing-replaces-the-DOM-suffix-in-the-prepared-formatted-target.png
+  - .vitest/attachments/failure-screenshots/LexicalSafariComposition.test.ts/Safari-composition--richText-true----browser-editing-replaces-the-DOM-suffix-in-the-prepared-formatted-target.png
+
+Expected: [32m" "[39m
+Received: [31m" "[39m
+
+ ❯ <checkout>/packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts:563:32
+ ❯ async*withFixtures/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:3848:35
+ ❯ withAwaitAsyncAssertions/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:4951:26
+ ❯ withCancel/runWithCancel/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5440:22
+ ❯ runWithCancel node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5435:10
+ ❯ withTimeout/runWithTimeout/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5424:22
+ ❯ runWithTimeout node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5388:10
+ ❯ runTest/</</< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5953:64
+ ❯ run node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:3585:24
+ ❯ limiterFn node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:3595:59
+ ❯ runTest/</< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5953:57
+ ❯ runTest/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5953:13
+ ❯ async*callAroundEachHooks/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5833:37
+ ❯ callAroundHooks node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5723:9
+ ❯ callAroundEachHooks node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5833:8
+ ❯ runTest node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5941:10
+ ❯ async*runSuiteChild/</< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6160:45
+ ❯ run node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:3585:24
+ ❯ limiterFn node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:3595:59
+ ❯ runSuiteChild/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6160:31
+ ❯ runSuiteChild node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6152:32
+ ❯ runSuite/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6118:41
+ ❯ async*callAroundHooks node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5723:9
+ ❯ callAroundAllHooks node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5825:8
+ ❯ runSuite node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6101:10
+ ❯ async*runSuiteChild/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6168:19
+ ❯ runSuiteChild node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6161:38
+ ❯ runSuite/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6118:41
+ ❯ async*callAroundHooks node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5723:9
+ ❯ callAroundAllHooks node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:5825:8
+ ❯ runSuite node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6101:10
+ ❯ async*runFiles/< node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6183:20
+ ❯ runFiles node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6180:16
+ ❯ startTests node_modules/.vite/vitest/ef98362b8a6b0c8cd804b0d227aa1ffeaba89786/deps/plugins.Cigb0uSy-nS94KU5A.js?v=7326e27b:6216:9
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯
+
+
+ Test Files  1 failed | 83 passed (84)
+      Tests  2 failed | 2073 passed | 8 skipped (2083)
+   Start at  02:09:04
+   Duration  41.02s (worker 80%, tests 12%, import 8%)
+
+[ELIFECYCLE] Command failed with exit code 1.

@@ -1,0 +1,65 @@
+{
+  "revision": "dom-target-v2",
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "workingTreeHead": "b77e004c1087afc812f145cdcc937d5a4491665a",
+  "sourceIsUncommitted": true,
+  "patchSha256": "bc362a0f0ce00bb35d9c050e75cf86057bb3401b5025d586af6764ef4481a70b",
+  "sourceManifestSha256": "d9b74c491aff0b29dedffc082db8db972ff24253c693711639463ddd5588acc4",
+  "bundleSha256": "3bcb2135b297fc0beab6cd10b19b1954cf4a9ba6c9f3c6629a828fe2bc4b5086",
+  "binarySha256": "4861c12915b6c412a1d3b4d9c3cf9d5eb578129dc14dd2e467ca795873f52e85",
+  "buildManifestSha256": "0aebe368a261e6a34b4b47bb4f2455097a55b673bac7448a179e270e30e0cc2c",
+  "scenarioPlanSha256": "d4af437dc4c31dfd49e8ade4b4f50f68c6daaa4522be81b5e9fa4cf9a10ab222",
+  "scenarioCount": 20,
+  "inputs": 134,
+  "preflight": {
+    "accessibilityTrusted": true,
+    "frontmostApplicationAvailable": true,
+    "os": "Version 27.0.1 (Build 26A434)",
+    "postEventAccess": true,
+    "systemPinyinAvailable": true
+  },
+  "checkResults": {
+    "after-dom-range-final": {
+      "exit": 0,
+      "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be"
+    },
+    "composition-final": {
+      "exit": 0,
+      "sourcePatchSha256": "a1c02d2eecc8ebdcf4ae8c95d3f2dfa76306f91424dc975740b7416c762fee77"
+    },
+    "affected-unit": {
+      "exit": 0,
+      "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be"
+    },
+    "test-types": {
+      "exit": 0,
+      "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be"
+    },
+    "source-types-final": {
+      "exit": 0,
+      "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be"
+    },
+    "lint-current": {
+      "exit": 0,
+      "sourcePatchSha256": "a1c02d2eecc8ebdcf4ae8c95d3f2dfa76306f91424dc975740b7416c762fee77"
+    },
+    "format-current": {
+      "exit": 0,
+      "sourcePatchSha256": "a1c02d2eecc8ebdcf4ae8c95d3f2dfa76306f91424dc975740b7416c762fee77"
+    },
+    "native-fixture-dry-run-final": {
+      "exit": 0,
+      "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be"
+    },
+    "independent-probes": {
+      "exit": 0,
+      "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be"
+    },
+    "native-compile": {
+      "exit": 0,
+      "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be"
+    }
+  },
+  "mismatches": [],
+  "foregroundScope": "One dedicated WKWebView window, 20 prepared scenarios, exact SCIM.ITABC, HID keydowns only while focused; stop on focus loss; restore previous input source and app/focus; 120-second watchdog"
+}

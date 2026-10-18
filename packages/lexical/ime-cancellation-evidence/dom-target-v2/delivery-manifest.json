@@ -1,0 +1,32 @@
+{
+  "head": "77c26a908ea9f482295d2539433f56a66292f7ec",
+  "parent": "b77e004c1087afc812f145cdcc937d5a4491665a",
+  "tree": "78982fe4e60e3084d9992757c94fc69493955b4f",
+  "patchSha256": "bc362a0f0ce00bb35d9c050e75cf86057bb3401b5025d586af6764ef4481a70b",
+  "author": "Justin Chen <45264536+justinchen13@users.noreply.github.com>",
+  "committer": "Justin Chen <45264536+justinchen13@users.noreply.github.com>",
+  "netFiles": [
+    "packages/lexical/src/LexicalEditor.ts",
+    "packages/lexical/src/LexicalEvents.ts",
+    "packages/lexical/src/LexicalNormalization.ts",
+    "packages/lexical/src/LexicalSelection.ts",
+    "packages/lexical/src/LexicalUtils.ts",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+    "packages/lexical/src/__tests__/browser/utils/compose.ts"
+  ],
+  "worktreeClean": true,
+  "hookExitCode": 0,
+  "frozenTreeUnchanged": true,
+  "revision": "dom-target-v2",
+  "sourceRepository": "justinchen13/lexical",
+  "sourceBranch": "fix/webkit-pinyin-cancellation",
+  "targetRepository": "facebook/lexical",
+  "targetBranch": "main",
+  "pullRequest": "https://github.com/facebook/lexical/pull/9362",
+  "sourcePushed": true,
+  "captureRecordedBeforeCommit": true,
+  "captureManifestsUnchanged": true,
+  "nativeBuildInputsUnchanged": 134,
+  "nativeBundleSha256": "3bcb2135b297fc0beab6cd10b19b1954cf4a9ba6c9f3c6629a828fe2bc4b5086",
+  "note": "The original capture metadata records an uncommitted patch above the previous PR head. This delivery commit contains the exact tested tree and patch; no native capture was repeated for publication."
+}

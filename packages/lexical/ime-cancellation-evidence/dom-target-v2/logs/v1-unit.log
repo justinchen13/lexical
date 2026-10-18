@@ -1,0 +1,17 @@
+$ vitest --project unit --project scripts-unit --no-watch packages/lexical/src/__tests__/unit/LexicalSelection packages/lexical/src/__tests__/unit/LexicalNormalization packages/lexical/src/__tests__/unit/LexicalEditor packages/lexical/src/__tests__/unit/LexicalGeneratedJSON packages/lexical/src/__tests__/unit/LexicalSchema packages/lexical/src/__tests__/unit/LexicalAndroidChromeComposition packages/lexical/src/__tests__/unit/LexicalFirefoxCompositionEndTag packages/lexical/src/nodes/__tests__/unit/LexicalTextNode packages/lexical-history/src/__tests__/unit/LexicalHistory 'packages/lexical-selection/src/__tests__/unit/$sliceSelectedTextNodeContent.test.ts' scripts/__tests__/unit/generateNodeJSON.test.ts
+
+ RUN  v5.0.1 <checkout>
+
+ObjectDefault: compact export compares "box" at run time, which has a default with no faithful literal ({"w":0})
+NarrowedNode: no generated parser, "tag" declares a membership predicate of its own, which the metadata does not describe
+AliasedNarrowedNode: no generated parser, "tag" declares a membership predicate of its own, which the metadata does not describe
+
+ Test Files  19 passed (19)
+      Tests  716 passed (716)
+   Start at  01:47:05
+   Duration  6.26s (transform 50%, environment 35%, tests 7%, import 7%, setup 1%)
+
+  Transform  |unit| transforming modules took 35.82s · 48% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

@@ -1,0 +1,10 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts
+
+ RUN  v5.0.1 <checkout>
+
+
+ Test Files  3 passed (3)
+      Tests  366 passed (366)
+   Start at  02:10:44
+   Duration  5.65s (tests 87%, import 10%, worker 3%)
+

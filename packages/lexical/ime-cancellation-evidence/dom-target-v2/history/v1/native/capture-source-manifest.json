@@ -1,0 +1,34 @@
+{
+  "revision": "dom-target-v1",
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "workingTreeHead": "b77e004c1087afc812f145cdcc937d5a4491665a",
+  "sourceIsUncommitted": true,
+  "packageVersion": "0.52.0",
+  "patchSha256": "8a064d15217e1008fe9c201bbdf942c6551c0e61889f73da147b2ae884a99f78",
+  "files": [
+    {
+      "file": "packages/lexical/src/LexicalEditor.ts",
+      "sha256": "6d4a77340c77783c0adf9000dbbe5dffad21c33b88e10db558efb6ec493fc6b5"
+    },
+    {
+      "file": "packages/lexical/src/LexicalEvents.ts",
+      "sha256": "8972cd2f7d60ec7c3434110b58ddc792681318e5ebbd4993b1e56ed9d21e8f1e"
+    },
+    {
+      "file": "packages/lexical/src/LexicalNormalization.ts",
+      "sha256": "981211ae47735535231d3f59ac074d90519bbf9246fc4a8bfc02819c00a1278b"
+    },
+    {
+      "file": "packages/lexical/src/LexicalSelection.ts",
+      "sha256": "bbf0740cbd639e837854a7ee9a7d993faea6d7029a50fc46a455b24221a91aaf"
+    },
+    {
+      "file": "packages/lexical/src/LexicalUtils.ts",
+      "sha256": "26c00dd1796e8ffc49081694eed4287874f663a5d42a4fedeeacfbc1178279c0"
+    },
+    {
+      "file": "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts",
+      "sha256": "cd50a5fb353e898a006d49c424e0cdba8467b9ec7295e3e5ff7277c0048cc6ae"
+    }
+  ]
+}

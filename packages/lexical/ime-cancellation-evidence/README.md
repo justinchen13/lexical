@@ -1,3 +1,7 @@
+> Current revision: [DOM composition targets / dom-target-v2](dom-target-v2/README.md), source commit [77c26a908ea9f482295d2539433f56a66292f7ec](https://github.com/justinchen13/lexical/commit/77c26a908ea9f482295d2539433f56a66292f7ec). [Download the source-only reproduction ZIP](dom-target-v2.zip); [archive identity](dom-target-v2-archive-manifest.json).
+>
+> The active-node-v4 material below is historical and describes the preceding implementation. The source commit above replaces its model ownership hooks with input preparation. Capture manifests are retained unchanged for each version.
+
 # Lexical system Pinyin cancellation — frozen active-node-v4 evidence
 
 Captured implementation: package **0.52.0**, baseline **cb21da40de69c1eedc2b9ec60001fef0d3b1770a**, runtime label **active-node-v4**, code commit **8caa57128218797d6acfe43ca918bab81b99e461**. The physical capture predates the test-only naming follow-up **901bc60381d55834793e2e6c8edd4997a53394d7**. Current `fix.patch` includes exactly the callback `slice` → `$slice` and two reference renames; apply it to the exact baseline. Current patch SHA-256: **c750fdb077f61d223f258d2bcffc302069726eb3cf9ff2a51df7e04d559acc67**. The original captured patch remains `capture-fix.patch` (b1e53e83bb89a9e11ec99e042cd0eab99c66071b4deb7c61cf88fc2d6c12dd44).

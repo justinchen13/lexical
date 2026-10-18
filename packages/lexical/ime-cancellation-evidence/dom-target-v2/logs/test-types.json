@@ -1,0 +1,15 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "tsc-test"
+  ],
+  "cwd": "repository root",
+  "started": "2026-10-17T18:09:03.407Z",
+  "node": "v22.22.3",
+  "VITEST_BROWSER": null,
+  "sourcePatchSha256": "9043de3b6d83cf462e773c7ab42f31bd1058ac8116c72b3150f0565384a160be",
+  "finished": "2026-10-17T18:09:21.780Z",
+  "exit": 0,
+  "signal": null
+}

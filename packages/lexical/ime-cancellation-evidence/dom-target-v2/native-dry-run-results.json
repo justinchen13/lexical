@@ -1,0 +1,4714 @@
+[
+  {
+    "engine": "webkit",
+    "id": "plain-backspace",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "3",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 5,
+          "focusKey": "3",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 3,
+          "focusKey": "3",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 3,
+          "focusKey": "3",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab",
+        "dom": "ab",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 2,
+          "focusKey": "3",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "ab",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "6",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 5,
+          "focusKey": "6",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 3,
+          "focusKey": "6",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 3,
+          "focusKey": "6",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab",
+        "dom": "ab",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 2,
+          "focusKey": "6",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "ab",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "9",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 5,
+          "focusKey": "9",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 4,
+          "focusKey": "9",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 4,
+          "focusKey": "9",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 3,
+          "focusKey": "9",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-confirm-enter",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "12",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 5,
+          "focusKey": "12",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 5,
+          "focusKey": "12",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 5,
+          "focusKey": "12",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcn",
+        "dom": "abcn",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 4,
+          "focusKey": "12",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcn",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-empty-backspace",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ni",
+        "dom": "ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "15",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "15",
+          "anchor": 2,
+          "focusKey": "15",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "14",
+          "anchor": 0,
+          "focusKey": "14",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "14",
+          "anchor": 0,
+          "focusKey": "14",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "14",
+          "anchor": 0,
+          "focusKey": "14",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-format-middle-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anibc",
+        "dom": "ani bc",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "19",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "19",
+          "anchor": 2,
+          "focusKey": "19",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "18",
+            "type": "text",
+            "text": "a",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "19",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 1,
+            "identity": ""
+          },
+          {
+            "key": "20",
+            "type": "text",
+            "text": "bc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "18",
+          "anchor": 1,
+          "focusKey": "18",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "18",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "18",
+          "anchor": 1,
+          "focusKey": "18",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "18",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-token-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "24",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "24",
+          "anchor": 2,
+          "focusKey": "24",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "23",
+            "type": "text",
+            "text": "abc",
+            "mode": "token",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "24",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "24",
+          "anchor": 1,
+          "focusKey": "24",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "23",
+            "type": "text",
+            "text": "abc",
+            "mode": "token",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "24",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "24",
+          "anchor": 1,
+          "focusKey": "24",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "23",
+            "type": "text",
+            "text": "abc",
+            "mode": "token",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "24",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-empty-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ni",
+        "dom": "ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "27",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "27",
+          "anchor": 2,
+          "focusKey": "27",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "27",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "你",
+        "dom": "你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "27",
+          "anchor": 1,
+          "focusKey": "27",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "27",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "你",
+        "dom": "你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "27",
+          "anchor": 1,
+          "focusKey": "27",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "27",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "26",
+          "anchor": 0,
+          "focusKey": "26",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-nbsp-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ni",
+        "dom": "a b ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "30",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 6,
+          "focusKey": "30",
+          "focus": 6
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ",
+        "dom": "a b ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 4,
+          "focusKey": "30",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ",
+        "dom": "a b ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 4,
+          "focusKey": "30",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b",
+        "dom": "a b",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 3,
+          "focusKey": "30",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-nbsp-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ni",
+        "dom": "a b ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "33",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 6,
+          "focusKey": "33",
+          "focus": 6
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b 你",
+        "dom": "a b 你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 5,
+          "focusKey": "33",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b 你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b 你",
+        "dom": "a b 你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 5,
+          "focusKey": "33",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b 你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ",
+        "dom": "a b ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 4,
+          "focusKey": "33",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-multi-forward-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abniZ",
+        "dom": "abniZ ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "36",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "36",
+          "anchor": 4,
+          "focusKey": "36",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "36",
+            "type": "text",
+            "text": "abniZ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "36",
+          "anchor": 2,
+          "focusKey": "36",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "36",
+            "type": "text",
+            "text": "abZ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "36",
+          "anchor": 2,
+          "focusKey": "36",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "36",
+            "type": "text",
+            "text": "abZ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-multi-backward-nbsp",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ni Z",
+        "dom": "a ni Z ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "41",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "41",
+          "anchor": 4,
+          "focusKey": "41",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "41",
+            "type": "text",
+            "text": "a ni Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "41",
+          "anchor": 2,
+          "focusKey": "41",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "41",
+            "type": "text",
+            "text": "a  Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "41",
+          "anchor": 2,
+          "focusKey": "41",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "41",
+            "type": "text",
+            "text": "a  Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-selection-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ni",
+        "dom": "a ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "46",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "46",
+          "anchor": 4,
+          "focusKey": "46",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "46",
+            "type": "text",
+            "text": "a ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ",
+        "dom": "a ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "46",
+          "anchor": 2,
+          "focusKey": "46",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "46",
+            "type": "text",
+            "text": "a ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ",
+        "dom": "a ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "46",
+          "anchor": 2,
+          "focusKey": "46",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "46",
+            "type": "text",
+            "text": "a ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-export-copies",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anib c",
+        "dom": "anib c ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "49",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "49",
+          "anchor": 3,
+          "focusKey": "49",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "49",
+            "type": "text",
+            "text": "anib c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab c",
+        "dom": "ab c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "49",
+          "anchor": 1,
+          "focusKey": "49",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "49",
+            "type": "text",
+            "text": "ab c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab c",
+        "dom": "ab c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "49",
+          "anchor": 1,
+          "focusKey": "49",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "49",
+            "type": "text",
+            "text": "ab c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-consumed-copy-handler",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anibc",
+        "dom": "anibc ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "52",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "52",
+          "anchor": 3,
+          "focusKey": "52",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "52",
+            "type": "text",
+            "text": "anibc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 3,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "52",
+          "anchor": 1,
+          "focusKey": "52",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "52",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 3,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "52",
+          "anchor": 1,
+          "focusKey": "52",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "52",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 3,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-json-replace",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "Xni Z",
+        "dom": "Xni Z ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "55",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "55",
+          "anchor": 3,
+          "focusKey": "55",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "55",
+            "type": "text",
+            "text": "Xni Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "X Z",
+        "dom": "X Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "55",
+          "anchor": 1,
+          "focusKey": "55",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "55",
+            "type": "text",
+            "text": "X Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "X Z",
+        "dom": "X Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "55",
+          "anchor": 1,
+          "focusKey": "55",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "55",
+            "type": "text",
+            "text": "X Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-live-slice",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "nib c",
+        "dom": "nib c ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "58",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "58",
+          "anchor": 2,
+          "focusKey": "58",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "58",
+            "type": "text",
+            "text": "nib c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "b c",
+        "dom": "b c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "58",
+          "anchor": 0,
+          "focusKey": "58",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "58",
+            "type": "text",
+            "text": "b c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "b c",
+        "dom": "b c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "58",
+          "anchor": 0,
+          "focusKey": "58",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "58",
+            "type": "text",
+            "text": "b c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "plain-live-nbsp-slice",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ni ",
+        "dom": "ni  ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "61",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "61",
+          "anchor": 2,
+          "focusKey": "61",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "61",
+            "type": "text",
+            "text": "ni ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": " ",
+        "dom": " ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "61",
+          "anchor": 0,
+          "focusKey": "61",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "61",
+            "type": "text",
+            "text": " ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": " ",
+        "dom": " ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "61",
+          "anchor": 0,
+          "focusKey": "61",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "61",
+            "type": "text",
+            "text": " ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-custom-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "64",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "64",
+          "anchor": 5,
+          "focusKey": "64",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "64",
+            "type": "probe-custom-text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "64",
+          "anchor": 4,
+          "focusKey": "64",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "64",
+            "type": "probe-custom-text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "64",
+          "anchor": 4,
+          "focusKey": "64",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "64",
+            "type": "probe-custom-text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "webkit",
+    "id": "rich-segmented-middle-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anibc",
+        "dom": "anibc ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "67",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "67",
+          "anchor": 3,
+          "focusKey": "67",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "67",
+            "type": "probe-custom-text",
+            "text": "anibc",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "68",
+          "anchor": 1,
+          "focusKey": "68",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "68",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "68",
+          "anchor": 1,
+          "focusKey": "68",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "68",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-backspace",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "3",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 5,
+          "focusKey": "3",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 3,
+          "focusKey": "3",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 3,
+          "focusKey": "3",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab",
+        "dom": "ab",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "3",
+          "anchor": 2,
+          "focusKey": "3",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "3",
+            "type": "text",
+            "text": "ab",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "6",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 5,
+          "focusKey": "6",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 3,
+          "focusKey": "6",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 3,
+          "focusKey": "6",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab",
+        "dom": "ab",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "6",
+          "anchor": 2,
+          "focusKey": "6",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "6",
+            "type": "text",
+            "text": "ab",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "9",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 5,
+          "focusKey": "9",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 4,
+          "focusKey": "9",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 4,
+          "focusKey": "9",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "9",
+          "anchor": 3,
+          "focusKey": "9",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "9",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-confirm-enter",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "12",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 5,
+          "focusKey": "12",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 5,
+          "focusKey": "12",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 5,
+          "focusKey": "12",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcn",
+        "dom": "abcn",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "12",
+          "anchor": 4,
+          "focusKey": "12",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "12",
+            "type": "text",
+            "text": "abcn",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-empty-backspace",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ni",
+        "dom": "ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "15",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "15",
+          "anchor": 2,
+          "focusKey": "15",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "15",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "14",
+          "anchor": 0,
+          "focusKey": "14",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "14",
+          "anchor": 0,
+          "focusKey": "14",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "14",
+          "anchor": 0,
+          "focusKey": "14",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-format-middle-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anibc",
+        "dom": "ani bc",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "19",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "19",
+          "anchor": 2,
+          "focusKey": "19",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "18",
+            "type": "text",
+            "text": "a",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "19",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 1,
+            "identity": ""
+          },
+          {
+            "key": "20",
+            "type": "text",
+            "text": "bc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "18",
+          "anchor": 1,
+          "focusKey": "18",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "18",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "18",
+          "anchor": 1,
+          "focusKey": "18",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "18",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-token-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "24",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "24",
+          "anchor": 2,
+          "focusKey": "24",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "23",
+            "type": "text",
+            "text": "abc",
+            "mode": "token",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "24",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "24",
+          "anchor": 1,
+          "focusKey": "24",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "23",
+            "type": "text",
+            "text": "abc",
+            "mode": "token",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "24",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "24",
+          "anchor": 1,
+          "focusKey": "24",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "23",
+            "type": "text",
+            "text": "abc",
+            "mode": "token",
+            "format": 0,
+            "identity": ""
+          },
+          {
+            "key": "24",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-empty-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ni",
+        "dom": "ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "27",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "27",
+          "anchor": 2,
+          "focusKey": "27",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "27",
+            "type": "text",
+            "text": "ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "你",
+        "dom": "你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "27",
+          "anchor": 1,
+          "focusKey": "27",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "27",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "你",
+        "dom": "你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "27",
+          "anchor": 1,
+          "focusKey": "27",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "27",
+            "type": "text",
+            "text": "你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "",
+        "dom": "",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "26",
+          "anchor": 0,
+          "focusKey": "26",
+          "focus": 0
+        },
+        "nodes": [],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-nbsp-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ni",
+        "dom": "a b ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "30",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 6,
+          "focusKey": "30",
+          "focus": 6
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ",
+        "dom": "a b ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 4,
+          "focusKey": "30",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ",
+        "dom": "a b ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 4,
+          "focusKey": "30",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b",
+        "dom": "a b",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "30",
+          "anchor": 3,
+          "focusKey": "30",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "30",
+            "type": "text",
+            "text": "a b",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-nbsp-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ni",
+        "dom": "a b ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "33",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 6,
+          "focusKey": "33",
+          "focus": 6
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b 你",
+        "dom": "a b 你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 5,
+          "focusKey": "33",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b 你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b 你",
+        "dom": "a b 你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 5,
+          "focusKey": "33",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b 你",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a b ",
+        "dom": "a b ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "33",
+          "anchor": 4,
+          "focusKey": "33",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "33",
+            "type": "text",
+            "text": "a b ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter",
+          "backspace"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-multi-forward-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abniZ",
+        "dom": "abniZ ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "36",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "36",
+          "anchor": 4,
+          "focusKey": "36",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "36",
+            "type": "text",
+            "text": "abniZ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "36",
+          "anchor": 2,
+          "focusKey": "36",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "36",
+            "type": "text",
+            "text": "abZ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abZ",
+        "dom": "abZ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "36",
+          "anchor": 2,
+          "focusKey": "36",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "36",
+            "type": "text",
+            "text": "abZ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-multi-backward-nbsp",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ni Z",
+        "dom": "a ni Z ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "41",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "41",
+          "anchor": 4,
+          "focusKey": "41",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "41",
+            "type": "text",
+            "text": "a ni Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "41",
+          "anchor": 2,
+          "focusKey": "41",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "41",
+            "type": "text",
+            "text": "a  Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a  Z",
+        "dom": "a  Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "41",
+          "anchor": 2,
+          "focusKey": "41",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "41",
+            "type": "text",
+            "text": "a  Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-selection-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ni",
+        "dom": "a ni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "46",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "46",
+          "anchor": 4,
+          "focusKey": "46",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "46",
+            "type": "text",
+            "text": "a ni",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ",
+        "dom": "a ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "46",
+          "anchor": 2,
+          "focusKey": "46",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "46",
+            "type": "text",
+            "text": "a ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "a ",
+        "dom": "a ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "46",
+          "anchor": 2,
+          "focusKey": "46",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "46",
+            "type": "text",
+            "text": "a ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-export-copies",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anib c",
+        "dom": "anib c ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "49",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "49",
+          "anchor": 3,
+          "focusKey": "49",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "49",
+            "type": "text",
+            "text": "anib c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab c",
+        "dom": "ab c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "49",
+          "anchor": 1,
+          "focusKey": "49",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "49",
+            "type": "text",
+            "text": "ab c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ab c",
+        "dom": "ab c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "49",
+          "anchor": 1,
+          "focusKey": "49",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "49",
+            "type": "text",
+            "text": "ab c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-consumed-copy-handler",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anibc",
+        "dom": "anibc ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "52",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "52",
+          "anchor": 3,
+          "focusKey": "52",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "52",
+            "type": "text",
+            "text": "anibc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 3,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "52",
+          "anchor": 1,
+          "focusKey": "52",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "52",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 3,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "52",
+          "anchor": 1,
+          "focusKey": "52",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "52",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 3,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-json-replace",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "Xni Z",
+        "dom": "Xni Z ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "55",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "55",
+          "anchor": 3,
+          "focusKey": "55",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "55",
+            "type": "text",
+            "text": "Xni Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "X Z",
+        "dom": "X Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "55",
+          "anchor": 1,
+          "focusKey": "55",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "55",
+            "type": "text",
+            "text": "X Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "X Z",
+        "dom": "X Z",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "55",
+          "anchor": 1,
+          "focusKey": "55",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "55",
+            "type": "text",
+            "text": "X Z",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-live-slice",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "nib c",
+        "dom": "nib c ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "58",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "58",
+          "anchor": 2,
+          "focusKey": "58",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "58",
+            "type": "text",
+            "text": "nib c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "b c",
+        "dom": "b c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "58",
+          "anchor": 0,
+          "focusKey": "58",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "58",
+            "type": "text",
+            "text": "b c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "b c",
+        "dom": "b c",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "58",
+          "anchor": 0,
+          "focusKey": "58",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "58",
+            "type": "text",
+            "text": "b c",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "plain-live-nbsp-slice",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "ni ",
+        "dom": "ni  ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "61",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "61",
+          "anchor": 2,
+          "focusKey": "61",
+          "focus": 2
+        },
+        "nodes": [
+          {
+            "key": "61",
+            "type": "text",
+            "text": "ni ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": " ",
+        "dom": " ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "61",
+          "anchor": 0,
+          "focusKey": "61",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "61",
+            "type": "text",
+            "text": " ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": " ",
+        "dom": " ",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "61",
+          "anchor": 0,
+          "focusKey": "61",
+          "focus": 0
+        },
+        "nodes": [
+          {
+            "key": "61",
+            "type": "text",
+            "text": " ",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-custom-confirm-space",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abcni",
+        "dom": "abcni ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "64",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "64",
+          "anchor": 5,
+          "focusKey": "64",
+          "focus": 5
+        },
+        "nodes": [
+          {
+            "key": "64",
+            "type": "probe-custom-text",
+            "text": "abcni",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "ending-safari",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "64",
+          "anchor": 4,
+          "focusKey": "64",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "64",
+            "type": "probe-custom-text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc你",
+        "dom": "abc你",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "64",
+          "anchor": 4,
+          "focusKey": "64",
+          "focus": 4
+        },
+        "nodes": [
+          {
+            "key": "64",
+            "type": "probe-custom-text",
+            "text": "abc你",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  },
+  {
+    "engine": "chromium",
+    "id": "rich-segmented-middle-escape",
+    "composing": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "anibc",
+        "dom": "anibc ",
+        "composing": true,
+        "phase": "composing",
+        "compositionKey": "67",
+        "preparing": false,
+        "selection": {
+          "anchorKey": "67",
+          "anchor": 3,
+          "focusKey": "67",
+          "focus": 3
+        },
+        "nodes": [
+          {
+            "key": "67",
+            "type": "probe-custom-text",
+            "text": "anibc",
+            "mode": "normal",
+            "format": 0,
+            "identity": "fixed-test-state"
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "ended": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "68",
+          "anchor": 1,
+          "focusKey": "68",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "68",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "entered": {
+      "ok": true,
+      "issues": [],
+      "state": {
+        "model": "abc",
+        "dom": "abc",
+        "composing": false,
+        "phase": "idle",
+        "compositionKey": null,
+        "preparing": false,
+        "selection": {
+          "anchorKey": "68",
+          "anchor": 1,
+          "focusKey": "68",
+          "focus": 1
+        },
+        "nodes": [
+          {
+            "key": "68",
+            "type": "text",
+            "text": "abc",
+            "mode": "normal",
+            "format": 0,
+            "identity": ""
+          }
+        ],
+        "commands": [
+          "enter"
+        ],
+        "hookCount": 1,
+        "insertionChecks": 0,
+        "errors": []
+      }
+    },
+    "backspace": null,
+    "pass": true
+  }
+]

@@ -1,0 +1,14 @@
+$ vitest --project unit --project scripts-unit --no-watch packages/lexical/src/__tests__/unit/LexicalSelection packages/lexical/src/__tests__/unit/LexicalEditor packages/lexical/src/__tests__/unit/LexicalNormalization packages/lexical-history/src/__tests__/unit/LexicalHistory
+
+ RUN  v5.0.1 <checkout>
+
+
+ Test Files  12 passed (12)
+      Tests  327 passed (327)
+   Start at  02:09:04
+   Duration  5.50s (transform 46%, environment 42%, import 6%, tests 5%, setup 1%)
+
+  Transform  |unit| transforming modules took 21.79s · 46% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+

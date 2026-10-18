@@ -1,0 +1,10 @@
+$ vitest --project browser --no-watch packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts -t 'browser editing replaces the DOM suffix'
+
+ RUN  v5.0.1 <checkout>
+
+
+ Test Files  2 passed (2)
+      Tests  4 passed | 240 skipped (244)
+   Start at  02:07:47
+   Duration  826ms (import 77%, worker 14%, tests 6%, setup 3%)
+

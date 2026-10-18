@@ -1,0 +1,749 @@
+{
+  "scope": "All tracked Flow definitions/stubs, .flowconfig, root package/lock/workspace/runtime config and Flow runner",
+  "inputs": 148,
+  "allUnchanged": true,
+  "currentRun": false,
+  "reusedResult": "2026-10-17T08:17:34.410Z Found 0 errors; exit 0; Node v25.2.1",
+  "files": [
+    {
+      "file": ".flowconfig",
+      "sha256": "222d6c01aa1da733eb4fd92cc8f7d5d666a54061882a377be802f984fb3f8965",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": ".nvmrc",
+      "sha256": "73fb1b615e2043a933be1c0895cde4358036acc28d785692509b822aa53c761f",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "flow-typed/environments/jsx.js",
+      "sha256": "c3202d706be553bb86ef43940eef756fe38b4e4b883b30645b4142e0b6e06e13",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "package.json",
+      "sha256": "269d16bb82244bd98ccf27298c303e9a69954fe4aff9eb11ff58c1f4793247a1",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-a11y/flow/LexicalA11y.js.flow",
+      "sha256": "51dcfec77678aae84dd100b005aca0942c9eca4a6e5c3c7a2c90142fbe4e50cc",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-clipboard/flow/LexicalClipboard.js.flow",
+      "sha256": "6652abfda65e22a8fd41e3c21dce398690d2304aa72bea1c06117d741e104c2a",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-code-core/flow/LexicalCodeCore.js.flow",
+      "sha256": "8f4785d7ea1d9a20e8819b26a63cd9f4c28f2db51a2db6abc079d57afcac134b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-code-prism/flow/LexicalCodePrism.js.flow",
+      "sha256": "980afe4d0eb5464c90f8e1d38ec6115fcb558eda37b1cc7d4b9e548cdd6a884e",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-code-shiki/flow/LexicalCodeShiki.js.flow",
+      "sha256": "73f1caf5501f925edd28b6a5b5c31a1123e2de8d926df786471498021b16977d",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-code/flow/LexicalCode.js.flow",
+      "sha256": "6af6763c3a8ca49e1c35bcd6b839f5787247b4cfdaf20d5228d5eade06de16bd",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-compiler/flow/LexicalCompiler.js.flow",
+      "sha256": "72ea4e6d2ccae9e09cd860a91ec5584131c86c445d0730922cb281af1e412171",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-compiler/flow/LexicalCompilerPureAnnotations.js.flow",
+      "sha256": "99babeec446fd897121faa6c31adb8550dd519102497cad9be6fbe9a498331fe",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-compiler/flow/LexicalCompilerSchemaJsonCodegen.js.flow",
+      "sha256": "6ebeaba41a65e35dcba7b49a0476bcb6b9989156f224b06918a86f2cb50e2494",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-compiler/flow/LexicalCompilerSchemaJsonCodegenUsage.js.flow",
+      "sha256": "26b556ea7d9138ca9478217d6e05238574f1c3fb68b8605f36e2a427560eea47",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-compiler/flow/LexicalCompilerSubpathImports.js.flow",
+      "sha256": "b3ea75cc998685bb01117098443e91fe6b3ef53a58e0926758611bc9518024e7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-devtools-core/flow/LexicalDevtoolsCore.js.flow",
+      "sha256": "7bf99f6db5d05762ab975b522d20c334521c785200fdf7e33c24d28062edce73",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-dragon/flow/LexicalDragon.js.flow",
+      "sha256": "420cf67bae0150989430af6ee387cb913653a5c8c57bcc74ddcfdc4373710e7e",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-eslint-plugin/flow/LexicalEslintPlugin.js.flow",
+      "sha256": "9c94af0aa99c90413f879d97f5d6c2231ef365226da0010cfdd22739146db8ba",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtension.flowtest.js.flow",
+      "sha256": "b72c3ce232bbd73d40ab7ba8565ab11f7e41c998fa66156db09e9dbf5f3d6365",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtension.js.flow",
+      "sha256": "77f999914fd23182a0c74870213f5201515f736743b79838d9c3c39e131251fe",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionAutoFocusExtension.js.flow",
+      "sha256": "0f13f986f7c6f506581d52f414d8e620c52651992d2840fc4337815be5676944",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionClearEditorExtension.js.flow",
+      "sha256": "3afd1be5140aa5fefb9179353dfdc2ec952bfd293fc9546fdf00c22cbbf0b4f2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionClickAfterLastBlockExtension.js.flow",
+      "sha256": "95705ca1d1fc1ba2e56b5c65af77491168e3bdc2e54da37530877c4053ad6faf",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionConfig.js.flow",
+      "sha256": "ba7690c8d33553cac45a02b262cc51e1975ae2635e8d05547837737cec3d10e7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionDecoratorTextExtension.js.flow",
+      "sha256": "c33cef3893962fbad54fae1c7e5be9b62ea82df8534e9fdae3d8243ae00f1fe0",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionEditorStateExtension.js.flow",
+      "sha256": "61903e7bd5354ea00721078dd23d70866c2597d14d11dfa808e920c8f9f3c6ec",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionGetExtensionDependency.js.flow",
+      "sha256": "2705e8297e1538773500911c718e8dcc40e4fa9c1cf1f4a2cdd7f1d5f22e14a7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionGetExtensionDependencyFromEditor.js.flow",
+      "sha256": "f4eb644d14fcb6f8289a58a60e7add7a2faa671da87edd989c80405179c37780",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionGetPeerDependencyFromEditor.js.flow",
+      "sha256": "0e68d8d10984e33ba42fa18ab99bbd2363042a2fd0dbec67b8245973a2247c53",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionHMRExtension.js.flow",
+      "sha256": "016684eb79fc072d30a870d35ec4dfa879e2cc54146f6b7b989e801d432e846d",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionHorizontalRuleExtension.js.flow",
+      "sha256": "4c0fcca6f331bc041e48d5327c26702b2ea6ccf6ea0057a16692b450fee20984",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionIMEExtension.js.flow",
+      "sha256": "d0e1f3f1160f63d168100ab5f8aae26b340cf7571f42ec65701917cefe36c995",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionInitialStateExtension.js.flow",
+      "sha256": "35e705fa695eaa86a14670a43243e75bf1be0c8d97ecb4f4ebd7e2d171c216c2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionKeyboardShortcutsExtension.js.flow",
+      "sha256": "b4337b703167b72c37848d99774fa0f06eefdb08f52756dfeacbdebd009d76bb",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionLexicalBuilder.js.flow",
+      "sha256": "852079bf74a3c77ca55fdfdc4970a9c578ff214b38e9871a098626a1d6428a17",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionNamedSignals.js.flow",
+      "sha256": "b40db849faa96305b29cb25fe1af3ffd6f8132b2f0f2cda4aa12f25410b49fa7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionNestedEditorExtension.js.flow",
+      "sha256": "00b38901897558b322b3dbf6db3a93719fc402cee847f0b432b9b1a8d4f8d6ee",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionNodeSelectionDataSelectedExtension.js.flow",
+      "sha256": "47d0cdfc25e72a2a49b3828c156a995f56fb632cbace77c539ebe63fd33f2e74",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionNodeSelectionExtension.js.flow",
+      "sha256": "dab19b84bad5bea6d67f656ae2cf563d07c7aa82a2b5a786d58e9a8a63b32e75",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionNormalizeInlineElementsExtension.js.flow",
+      "sha256": "b8015b12ac8162f45b4013e7f6d721648ce2eaf8ef13cd117bb02e024b8edaa6",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionNormalizeTripleClickSelectionExtension.js.flow",
+      "sha256": "7b3abda2c2b62466ac307057ae03f337557bb241ee4ce67bc93a5eaa4ed82dbe",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionPreventSelectAllExtension.js.flow",
+      "sha256": "727cb3c3de271fb888f4051a1c316ea20279fc98aac2228b2d70932b0d927830",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionRootElementExtension.js.flow",
+      "sha256": "79d492634920982f9665e5d61e068adf578fb8e02106c8af9e054dc997c12856",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionSelectBlockExtension.js.flow",
+      "sha256": "9a43693c0f8d71baf98839c00b1ffa4f01d446a1f4f4e066e4ae94191c736c0a",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionSelectionAlwaysOnDisplayExtension.js.flow",
+      "sha256": "e06cbd8ae53dff8d75a221f901057b2a1f7632f1063e3e073cffd5d206198f78",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionSignals.js.flow",
+      "sha256": "a3787ce6a4a03b5527fc03aba268a8c49183eb35ada12d1f8e18c5b6c77f7e94",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionTabIndentationExtension.js.flow",
+      "sha256": "d129876e14f9f3ec90bb7b7cf05d7baf747930c0dbed2290cf658659984ac91b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionWatchEditableExtension.js.flow",
+      "sha256": "65f8babea6e8a5182c08f6b3d174675c84b8b99f395f0cff253cb9fbeadb197a",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-extension/flow/LexicalExtensionWatchedSignal.js.flow",
+      "sha256": "32450d94a2386faccb34293894dcb5aa7445b6f7c12f61dde8e8ed947c7a599b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-fast-check/flow/LexicalFastCheck.js.flow",
+      "sha256": "249a075b592db9eaad8925a12c2aedbe5beb5579c46bb84737e9f004982888e0",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-file/flow/LexicalFile.js.flow",
+      "sha256": "8e50583146274e3f1638babb4683ecf1e3e9e38c66740bfa6e6f06eaa22552ac",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-hashtag/flow/LexicalHashtag.js.flow",
+      "sha256": "73174a2e8ffea10b745336557fed8a0c132822a65c0ad8bc38c5178b1565a4c5",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-headless/flow/LexicalHeadless.js.flow",
+      "sha256": "5844e9451e1c7bb8b66cf956f9793af0ff0e3e6a6644ca0af60ac8835a8d4154",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-headless/flow/LexicalHeadlessDom.js.flow",
+      "sha256": "385719aede87932795412b05bdaf869efb73bbab6006a84a96613cceebf52c02",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-headless/flow/LexicalHeadlessHeadlessExtension.js.flow",
+      "sha256": "1ab91c478efb3c8be33779be70b5b5546fb7b1a13f18eaff6bf8280785a6f7e1",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-history/flow/LexicalHistory.js.flow",
+      "sha256": "8eb11f135138ee4170f6796d935234e7ec69649d701b66c433a924b3ee43f8dc",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-html/flow/LexicalHtml.js.flow",
+      "sha256": "f8d93bb2177a6f7d2cab19514db0993b279b1c28a56e671bbe5deeb05c0c14b7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalCreateDevError.js.flow",
+      "sha256": "f2dfa252ba772afb3c5fa0c4e8eaca8475e95046253d698cf2536e7a08e39329",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalCreateError.js.flow",
+      "sha256": "372e1769dd11cb49108a7b04ddcff6859b3d7e751c8e96ad8956888c5e934beb",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalCreateProdError.js.flow",
+      "sha256": "e698d804971f757f4fbe1f7ccea63642b8459724ff8b41cc3157aa3745de37cc",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalDevInvariant.js.flow",
+      "sha256": "61b505b2ba2d9eed4cfdad8da14e1734bf82f59274c54ae7169c68e572c52159",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalFormatDevErrorMessage.js.flow",
+      "sha256": "ad9a23e86a1887bdd350f6b12689c05cddbf99b847e423b29e5d3630c326f2ff",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalFormatDevWarningMessage.js.flow",
+      "sha256": "a1e76ea0a284374494e2335c0e728893d7c6645657cde709b49f0931e5dad660",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalFormatProdErrorMessage.js.flow",
+      "sha256": "3d3af94691b62889c2586053d9b4a49accfa0b9e2e7e92db04cb97c9f01823d7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalFormatProdWarningMessage.js.flow",
+      "sha256": "0b06624db5764e607917e16b4dfbf4be63d22de56fa5042fcc4d1c1211552ff2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalInvariant.js.flow",
+      "sha256": "30c2ef24572da8e5500064a4e2225d442aca778d79df5f17d714a5d117552e0d",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalVersion.js.flow",
+      "sha256": "3f540564e2ef70ae62f5740b09b07f88610d70cb1d6efd72aa4e31bd52222ec2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-internal/flow/LexicalInternalWarnOnlyOnce.js.flow",
+      "sha256": "dd6d36342b28fad943df571b0371578ca6c2989c936647dee0e6a36fc760af56",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-link/flow/LexicalLink.js.flow",
+      "sha256": "6d79e6f11820349a662db562ba3b74d3374475f721bac44d159d70b17228c32b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-list/flow/LexicalList.js.flow",
+      "sha256": "1e642e589c0393802f0b4917c85110377bae8d3bd1a4d8ca6accabaa1890005c",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-mark/flow/LexicalMark.js.flow",
+      "sha256": "18fe46201820d9865bc2fad9586d1e90a0b09d4c12409c85ee9bd0d261cab319",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-markdown/flow/LexicalMarkdown.js.flow",
+      "sha256": "af9edc26520a22cd226b98dcdc9a5677753df212cbbcd2fe3db10bf691e58702",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-mdast/flow/LexicalMdast.js.flow",
+      "sha256": "7bb28221fb5290d5b1babf1f6ebe6097c0d06042955dd20478f4dc68663f1ca8",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-offset/flow/LexicalOffset.js.flow",
+      "sha256": "a1aad02bae3ba785182e49e3d3ac27ee7efa0e87c7d6bfd2725ff7631d25e153",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-overflow/flow/LexicalOverflow.js.flow",
+      "sha256": "38532b4e0076ebb9365c84dfdef89e1b98d3191bc2f192d0baa8df73da30b401",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-plain-text/flow/LexicalPlainText.js.flow",
+      "sha256": "bb0dae0ef3c3d8a343a18cb160b85b01a13e672a568c6b8139c738a29c7ac787",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalAutoEmbedPlugin.js.flow",
+      "sha256": "0db678864a0437da89586b684e616551bb051d4eb7fbe844258afb856b6c43e2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalAutoEmbedPluginUtils.js.flow",
+      "sha256": "b60f616ab42162fc178473f6e47117eb2045173fc300d9fd55b1acb848198eb5",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalAutoFocusPlugin.js.flow",
+      "sha256": "359d36649e0a6cc0c81f893c94500b658f2ebdc16fc7d4cdb8a675a30a6df0d5",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalAutoLinkPlugin.js.flow",
+      "sha256": "d83a09db8673d306600f7b8d8d21deaf857e23309136e87e77f7ed88690af981",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalBlockWithAlignableContents.js.flow",
+      "sha256": "02ffcfde6abac87345b6a18068b548736fa0fa26a5dc09fa07ca8e547d9f064d",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalCharacterLimitPlugin.js.flow",
+      "sha256": "933728b9931b8a08e1db49f0f781ec65704af5892bf0dffcc90fe799bc1cc989",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalCheckListPlugin.js.flow",
+      "sha256": "c6a52a1746b23a27a2d23f1b3353b967382d25b211676cde5daf381190a4fee1",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalClearEditorPlugin.js.flow",
+      "sha256": "475fb4f35b358b085e4bdad7dd088416be463246893e5e5bb5b3ad3466e3a706",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalClickableLinkPlugin.js.flow",
+      "sha256": "7292b92c355e344b1b55e39de66c5790382f6f2b06650f625aef3617bcf8b602",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalCollaborationContext.js.flow",
+      "sha256": "613c9124295b5531597799700a9ca2f7b33732e8e60eeb5551276f71632fc221",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalCollaborationContextUtils.js.flow",
+      "sha256": "f39f877183161a711f5075b88a9498ee8241640d79db5fc726840cd35ef13d87",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalCollaborationPlugin.js.flow",
+      "sha256": "1b36a7cb5a0d1db210a9cd973fa27ac574649851361c9fc75788f5b0223fa66f",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalComposer.js.flow",
+      "sha256": "f593067e1b1e68c44c3b41536975d3a21fa2c3564d6d063c32c99d89c296cb0e",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalComposerContext.js.flow",
+      "sha256": "bcb9b8550e4cce97b373f6fe2976b9067e2b887fe2ab687b61bdb9cdfc5009c8",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalContentEditable.js.flow",
+      "sha256": "c2fabedbdc4c0d9dbb126913da7ddbe517dc4c3b574ce44eb2321ef17f1303d2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalDecoratorBlockNode.js.flow",
+      "sha256": "75bc648dc86b6d3881b35a65f36a340418c55594f3a96e9d069dc621cba09dff",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalDraggableBlockPlugin.js.flow",
+      "sha256": "302011d999135addd14487a9d19238640d1f0d7f3a83405af72d2308f418047b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalEditorRefPlugin.js.flow",
+      "sha256": "990a79907acb5c0d2a877dc01835e819e1dde742e4bd445a2972fbd4c5ac94c7",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalErrorBoundary.js.flow",
+      "sha256": "7949d5d3b47ec5c3905aaf2b1d2a16b4b6f6eb0edb0ba1046b922a0f921dba30",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalExtensionComponent.js.flow",
+      "sha256": "8eabf231042538ac57b97d7add93a531c39d2734f4850096e7ee6b4a843c2571",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalExtensionComposer.js.flow",
+      "sha256": "4ce2efcb1071d520203298ae08675944682d5f359f05064ba099be11d78c2f96",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalExtensionEditorComposer.js.flow",
+      "sha256": "e6dcf97e7c0d9071e8490e61beea5a62acf10ff41508ccbf7ddfa57a8e3922cb",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalHashtagPlugin.js.flow",
+      "sha256": "25d4eb58e9fb7e0b3a785422488cc38584e4606619bc49c717ad3d81874a39ee",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalHistoryPlugin.js.flow",
+      "sha256": "8d2215d609b5066fb7617553a43dbdf8b0bee2e5514c427efd7aa04d1f58c306",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalHorizontalRuleNode.js.flow",
+      "sha256": "5bf726de627875e76c329d241efd38ec140c7f4b9862821186b0bbd08c18966f",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalHorizontalRulePlugin.js.flow",
+      "sha256": "6f32cf62fdc191e7e4af01c1ef7e5a6cee3bb7535765c20f02d1fc61cc3b8ee2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalLinkPlugin.js.flow",
+      "sha256": "d4d00ee06562344c56070b2ed35f48d16fd6ca046cf2cf5507a4420a81bcc063",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalListPlugin.js.flow",
+      "sha256": "99c9bf32d0b89a15d21d8b73639d86262191d2222b6a437eb2b225bb44d38552",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalMarkdownShortcutPlugin.js.flow",
+      "sha256": "356b1b7b1ae3dfdf5a87e6b6c7428b6aef59191190cb8f07fd2fc70c85da7547",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalMenuOption.js.flow",
+      "sha256": "fba07315bc3346ebd1660948d7d8788e285307744f5103a80b2b86b0a26eca93",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalNestedComposer.js.flow",
+      "sha256": "d2b76371d49af589b6e907f4721e29ab84c56becc8de11bcd462d0306594c56a",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalNodeContextMenuPlugin.js.flow",
+      "sha256": "ce8d8140cad7a67da70b80441b4a390a8402bbe88d88015434d992e7481ed418",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalNodeEventPlugin.js.flow",
+      "sha256": "39265be43504118ff9ba2cffab6254f15224824111aada2c6380f4351439f0e3",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalNodeMenuPlugin.js.flow",
+      "sha256": "4c57ca5ae19ffbdeadaaf985c3f0ec17dfcd1c8d24f53eafeb980b0eeaca6b0d",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalOnChangePlugin.js.flow",
+      "sha256": "801162477822be067cec8eb060f5ffcf335ef1e83e6a4d0ef5a52d0aa82b8d58",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalPlainTextPlugin.js.flow",
+      "sha256": "92cc8106b244a985f9398de436a298ba75e1a6df9eefa100b29bafc7456ad2e2",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalReactExtension.js.flow",
+      "sha256": "329796ea5d18cd188969332ba3578f473ccee065d235f2d6a21d041aa4cb2196",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalReactPluginHostExtension.js.flow",
+      "sha256": "18f1c15bb73ec6dbb72e445503f9a258d9c436489418eb2289c230948deed5e4",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalReactProviderExtension.js.flow",
+      "sha256": "a95c1f7e6004f5dba691a8175e76c91d3d174f9f4cdddaa1574823f75e160683",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalRichTextPlugin.js.flow",
+      "sha256": "31206f3cdf2fba5c0f2e4d86a2db179fa95b4671b1de5296dcf9f8bb827f9adf",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalSelectionAlwaysOnDisplay.js.flow",
+      "sha256": "57bff0dd4bec9ce6074e4acfe5e6e5cac5f26a73a7debc2e3e4ffb8201235579",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalTabIndentationPlugin.js.flow",
+      "sha256": "aff25a7f5dd8f42e2660a188926c08ebfda1cad53d36c28ce2681e83199a38c5",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalTableOfContentsPlugin.js.flow",
+      "sha256": "acca2b507028448a122a7698d712ab69937234515890c106e670cf2c580ab934",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalTablePlugin.js.flow",
+      "sha256": "300a877cdf02772765db9ac6c35b4acd56d06dc1567dc2806dbd62e5aa9bf041",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalTreeView.js.flow",
+      "sha256": "82112a4d61409935d00eaabd69ea610e6175e22a73b9ee61a9001dc3f0605da0",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalTreeViewExtension.js.flow",
+      "sha256": "c0899d33de6fd81bef66b5b9857d69ec748ed3fafe63a503ae3f98ebe3af8298",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalTypeaheadMenuPlugin.js.flow",
+      "sha256": "a141c676ab2123ef2decda262495833dd574730a8736bf1173d544fa97253c2b",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/LexicalTypeaheadMenuPluginUtils.js.flow",
+      "sha256": "47a460d57185246cd4f6e8e0672c595517351590172e096089a0306b89d08336",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalAriaLiveRegion.js.flow",
+      "sha256": "c19a6e4f3d7a78bbb10c86b921467d7029752757b714c008469cebed33e905e5",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalEditable.js.flow",
+      "sha256": "d7e247ef87a42184aa44a9879082e559e78ce176eec4a1f3fb46abb0b303b027",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalExtensionComponent.js.flow",
+      "sha256": "c178f1c4473c17841188c3168bf24239adafee7647e3c161e855b1e781d04f83",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalExtensionSignalValue.js.flow",
+      "sha256": "5b59dc159f4b78ce0e844d0505b506c0d416bdd9206edabfb90b9907259a1f07",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalFocusManagerRef.js.flow",
+      "sha256": "0dc2090c85666575c26f1fffe6e496648b78289e1cbdf8d21754ec2387632ab8",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalFocusTrapRef.js.flow",
+      "sha256": "2879fab0c0014ca345e5a3150461817784520e4711849c33ca8780284b27e779",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalIsTextContentEmpty.js.flow",
+      "sha256": "febafcbbd23e6dff9547ccfd2314be71675dfaf228380e09d313dcb3f4aae04d",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalNodeSelection.js.flow",
+      "sha256": "0684abce4dd6fbafa8cf4140420637c51c05d2623e7a4e2f046eb75faa7d144f",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalRovingTabIndexRef.js.flow",
+      "sha256": "00a8c2e2b149719d2fd7db7990b332aca87a1c7adc592854ab0ff20ce38e7d8f",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalSlotRef.js.flow",
+      "sha256": "f74a005cde54f21efcc2f66e9db6de0bba0760d1e956f59b72ddaf8d63dead80",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalSubscription.js.flow",
+      "sha256": "a83218afc562b550c2045986b50480488b501da2caa9314537958910bb42708c",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-react/flow/useLexicalTextEntity.js.flow",
+      "sha256": "4384ea31fff8fbc8e703f15adeaacf6f7f30f54af52a48d5375efc7cb52d84ee",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-rich-text/flow/LexicalRichText.js.flow",
+      "sha256": "9ede8e54eaf04456246db51ea81e0f0de927e4a90ad38884cfb67bd31ba225e4",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-selection/flow/LexicalSelection.js.flow",
+      "sha256": "55d55a64c4209e671468dcd7415157e5266cfb3dc1fc7133f074d59664a6a4dd",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-table/flow/LexicalTable.js.flow",
+      "sha256": "6e560738818f72c2f68bc35c0c276a4afd5c9960e3f88cbb6981f69d8e462058",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-tailwind/flow/LexicalTailwind.js.flow",
+      "sha256": "2db7d617690372f0fcc5368cc5b0924126907a070d4b883c635fe5548952c5bc",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-text/flow/LexicalText.js.flow",
+      "sha256": "3bc5298a77b93753ef19c47b3973774a5ed59d4c6a46d7bb9e58eb8adf971eb9",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-utils/flow/LexicalUtils.js.flow",
+      "sha256": "a27eda6a8434cb9d4287e1eba06a57ee7f5c617b6d7e17a85fa1841653b3df9d",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical-yjs/flow/LexicalYjs.js.flow",
+      "sha256": "c07596058d281c44d9b1e3e3f2bfdb51bbac8db6286671893ab5928b1b9a71ca",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical/flow/Lexical.flowtest.js.flow",
+      "sha256": "75d3f306d05eae40a790c4ad5757fd7fdd31ba7ee56fabd09cdd90f8d2cd788a",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "packages/lexical/flow/Lexical.js.flow",
+      "sha256": "c8adc472ebad306247935136617edb9d1a9999f90158c45f879ff94f20370bd0",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "pnpm-lock.yaml",
+      "sha256": "62d595c2ed02a801e17317f08993111e9a936f51090cf970c3727de36dab7c21",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "pnpm-workspace.yaml",
+      "sha256": "cf95e7e55a3da09c53c76458c6292f53b979ffcf44cd408930cce81c8dc33df6",
+      "unchangedFromBaseline": true
+    },
+    {
+      "file": "scripts/check-flow-types.mjs",
+      "sha256": "e2539a0a8e0322721c93793dd0707d0e6b23ca40f554034a736ca2d85dc7a718",
+      "unchangedFromBaseline": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>Lexical final system Pinyin verification</title>
+<style>body{font:20px system-ui;margin:40px}#root{border:2px solid #888;padding:20px;min-height:100px;white-space:pre-wrap}p{margin:0}#label{margin-bottom:20px}</style>
+<div id="label">Final dom-target-v1 verification</div><div id="root" contenteditable="true"></div>
+<script src="after.js"></script>
+<script>
+window.resetProbe=scenario=>{window.current?.dispose();const old=document.querySelector('#root');const root=old.cloneNode(false);old.replaceWith(root);document.querySelector('#label').textContent=scenario.id+' / '+(scenario.richText?'RichText':'PlainText');window.current=window.makeFinalProbe(root,scenario);return window.current.snapshot()};
+window.snapshotProbe=()=>window.current.snapshot();window.validateProbe=stage=>window.current.validate(stage);
+</script>

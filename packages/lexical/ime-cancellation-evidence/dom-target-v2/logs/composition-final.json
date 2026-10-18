@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pnpm",
+    "run",
+    "test-browser",
+    "packages/lexical/src/__tests__/browser/LexicalSafariComposition.test.ts"
+  ],
+  "cwd": "repository root",
+  "started": "2026-10-17T18:10:43.600Z",
+  "node": "v22.22.3",
+  "VITEST_BROWSER": "chromium,firefox,webkit",
+  "sourcePatchSha256": "a1c02d2eecc8ebdcf4ae8c95d3f2dfa76306f91424dc975740b7416c762fee77",
+  "finished": "2026-10-17T18:10:50.413Z",
+  "exit": 0,
+  "signal": null
+}

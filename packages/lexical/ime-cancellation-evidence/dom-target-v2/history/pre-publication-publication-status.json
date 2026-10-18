@@ -1,0 +1,12 @@
+{
+  "phase": "implementation and validation complete; publication not performed",
+  "revision": "dom-target-v2",
+  "candidateTree": "78982fe4e60e3084d9992757c94fc69493955b4f",
+  "sourcePatchSha256": "bc362a0f0ce00bb35d9c050e75cf86057bb3401b5025d586af6764ef4481a70b",
+  "publishedPr": "https://github.com/facebook/lexical/pull/9362",
+  "publishedHead": "b77e004c1087afc812f145cdcc937d5a4491665a",
+  "sourceCommitted": false,
+  "sourcePushed": false,
+  "evidencePublished": false,
+  "prBodyUpdated": false
+}

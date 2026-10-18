@@ -1,0 +1,21 @@
+{
+  "baseline": "cb21da40de69c1eedc2b9ec60001fef0d3b1770a",
+  "files": [
+    {
+      "file": "packages/lexical/src/nodes/LexicalTextNode.ts",
+      "sha256": "bc26229f030d8b0a7fd473ffd7abfaa08c3a0af296a7b2f2bafa1ddae25b42c2"
+    },
+    {
+      "file": "packages/lexical/src/LexicalGeneratedJSON.ts",
+      "sha256": "0f11aa26b04975df96e86538ae7d3098bd47a58c1a0964e5f1fa58a22874b1e9"
+    },
+    {
+      "file": "packages/lexical-code-core/src/LexicalCodeCoreGeneratedJSON.ts",
+      "sha256": "f4870cf33b5934d5e95d7955b05c9d4ba94720f793bc5c0145110327c4931821"
+    },
+    {
+      "file": "packages/lexical-selection/src/lexical-node.ts",
+      "sha256": "401f72933c89ee59fee609f70e553792a31f014e2483fdc7c32d42fb16190db2"
+    }
+  ]
+}
